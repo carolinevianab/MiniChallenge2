@@ -10,20 +10,16 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button4: UIButton!
     
-    var seila = ""
+    var botaoClicado = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        button1.addTarget(self, action: #selector(teste), for: .touchUpInside)
-        
+        // Botão bonito
         button1.layer.cornerRadius = 15
         button2.layer.cornerRadius = 15
         button3.layer.cornerRadius = 15
@@ -31,45 +27,31 @@ class SecondViewController: UIViewController {
     
     }
     
-    @objc func teste(){
-        print("bla")
-    }
-    
+    // Definem qual foi o botão clicado
     @IBAction func bntJogo1(_ sender: Any) {
-        self.seila = "1"
+        self.botaoClicado = "1"
         performSegue(withIdentifier: "segue1", sender: self)
     }
     
     @IBAction func bntJogo2(_ sender: Any) {
-        self.seila = "2"
+        self.botaoClicado = "2"
         performSegue(withIdentifier: "segue1", sender: self)
     }
     
     @IBAction func bntJogo3(_ sender: Any) {
-        self.seila = "3"
+        self.botaoClicado = "3"
         performSegue(withIdentifier: "segue1", sender: self)
     }
     
     @IBAction func bntJogo4(_ sender: Any) {
-        self.seila = "4"
+        self.botaoClicado = "4"
         performSegue(withIdentifier: "segue1", sender: self)
     }
     
+    // Envia para a próxima view qual foi o botão clicado
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! JogoViewController
-        vc.x = seila
+        vc.escolha = botaoClicado
     }
     
-    /*
-    
-*/
 }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */

@@ -16,10 +16,5 @@ class ViewController: UIViewController {
         
         
     }
-    @IBAction func Teste(_ sender: UIButton) {
-        print("bla")
-    }
-    
-
 }
 
