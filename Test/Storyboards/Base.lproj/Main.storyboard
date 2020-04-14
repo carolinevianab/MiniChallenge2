@@ -10,7 +10,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="psU-Zg-uEC">
             <objects>
-                <tabBarController id="dFm-ZK-tkd" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" id="dFm-ZK-tkd" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="kNK-he-U9e"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UTO-15-P2R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
