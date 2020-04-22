@@ -11,6 +11,7 @@
 		10A3270E243C00B1005E4AF1 /* JogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3270D243C00B1005E4AF1 /* JogoViewController.swift */; };
 		10AEC594243AC60600C4BB05 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEC593243AC60600C4BB05 /* SecondViewController.swift */; };
 		10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F01F8124400DEA00CEC504 /* FinalViewController.swift */; };
+		2D03B6B4244A2934009AEC91 /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */; };
 		A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */; };
 		A88C8EE62433B6DB00BC6847 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE52433B6DB00BC6847 /* SceneDelegate.swift */; };
 		A88C8EE82433B6DB00BC6847 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE72433B6DB00BC6847 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		10A3270D243C00B1005E4AF1 /* JogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoViewController.swift; sourceTree = "<group>"; };
 		10AEC593243AC60600C4BB05 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		10F01F8124400DEA00CEC504 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		A88C8EE02433B6DB00BC6847 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A88C8EE52433B6DB00BC6847 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				A88C8EF12433B6DD00BC6847 /* Info.plist */,
 				10A3270D243C00B1005E4AF1 /* JogoViewController.swift */,
 				10F01F8124400DEA00CEC504 /* FinalViewController.swift */,
+				2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D03B6B4244A2934009AEC91 /* InstrucoesViewController.swift in Sources */,
 				10AEC594243AC60600C4BB05 /* SecondViewController.swift in Sources */,
 				10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */,
 				A88C8EE82433B6DB00BC6847 /* ViewController.swift in Sources */,
