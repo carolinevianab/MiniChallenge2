@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1007EF9A2446A2B1009AF65C /* Inicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1007EF992446A2B1009AF65C /* Inicio.storyboard */; };
-		10329023244F35FD00FC0F0C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10329022244F35FD00FC0F0C /* TabBarController.swift */; };
 		10329025244F583E00FC0F0C /* star2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10329024244F583E00FC0F0C /* star2.png */; };
+		1067BFC42450ED32009CC173 /* Demisexual-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 1067BFC32450ED32009CC173 /* Demisexual-Pride-Flag.png */; };
+		1067BFC62450EE5B009CC173 /* Bisexual-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 1067BFC52450EE5A009CC173 /* Bisexual-Pride-Flag.png */; };
+		1067BFC82450F037009CC173 /* Agender-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 1067BFC72450F037009CC173 /* Agender-Pride-Flag.png */; };
 		10A3270E243C00B1005E4AF1 /* JogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3270D243C00B1005E4AF1 /* JogoViewController.swift */; };
 		10AEC594243AC60600C4BB05 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEC593243AC60600C4BB05 /* SecondViewController.swift */; };
 		10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F01F8124400DEA00CEC504 /* FinalViewController.swift */; };
@@ -43,8 +45,10 @@
 
 /* Begin PBXFileReference section */
 		1007EF992446A2B1009AF65C /* Inicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Inicio.storyboard; sourceTree = "<group>"; };
-		10329022244F35FD00FC0F0C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		10329024244F583E00FC0F0C /* star2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star2.png; path = ../../../../Downloads/star2.png; sourceTree = "<group>"; };
+		1067BFC32450ED32009CC173 /* Demisexual-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Demisexual-Pride-Flag.png"; path = "../../../../Downloads/Demisexual-Pride-Flag.png"; sourceTree = "<group>"; };
+		1067BFC52450EE5A009CC173 /* Bisexual-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bisexual-Pride-Flag.png"; path = "../../../../Downloads/Bisexual-Pride-Flag.png"; sourceTree = "<group>"; };
+		1067BFC72450F037009CC173 /* Agender-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Agender-Pride-Flag.png"; path = "../../../../Downloads/Agender-Pride-Flag.png"; sourceTree = "<group>"; };
 		10A3270D243C00B1005E4AF1 /* JogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoViewController.swift; sourceTree = "<group>"; };
 		10AEC593243AC60600C4BB05 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		10F01F8124400DEA00CEC504 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
@@ -128,12 +132,14 @@
 				A88C8EE72433B6DB00BC6847 /* ViewController.swift */,
 				10AEC593243AC60600C4BB05 /* SecondViewController.swift */,
 				A88C8EEC2433B6DD00BC6847 /* Assets.xcassets */,
+				1067BFC72450F037009CC173 /* Agender-Pride-Flag.png */,
 				10329024244F583E00FC0F0C /* star2.png */,
+				1067BFC52450EE5A009CC173 /* Bisexual-Pride-Flag.png */,
+				1067BFC32450ED32009CC173 /* Demisexual-Pride-Flag.png */,
 				A88C8EEE2433B6DD00BC6847 /* LaunchScreen.storyboard */,
 				A88C8EF12433B6DD00BC6847 /* Info.plist */,
 				10A3270D243C00B1005E4AF1 /* JogoViewController.swift */,
 				10F01F8124400DEA00CEC504 /* FinalViewController.swift */,
-				10329022244F35FD00FC0F0C /* TabBarController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -262,11 +268,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A88C8EF02433B6DD00BC6847 /* LaunchScreen.storyboard in Resources */,
+				1067BFC42450ED32009CC173 /* Demisexual-Pride-Flag.png in Resources */,
 				A88C8EED2433B6DD00BC6847 /* Assets.xcassets in Resources */,
 				A8ED1D182436755E00EC8EC4 /* 2Main.storyboard in Resources */,
 				1007EF9A2446A2B1009AF65C /* Inicio.storyboard in Resources */,
 				10329025244F583E00FC0F0C /* star2.png in Resources */,
 				A88C8EEB2433B6DB00BC6847 /* Main.storyboard in Resources */,
+				1067BFC82450F037009CC173 /* Agender-Pride-Flag.png in Resources */,
+				1067BFC62450EE5B009CC173 /* Bisexual-Pride-Flag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +304,6 @@
 				10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */,
 				A88C8EE82433B6DB00BC6847 /* ViewController.swift in Sources */,
 				A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */,
-				10329023244F35FD00FC0F0C /* TabBarController.swift in Sources */,
 				A88C8EE62433B6DB00BC6847 /* SceneDelegate.swift in Sources */,
 				10A3270E243C00B1005E4AF1 /* JogoViewController.swift in Sources */,
 			);
