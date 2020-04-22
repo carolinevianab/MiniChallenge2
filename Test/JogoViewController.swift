@@ -17,6 +17,7 @@ class JogoViewController: UIViewController {
     @IBOutlet weak var resp3: UIButton!
     @IBOutlet weak var resp4: UIButton!
     @IBOutlet weak var Next: UIButton!
+    @IBOutlet weak var ImagemQuiz: UIImageView!
     
     var escolha = "" //Recebido da view anterior
     var correct = "" //Respostas certa das perguntas, precisa ser global porque funções diferentes fazem a leitura dela
@@ -26,6 +27,7 @@ class JogoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = #colorLiteral(red: 0.5824574828, green: 0.9204275012, blue: 0.6569642425, alpha: 1)
         
         // Botão bonito
         resp1.layer.cornerRadius = 15
@@ -33,8 +35,19 @@ class JogoViewController: UIViewController {
         resp3.layer.cornerRadius = 15
         resp4.layer.cornerRadius = 15
         
+        resp1.layer.borderWidth = 1
+        resp2.layer.borderWidth = 1
+        resp3.layer.borderWidth = 1
+        resp4.layer.borderWidth = 1
+        
+        resp1.layer.borderColor = UIColor.gray.cgColor
+        resp2.layer.borderColor = UIColor.gray.cgColor
+        resp3.layer.borderColor = UIColor.gray.cgColor
+        resp4.layer.borderColor = UIColor.gray.cgColor
+        
+        
         // Desativa o botão de próxima pergunta pra que não dê pra começar e dar pra clicar
-        Next.setTitleColor(#colorLiteral(red: 0.9275141358, green: 0.791228354, blue: 1, alpha: 1), for: .disabled)
+        Next.setTitleColor(.white, for: .disabled)
         Next.isEnabled = false
         
         //Dependendo do valor de escolha, ativa um jogo diferente
@@ -60,9 +73,16 @@ class JogoViewController: UIViewController {
     // Função do jogo 1
     func jogoBotao1(cont: Int) {
         let perguntas = [
-            "Pergunta1", "resposta1", "resposta2", "resposta3", "resposta4", "1",
+            "Qual a característica da sexualidade assexual?",
+            "Não sente atração por ninguém ou quase ninguém",
+            "Sente atração por pessoas de   qualquer identidade de gênero, ou independentemente de gênero",
+            "Alguém que sente atração pelo gênero oposto",
+            "Podem sentir atração apenas caso exista uma conexão especial prévia",
+            "1",
+            
             "Pergunta2", "resposta11", "resposta12", "resposta13", "resposta14", "2",
             "Pergunta3", "resposta21", "resposta22", "resposta23", "resposta24", "3"]
+        
         
         //If para de funcionar quando acaba o array de perguntas, e vai pro else, que faz o segue pra próxima tela
         if cont < perguntas.count{
@@ -105,14 +125,14 @@ class JogoViewController: UIViewController {
     func setQuiz (pergunta: String, resposta1: String,resposta2: String,resposta3: String,resposta4: String,respostaCerta: String){
         
         // Define o botão padrão
-        resp1.backgroundColor = #colorLiteral(red: 0.3589523435, green: 0.1497697234, blue: 0.6847261786, alpha: 1)
-        resp2.backgroundColor = #colorLiteral(red: 0.3589523435, green: 0.1497697234, blue: 0.6847261786, alpha: 1)
-        resp3.backgroundColor = #colorLiteral(red: 0.3589523435, green: 0.1497697234, blue: 0.6847261786, alpha: 1)
-        resp4.backgroundColor = #colorLiteral(red: 0.3589523435, green: 0.1497697234, blue: 0.6847261786, alpha: 1)
-        resp1.setTitleColor(#colorLiteral(red: 0.9275141358, green: 0.791228354, blue: 1, alpha: 1), for: .normal)
-        resp2.setTitleColor(#colorLiteral(red: 0.9275141358, green: 0.791228354, blue: 1, alpha: 1), for: .normal)
-        resp3.setTitleColor(#colorLiteral(red: 0.9275141358, green: 0.791228354, blue: 1, alpha: 1), for: .normal)
-        resp4.setTitleColor(#colorLiteral(red: 0.9275141358, green: 0.791228354, blue: 1, alpha: 1), for: .normal)
+        resp1.backgroundColor = .white
+        resp2.backgroundColor = .white
+        resp3.backgroundColor = .white
+        resp4.backgroundColor = .white
+        resp1.setTitleColor(.black, for: .normal)
+        resp2.setTitleColor(.black, for: .normal)
+        resp3.setTitleColor(.black, for: .normal)
+        resp4.setTitleColor(.black, for: .normal)
         
         // Coloca os elementos do array nos lugares certos
         Pergunta.text = pergunta
@@ -120,6 +140,7 @@ class JogoViewController: UIViewController {
         resp2.setTitle(resposta2, for: .normal)
         resp3.setTitle(resposta3, for: .normal)
         resp4.setTitle(resposta4, for: .normal)
+        
         
         //Salva a resposta correta
         correct = respostaCerta
@@ -144,6 +165,10 @@ class JogoViewController: UIViewController {
         }
         
         
+    }
+    
+    func setImagemQuiz(Imagem: UIImage){
+        ImagemQuiz.image = Imagem
     }
     
     // Função chamada quando o botão com a resposta certa é apertado; Muda o botão para verde e permite ir pra próxima tela

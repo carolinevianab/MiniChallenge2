@@ -18,8 +18,14 @@ class FinalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = #colorLiteral(red: 0.5824574828, green: 0.9204275012, blue: 0.6569642425, alpha: 1)
+
+        
         
         bntVoltar.layer.cornerRadius = 15
+        bntVoltar.layer.borderWidth = 1
+        bntVoltar.layer.borderColor = UIColor.gray.cgColor
+        
         PCertas.text = total //Coloca o total dentro da label na tela
         
     }
