@@ -28,6 +28,7 @@ class JogoViewController: UIViewController {
     @IBOutlet weak var resp4: UIButton!
     @IBOutlet weak var Next: UIButton!
     @IBOutlet weak var gameImage: UIImageView!
+    @IBOutlet weak var TituloJogo: UILabel!
     
     
     var choice = ""
@@ -65,15 +66,19 @@ class JogoViewController: UIViewController {
         // Se escolha = 3, botão 3 quem foi clicado
         // Se escolha = 4, botão 4 quem foi clicado
         if (choice == "1"){
+            TituloJogo.text = "Orientação sexual"
             game1(cont: i)
         }
         if (choice == "2"){
+            TituloJogo.text = "Identidade de gênero"
             game2(cont: i)
         }
         if (choice == "3"){
+            TituloJogo.text = "Geral"
             game3(cont: i)
         }
         if (choice == "4"){
+            TituloJogo.text = "Jogo das bandeiras"
             game4(cont: i)
         }
         
@@ -88,7 +93,7 @@ class JogoViewController: UIViewController {
                        Answer3: "Alguém que sente atração pelo gênero oposto",
                        Answer4: "Podem sentir atração apenas caso exista uma conexão especial prévia",
                        correctAnswer: "1",
-                       ImageName: ""),
+                       ImageName: "Assexual-Pride-Flag.png"),
                 
                 Questions(Question: "Que bandeira é essa?",
                           Answer1: "Assexual",
@@ -104,7 +109,15 @@ class JogoViewController: UIViewController {
                           Answer3: "Sexualidade",
                           Answer4: "Mistura do azul e do rosa",
                           correctAnswer: "4",
-                          ImageName: "Bisexual-Pride-Flag.png")]
+                          ImageName: "Bisexual-Pride-Flag.png"),
+        
+                Questions(Question: "Uma pessoa homossexual…",
+                          Answer1: "Sente atração pelo mesmo gênero",
+                          Answer2: "Sente atração por dois ou mais gêneros",
+                          Answer3: "Sente atração pelo gênero oposto",
+                          Answer4: "Nenhuma das alternativasa",
+                          correctAnswer: "1",
+                          ImageName: "blank.png")]
         
         if cont < questionsQuiz.count{
             setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)        }
@@ -131,7 +144,23 @@ class JogoViewController: UIViewController {
                           Answer3: "Alguém que se identifica com um gênero diferente do que lhe foi designado ao nascer",
                           Answer4: "Pessoas cujo gênero não é nem 100% homem e nem 100% mulher",
                           correctAnswer: "4",
-                          ImageName: "")]
+                          ImageName: "blank.png"),
+                
+                Questions(Question: "O que é uma pessoa andrógina?",
+                          Answer1: "Pessoa cujo gênero está entre mulher e homem, ou cujo gênero é uma mescla de mulher e homem",
+                          Answer2: "Pessoa que mudam de gênero de tempos em tempos",
+                          Answer3: "Pessoa que se identifica e possui todas as características físicas do gênero que lhe foi designado ao nascer",
+                          Answer4: "Pessoa que se identifica, total ou parcialmente, com um gênero diferente do que lhe foi designado ao nascer",
+                          correctAnswer: "1",
+                          ImageName: "blank.png"),
+        
+                Questions(Question: "Que bandeira é essa?",
+                          Answer1: "Transgênero",
+                          Answer2: "Intergênero",
+                          Answer3: "Gênero fluído",
+                          Answer4: "Queer",
+                          correctAnswer: "4",
+                          ImageName: "Queer-Pride-Flag.png")]
         
         if cont < questionsQuiz.count{
             setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)
@@ -145,37 +174,37 @@ class JogoViewController: UIViewController {
     // Função do jogo 3
     func game3(cont: Int){
         let questionsQuiz =
-            [Questions(Question: "Jogo 3 Pergunta 1",
-                           Answer1: "resposta 1-1",
-                           Answer2: "resposta 2-1",
-                           Answer3: "resposta 3-1",
-                           Answer4: "resposta 4-1",
-                           correctAnswer: "1",
-                           ImageName: "star2.png"),
+            [Questions(Question: "Qual a característica da sexualidade assexual?",
+                        Answer1: "Não sente atração por ninguém ou quase ninguém",
+                        Answer2: "Sente atração por pessoas de   qualquer identidade de gênero, ou independentemente de gênero",
+                        Answer3: "Alguém que sente atração pelo gênero oposto",
+                        Answer4: "Podem sentir atração apenas caso exista uma conexão especial prévia",
+                        correctAnswer: "1",
+                        ImageName: "Assexual-Pride-Flag.png"),
                     
-                    Questions(Question: "Jogo 3 Pergunta 2?",
-                              Answer1: "resposta 1-2",
-                              Answer2: "resposta 2-2",
-                              Answer3: "resposta 3-2",
-                              Answer4: "resposta 4-2",
-                              correctAnswer: "2",
-                              ImageName: "star2.png"),
-            
-                    Questions(Question: "Jogo 3 Pergunta 3?",
-                              Answer1: "resposta 1-3",
-                              Answer2: "resposta 2-3",
-                              Answer3: "resposta 3-3",
-                              Answer4: "resposta 4-3",
-                              correctAnswer: "3",
-                              ImageName: "star2.png"),
-                    
-                    Questions(Question: "Jogo 3 Pergunta 4?",
-                              Answer1: "resposta 1-4",
-                              Answer2: "resposta 2-4",
-                              Answer3: "resposta 3-4",
-                              Answer4: "resposta 4-4",
+                    Questions(Question: "Que bandeira é essa?",
+                              Answer1: "Transgênero",
+                              Answer2: "Intergênero",
+                              Answer3: "Gênero fluído",
+                              Answer4: "Queer",
                               correctAnswer: "4",
-                              ImageName: "star2.png")]
+                              ImageName: "Queer-Pride-Flag.png"),
+            
+                    Questions(Question: "Que bandeira é essa?",
+                              Answer1: "Assexual",
+                              Answer2: "Demissexual",
+                              Answer3: "Pansexual",
+                              Answer4: "Nenhuma das alternativas",
+                              correctAnswer: "3",
+                              ImageName: "Pansexual-Pride-Flag.png"),
+                    
+                    Questions(Question: "Qual a característica da identidade de gênero não binário?",
+                              Answer1: "Pessoas que mudam de gênero de tempos em tempos",
+                              Answer2: "Ausência de gênero, gênero neutro, ou ausência de identidade de gênero.",
+                              Answer3: "Alguém que se identifica com um gênero diferente do que lhe foi designado ao nascer",
+                              Answer4: "Pessoas cujo gênero não é nem 100% homem e nem 100% mulher",
+                              correctAnswer: "4",
+                              ImageName: "blank.png")]
         
         if cont < questionsQuiz.count{
             setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)
@@ -188,37 +217,37 @@ class JogoViewController: UIViewController {
     // Função do jogo 4
     func game4(cont: Int){
         let questionsQuiz =
-            [Questions(Question: "Jogo 4 Pergunta 1",
-                           Answer1: "resposta 1-1",
-                           Answer2: "resposta 2-1",
-                           Answer3: "resposta 3-1",
-                           Answer4: "resposta 4-1",
+            [Questions(Question: "Que bandeira é essa?",
+                           Answer1: "Transgênero",
+                           Answer2: "Intergênero",
+                           Answer3: "Gênero fluído",
+                           Answer4: "Queer",
                            correctAnswer: "1",
-                           ImageName: "star2.png"),
+                           ImageName: "Transgender-Pride-Flag.png"),
                     
-                    Questions(Question: "Jogo 4 Pergunta 2?",
-                              Answer1: "resposta 1-2",
-                              Answer2: "resposta 2-2",
-                              Answer3: "resposta 3-2",
-                              Answer4: "resposta 4-2",
-                              correctAnswer: "2",
-                              ImageName: "star2.png"),
-            
-                    Questions(Question: "Jogo 4 Pergunta 3?",
-                              Answer1: "resposta 1-3",
-                              Answer2: "resposta 2-3",
-                              Answer3: "resposta 3-3",
-                              Answer4: "resposta 4-3",
+                    Questions(Question: "Que bandeira é essa?",
+                              Answer1: "Assexual",
+                              Answer2: "Demissexual",
+                              Answer3: "Pansexual",
+                              Answer4: "Nenhuma das alternativas",
                               correctAnswer: "3",
-                              ImageName: "star2.png"),
-                    
-                    Questions(Question: "Jogo 4 Pergunta 4?",
-                              Answer1: "resposta 1-4",
-                              Answer2: "resposta 2-4",
-                              Answer3: "resposta 3-4",
-                              Answer4: "resposta 4-4",
+                              ImageName: "Pansexual-Pride-Flag.png"),
+            
+                    Questions(Question: "Que bandeira é essa?",
+                              Answer1: "Homossexual",
+                              Answer2: "Pansexual",
+                              Answer3: "Bissexual",
+                              Answer4: "Nenhuma das alternativas",
                               correctAnswer: "4",
-                              ImageName: "star2.png")]
+                              ImageName: "Assexual-Pride-Flag.png"),
+                    
+                    Questions(Question: "Que bandeira é essa?",
+                              Answer1: "Não binário",
+                              Answer2: "Agênero",
+                              Answer3: "Androginia",
+                              Answer4: "Nenhuma das alternativas",
+                              correctAnswer: "3",
+                              ImageName: "Androgine-Pride-Flag.png")]
         
         if cont < questionsQuiz.count{
             setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)
