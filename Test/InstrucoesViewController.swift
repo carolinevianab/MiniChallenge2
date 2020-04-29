@@ -10,12 +10,12 @@ import UIKit
 
 class InstrucoesViewController: UIViewController {
     
-    @IBOutlet weak var title1: UILabel!
-    @IBOutlet weak var title2: UILabel!
-    @IBOutlet weak var text1: UILabel!
-    @IBOutlet weak var text2: UILabel!
+    @IBOutlet weak var title1: UILabel! //Primeiro título
+    @IBOutlet weak var title2: UILabel! //Segundo titulo
+    @IBOutlet weak var text1: UILabel!  //Primeiro texto
+    @IBOutlet weak var text2: UILabel!  //Segundo texto
     
-    var count = 0
+    var count = 0 //Contador utilizado para modificar o conteúdo das labels
     
     
     override func viewDidLoad() {
