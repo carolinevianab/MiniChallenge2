@@ -8,8 +8,10 @@
 
 import UIKit
 
+
 class ConquistasViewController: UIViewController {
 
+    
     var clicked = ""
     
     // Esses são todos os botões presentes na view
@@ -33,7 +35,6 @@ class ConquistasViewController: UIViewController {
     @IBOutlet weak var b18: UIButton!
     @IBOutlet weak var b19: UIButton!
     @IBOutlet weak var b20: UIButton!
-    @IBOutlet weak var b21: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +59,7 @@ class ConquistasViewController: UIViewController {
         b18.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
         b19.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
         b20.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
-        b21.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
+       
         
         // Do any additional setup after loading the view.
     }
@@ -82,5 +83,5 @@ class ConquistasViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+ 
 }
