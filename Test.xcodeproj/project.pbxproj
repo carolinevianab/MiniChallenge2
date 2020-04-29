@@ -19,6 +19,8 @@
 		10DEF49D245479BA00F46E70 /* Transgender-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF496245479BA00F46E70 /* Transgender-Pride-Flag.png */; };
 		10DEF49F24547AA900F46E70 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF49E24547AA900F46E70 /* blank.png */; };
 		10DEF4A124547C1000F46E70 /* Androgine-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF4A024547C1000F46E70 /* Androgine-Pride-Flag.png */; };
+		10DEF4A32459A99F00F46E70 /* ConquistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DEF4A22459A99E00F46E70 /* ConquistasViewController.swift */; };
+		10DEF4A52459C53000F46E70 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DEF4A42459C53000F46E70 /* AchievementViewController.swift */; };
 		10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F01F8124400DEA00CEC504 /* FinalViewController.swift */; };
 		A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */; };
 		A88C8EE62433B6DB00BC6847 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE52433B6DB00BC6847 /* SceneDelegate.swift */; };
@@ -61,6 +63,8 @@
 		10DEF496245479BA00F46E70 /* Transgender-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Transgender-Pride-Flag.png"; sourceTree = "<group>"; };
 		10DEF49E24547AA900F46E70 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		10DEF4A024547C1000F46E70 /* Androgine-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Androgine-Pride-Flag.png"; sourceTree = "<group>"; };
+		10DEF4A22459A99E00F46E70 /* ConquistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasViewController.swift; sourceTree = "<group>"; };
+		10DEF4A42459C53000F46E70 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 		10F01F8124400DEA00CEC504 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		A88C8EE02433B6DB00BC6847 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				A88C8EF12433B6DD00BC6847 /* Info.plist */,
 				10A3270D243C00B1005E4AF1 /* JogoViewController.swift */,
 				10F01F8124400DEA00CEC504 /* FinalViewController.swift */,
+				10DEF4A22459A99E00F46E70 /* ConquistasViewController.swift */,
+				10DEF4A42459C53000F46E70 /* AchievementViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -330,9 +336,11 @@
 			files = (
 				10AEC594243AC60600C4BB05 /* SecondViewController.swift in Sources */,
 				10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */,
+				10DEF4A32459A99F00F46E70 /* ConquistasViewController.swift in Sources */,
 				A88C8EE82433B6DB00BC6847 /* ViewController.swift in Sources */,
 				A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */,
 				A88C8EE62433B6DB00BC6847 /* SceneDelegate.swift in Sources */,
+				10DEF4A52459C53000F46E70 /* AchievementViewController.swift in Sources */,
 				10A3270E243C00B1005E4AF1 /* JogoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
