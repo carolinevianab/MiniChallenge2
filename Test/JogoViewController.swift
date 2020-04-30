@@ -39,7 +39,7 @@ class JogoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.5824574828, green: 0.9204275012, blue: 0.6569642425, alpha: 1)
+        self.view.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
         
         // Botão bonito
         resp1.layer.cornerRadius = 15
@@ -115,7 +115,7 @@ class JogoViewController: UIViewController {
                           Answer1: "Sente atração pelo mesmo gênero",
                           Answer2: "Sente atração por dois ou mais gêneros",
                           Answer3: "Sente atração pelo gênero oposto",
-                          Answer4: "Nenhuma das alternativasa",
+                          Answer4: "Nenhuma das alternativas",
                           correctAnswer: "1",
                           ImageName: "blank.png")]
         
