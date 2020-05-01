@@ -29,23 +29,24 @@ class JogoViewController: UIViewController {
     @IBOutlet weak var Next: UIButton!
     @IBOutlet weak var gameImage: UIImageView!
     @IBOutlet weak var TituloJogo: UILabel!
-    
+    @IBOutlet weak var SairJogo: UIButton!
     
     var choice = ""
     var correct = ""
     var i = 0
     var correctAnswers = 0
     var aux = 0
+    var end = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
         
         // Botão bonito
         resp1.layer.cornerRadius = 15
         resp2.layer.cornerRadius = 15
         resp3.layer.cornerRadius = 15
         resp4.layer.cornerRadius = 15
+        SairJogo.layer.cornerRadius = 15
         
         resp1.layer.borderWidth = 1
         resp2.layer.borderWidth = 1
@@ -122,6 +123,7 @@ class JogoViewController: UIViewController {
         if cont < questionsQuiz.count{
             setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)        }
         else{
+            end = true
             performSegue(withIdentifier: "segueResul", sender: self)
         }
         
@@ -166,6 +168,7 @@ class JogoViewController: UIViewController {
             setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)
         }
         else{
+            end = true
             performSegue(withIdentifier: "segueResul", sender: self)
         }
         
@@ -210,6 +213,7 @@ class JogoViewController: UIViewController {
             setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)
         }
         else{
+            end = true
             performSegue(withIdentifier: "segueResul", sender: self)
         }
     }
@@ -253,6 +257,7 @@ class JogoViewController: UIViewController {
             setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)
         }
         else{
+            end = true
             performSegue(withIdentifier: "segueResul", sender: self)
         }
     }
@@ -300,10 +305,18 @@ class JogoViewController: UIViewController {
     }
     
     @objc func rightAnswer(sender: UIButton){
+        SairJogo.isEnabled = false
+        SairJogo.isHidden = true
+        
         if sender.accessibilityIdentifier == correct {
             sender.backgroundColor = .green
             sender.setTitleColor(.black, for: .normal)
             Next.isEnabled = true
+            resp1.isEnabled = false
+            resp2.isEnabled = false
+            resp3.isEnabled = false
+            resp4.isEnabled = false
+            sender.isEnabled = true
             correctAnswers += 1
             aux = correctAnswers
         }
@@ -322,6 +335,10 @@ class JogoViewController: UIViewController {
     @IBAction func NextQuestion(_ sender: Any) {
         i += 1
         Next.isEnabled = false
+        resp1.isEnabled = true
+        resp2.isEnabled = true
+        resp3.isEnabled = true
+        resp4.isEnabled = true
         
         if (choice == "1"){
             game1(cont: i)
@@ -337,10 +354,13 @@ class JogoViewController: UIViewController {
         }
         
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! FinalViewController
-        vc.total = String(correctAnswers)
+        if end == true{
+            let vc = segue.destination as! FinalViewController
+            vc.total = String(correctAnswers)
+        }
+        
     }
     
 }

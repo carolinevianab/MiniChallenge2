@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dFm-ZK-tkd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dFm-ZK-tkd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -481,7 +481,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Conquistas">
                                         <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="NSColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="32" name="SFProRounded-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -490,7 +490,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="NWL-W0-XRK"/>
                     </view>
@@ -541,10 +541,10 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">Orientity é a mistura das palavras “orientation” (orientação) e “identity” 
+                                        <string key="content">Orientity é a mistura das palavras “orientation” (orientação) e “identity” 
 (identidade).
 Nosso objetivo é ensinar um pouco mais sobre alguns tipos de Orientações Sexuais e Identidades de Gênero. Temas importantes que não costumam ser abordados nas escolas ou em casa, e muitas vezes, por causa de preconceitos ou desconhecimento, as poucas informações passadas não são totalmente verídicas. 
-Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas sobre o assunto em um ambiente em que se sintam seguras e confortáveis. E assim, quem sabe, repassar esse conhecimento.</mutableString>
+Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas sobre o assunto em um ambiente em que se sintam seguras e confortáveis. E assim, quem sabe, repassar esse conhecimento.</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="17" name="SFProDisplay-Regular"/>
@@ -605,7 +605,7 @@ Cg
                                 <attributedString key="attributedText">
                                     <fragment content="Resultados">
                                         <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="NSColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="32" name="SFProRounded-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -656,7 +656,7 @@ Cg
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="J5V-BJ-PYG">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="J5V-BJ-PYG">
                                 <rect key="frame" x="54" y="589" width="306" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -673,11 +673,11 @@ Cg
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="dFm-ZK-tkd" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="1fy-fL-w1K"/>
+                                    <segue destination="dFm-ZK-tkd" kind="presentation" identifier="SegueInicio" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="1fy-fL-w1K"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="SAY-r6-gMO"/>
                     </view>
                     <navigationItem key="navigationItem" id="295-Rc-cBq"/>
@@ -703,7 +703,7 @@ Cg
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uip-dT-lal">
@@ -781,14 +781,28 @@ Cg
                                 <rect key="frame" x="87" y="278" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="98v-nG-b02">
+                                <rect key="frame" x="115" y="822" width="185" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dFm-ZK-tkd" kind="presentation" identifier="segueInicio" modalPresentationStyle="fullScreen" id="Dpd-Cu-ATo"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vjh-ix-8So"/>
                     </view>
                     <navigationItem key="navigationItem" id="7tM-93-fFE"/>
                     <connections>
                         <outlet property="Next" destination="UXg-Ht-uH0" id="0IN-Wi-MWm"/>
                         <outlet property="Pergunta" destination="zEh-Z6-9zY" id="aWf-L0-2So"/>
+                        <outlet property="SairJogo" destination="98v-nG-b02" id="B7L-OX-hI1"/>
                         <outlet property="TituloJogo" destination="9Gy-3A-Qja" id="cmY-uX-ciK"/>
                         <outlet property="gameImage" destination="vhP-Uh-g5p" id="F89-ur-CGG"/>
                         <outlet property="resp1" destination="HJk-SM-smX" id="kI3-Tf-3Ku"/>
@@ -803,6 +817,9 @@ Cg
             <point key="canvasLocation" x="773.91304347826087" y="1803.3482142857142"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dpd-Cu-ATo"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Agenero" width="300" height="180"/>
         <image name="Androgine" width="300" height="180"/>
@@ -818,11 +835,11 @@ Cg
         <image name="Trans" width="300" height="180"/>
         <image name="ace" width="1200" height="720"/>
         <image name="blank.png" width="1920" height="1080"/>
-        <image name="checkmark.seal" catalog="system" width="64" height="60"/>
-        <image name="checkmark.seal.fill" catalog="system" width="64" height="60"/>
-        <image name="flag" catalog="system" width="64" height="60"/>
-        <image name="gamecontroller" catalog="system" width="64" height="40"/>
-        <image name="info.circle" catalog="system" width="64" height="60"/>
-        <image name="link" catalog="system" width="64" height="58"/>
+        <image name="checkmark.seal" catalog="system" width="128" height="122"/>
+        <image name="checkmark.seal.fill" catalog="system" width="128" height="122"/>
+        <image name="flag" catalog="system" width="128" height="121"/>
+        <image name="gamecontroller" catalog="system" width="128" height="82"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="link" catalog="system" width="128" height="116"/>
     </resources>
 </document>
