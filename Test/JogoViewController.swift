@@ -49,6 +49,7 @@ class JogoViewController: UIViewController {
         resp3.layer.cornerRadius = 15
         resp4.layer.cornerRadius = 15
         SairJogo.layer.cornerRadius = 15
+        Next.layer.cornerRadius = 15
         
         resp1.layer.borderWidth = 1
         resp2.layer.borderWidth = 1
@@ -60,7 +61,17 @@ class JogoViewController: UIViewController {
         resp3.layer.borderColor = UIColor.gray.cgColor
         resp4.layer.borderColor = UIColor.gray.cgColor
         
-        Next.setTitleColor(.white, for: .disabled)
+        
+        
+        resp1.titleLabel?.textAlignment = .left
+        resp2.titleLabel?.textAlignment = .left
+        resp3.titleLabel?.textAlignment = .left
+        resp4.titleLabel?.textAlignment = .left
+        
+        
+        Next.setTitleColor(#colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1), for: .disabled)
+        Next.setTitleColor(.black, for: .normal)
+        Next.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
         Next.isEnabled = false
         
         //Dependendo do valor de escolha, ativa um jogo diferente
@@ -97,14 +108,14 @@ class JogoViewController: UIViewController {
                 k = Int.random(in: 0...10)
             }
             if(choice == "2"){
-                k = Int.random(in: 0...15)
+                k = Int.random(in: 0...14)
             }
             if(choice == "3"){
                 if(answered == 0 || answered == 1){
                     k = Int.random(in: 0...10)
                 }
                 else{
-                    k = Int.random(in: 0...15)
+                    k = Int.random(in: 0...14)
                 }
             }
             if(choice == "4"){
@@ -133,7 +144,7 @@ class JogoViewController: UIViewController {
         let questionsQuiz =
             [Questions(Question: "Qual a característica da sexualidade assexual?",
                        Answer1: "Não sente atração por ninguém ou quase ninguém",
-                       Answer2: "Sente atração por pessoas de   qualquer identidade de gênero, ou independentemente de gênero",
+                       Answer2: "Sente atração por pessoas de qualquer identidade de gênero, ou independentemente de gênero",
                        Answer3: "Alguém que sente atração pelo gênero oposto",
                        Answer4: "Podem sentir atração apenas caso exista uma conexão especial prévia",
                        correctAnswer: "1",
@@ -149,7 +160,7 @@ class JogoViewController: UIViewController {
                 
                 Questions(Question: "Qual a característica da sexualidade demisexual?",
                           Answer1: "Não sente atração por ninguém ou quase ninguém",
-                          Answer2: "Sente atração por pessoas de   qualquer identidade de gênero, ou independentemente de gênero",
+                          Answer2: "Sente atração por pessoas de qualquer identidade de gênero, ou independentemente de gênero",
                           Answer3: "Alguém que sente atração pelo gênero oposto",
                           Answer4: "Podem sentir atração apenas caso exista uma conexão especial prévia",
                           correctAnswer: "4",
@@ -265,10 +276,10 @@ class JogoViewController: UIViewController {
                           ImageName: "Nao binario.png"),
                 
                 Questions(Question: "O que é uma pessoa andrógina?",
-                          Answer1: "Pessoa cujo gênero está entre mulher e homem, ou cujo gênero é uma mescla de mulher e homem",
+                          Answer1: "Pessoa cujo gênero está entre mulher e homem / é uma mescla de mulher e homem",
                           Answer2: "Pessoa que mudam de gênero de tempos em tempos",
-                          Answer3: "Pessoa que se identifica e possui todas as características físicas do gênero que lhe foi designado ao nascer",
-                          Answer4: "Pessoa que se identifica, total ou parcialmente, com um gênero diferente do que lhe foi designado ao nascer",
+                          Answer3: "Pessoa que se identifica e possui todas as características do gênero que lhe foi designado ao nascer",
+                          Answer4: "Pessoa que se identifica com um gênero diferente do que lhe foi designado ao nascer",
                           correctAnswer: "1",
                           ImageName: "Androgine-Pride-Flag.png"),
                 
@@ -315,7 +326,7 @@ class JogoViewController: UIViewController {
                        Questions(Question: "Qual a característica da identidade de gênero cisgênero?",
                                  Answer1: "Pessoas que mudam de gênero de tempos em tempos",
                                  Answer2: "Ausência de gênero, gênero neutro, ou ausência de identidade de gênero.",
-                                 Answer3: "Alguem que identifica e possui todas as características físicas do gênero que lhe foi designado ao nascer",
+                                 Answer3: "Alguem que identifica e possui todas as características do gênero que lhe foi designado ao nascer",
                                  Answer4: "Pessoas cujo gênero não é nem 100% homem e nem 100% mulher",
                                  correctAnswer: "3",
                                  ImageName: "blank.png"),
@@ -346,9 +357,9 @@ class JogoViewController: UIViewController {
                             
                             Questions(Question: "Qual a característica da identidade de gênero transgênero?",
                                       Answer1: "Pessoas que mudam de gênero de tempos em tempos",
-                                      Answer2: "Pessoas cujo gênero está entre mulher e homem, ou cujo gênero é uma mescla de mulher e homem.",
+                                      Answer2: "Pessoas cujo gênero está entre mulher e homem, ou é uma mescla de mulher e homem.",
                                       Answer3: "Nenhuma das alternativas",
-                                      Answer4: "Alguém que se identifica, total ou parcialmente, com um gênero diferente do que lhe foi designado ao nascer.",
+                                      Answer4: "Alguém que se identifica com um gênero diferente do que lhe foi designado ao nascer.",
                                       correctAnswer: "4",
                                       ImageName: "Transgender-Pride-Flag.png"),]
         
@@ -546,6 +557,7 @@ class JogoViewController: UIViewController {
             sender.backgroundColor = .green
             sender.setTitleColor(.black, for: .normal)
             Next.isEnabled = true
+            Next.backgroundColor = .white
             resp1.isEnabled = false
             resp2.isEnabled = false
             resp3.isEnabled = false
@@ -573,6 +585,7 @@ class JogoViewController: UIViewController {
         resp2.isEnabled = true
         resp3.isEnabled = true
         resp4.isEnabled = true
+        Next.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
         
         answered += 1
         //i = randomQuestion()
