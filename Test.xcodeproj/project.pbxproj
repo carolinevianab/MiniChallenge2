@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1007EF9A2446A2B1009AF65C /* Inicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1007EF992446A2B1009AF65C /* Inicio.storyboard */; };
+		102952FE245C4CD500047009 /* Generofluido.png in Resources */ = {isa = PBXBuildFile; fileRef = 102952FD245C4CD500047009 /* Generofluido.png */; };
+		10295301245C4CE300047009 /* Homo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 102952FF245C4CE200047009 /* Homo.jpg */; };
+		10295302245C4CE300047009 /* Homo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10295300245C4CE300047009 /* Homo2.png */; };
+		10295305245C4CF300047009 /* Intergenero.png in Resources */ = {isa = PBXBuildFile; fileRef = 10295303245C4CF300047009 /* Intergenero.png */; };
+		10295306245C4CF300047009 /* Nao binario.png in Resources */ = {isa = PBXBuildFile; fileRef = 10295304245C4CF300047009 /* Nao binario.png */; };
 		10A3270E243C00B1005E4AF1 /* JogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3270D243C00B1005E4AF1 /* JogoViewController.swift */; };
 		10AEC594243AC60600C4BB05 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEC593243AC60600C4BB05 /* SecondViewController.swift */; };
 		10DEF497245479BA00F46E70 /* Queer-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF490245479BA00F46E70 /* Queer-Pride-Flag.png */; };
@@ -52,6 +57,11 @@
 
 /* Begin PBXFileReference section */
 		1007EF992446A2B1009AF65C /* Inicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Inicio.storyboard; sourceTree = "<group>"; };
+		102952FD245C4CD500047009 /* Generofluido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Generofluido.png; sourceTree = "<group>"; };
+		102952FF245C4CE200047009 /* Homo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Homo.jpg; sourceTree = "<group>"; };
+		10295300245C4CE300047009 /* Homo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Homo2.png; sourceTree = "<group>"; };
+		10295303245C4CF300047009 /* Intergenero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intergenero.png; sourceTree = "<group>"; };
+		10295304245C4CF300047009 /* Nao binario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nao binario.png"; sourceTree = "<group>"; };
 		10A3270D243C00B1005E4AF1 /* JogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoViewController.swift; sourceTree = "<group>"; };
 		10AEC593243AC60600C4BB05 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		10DEF490245479BA00F46E70 /* Queer-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Queer-Pride-Flag.png"; sourceTree = "<group>"; };
@@ -120,10 +130,15 @@
 		10DEF48A245476A600F46E70 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				102952FD245C4CD500047009 /* Generofluido.png */,
 				10DEF495245479BA00F46E70 /* Agender-Pride-Flag.png */,
+				102952FF245C4CE200047009 /* Homo.jpg */,
+				10295300245C4CE300047009 /* Homo2.png */,
 				10DEF49E24547AA900F46E70 /* blank.png */,
 				10DEF491245479BA00F46E70 /* Assexual-Pride-Flag.png */,
 				10DEF4A024547C1000F46E70 /* Androgine-Pride-Flag.png */,
+				10295303245C4CF300047009 /* Intergenero.png */,
+				10295304245C4CF300047009 /* Nao binario.png */,
 				10DEF492245479BA00F46E70 /* Bisexual-Pride-Flag.png */,
 				10DEF494245479BA00F46E70 /* Demisexual-Pride-Flag.png */,
 				10DEF493245479BA00F46E70 /* Pansexual-Pride-Flag.png */,
@@ -301,13 +316,18 @@
 				10DEF49D245479BA00F46E70 /* Transgender-Pride-Flag.png in Resources */,
 				10DEF497245479BA00F46E70 /* Queer-Pride-Flag.png in Resources */,
 				A88C8EED2433B6DD00BC6847 /* Assets.xcassets in Resources */,
+				10295306245C4CF300047009 /* Nao binario.png in Resources */,
 				10DEF49F24547AA900F46E70 /* blank.png in Resources */,
+				10295305245C4CF300047009 /* Intergenero.png in Resources */,
 				10DEF49B245479BA00F46E70 /* Demisexual-Pride-Flag.png in Resources */,
 				10DEF49A245479BA00F46E70 /* Pansexual-Pride-Flag.png in Resources */,
 				10DEF4A124547C1000F46E70 /* Androgine-Pride-Flag.png in Resources */,
+				10295302245C4CE300047009 /* Homo2.png in Resources */,
 				A8ED1D182436755E00EC8EC4 /* 2Main.storyboard in Resources */,
+				10295301245C4CE300047009 /* Homo.jpg in Resources */,
 				1007EF9A2446A2B1009AF65C /* Inicio.storyboard in Resources */,
 				10DEF498245479BA00F46E70 /* Assexual-Pride-Flag.png in Resources */,
+				102952FE245C4CD500047009 /* Generofluido.png in Resources */,
 				A88C8EEB2433B6DB00BC6847 /* Main.storyboard in Resources */,
 				10DEF499245479BA00F46E70 /* Bisexual-Pride-Flag.png in Resources */,
 			);
