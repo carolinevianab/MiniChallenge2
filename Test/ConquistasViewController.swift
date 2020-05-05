@@ -60,9 +60,51 @@ class ConquistasViewController: UIViewController {
         b19.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
         b20.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
        
+        b1.layer.cornerRadius = 15 ;
+        b2.layer.cornerRadius = 15 ;
+        b3.layer.cornerRadius = 15 ;
+        b4.layer.cornerRadius = 15 ;
+        b5.layer.cornerRadius = 15 ;
+        b6.layer.cornerRadius = 15 ;
+        b7.layer.cornerRadius = 15 ;
+        b8.layer.cornerRadius = 15 ;
+        b9.layer.cornerRadius = 15 ;
+        b10.layer.cornerRadius = 15 ;
+        b11.layer.cornerRadius = 15 ;
+        b12.layer.cornerRadius = 15 ;
+        b13.layer.cornerRadius = 15 ;
+        b14.layer.cornerRadius = 15 ;
+        b15.layer.cornerRadius = 15 ;
+        b16.layer.cornerRadius = 15 ;
+        b17.layer.cornerRadius = 15 ;
+        b18.layer.cornerRadius = 15 ;
+        b19.layer.cornerRadius = 15 ;
+        b20.layer.cornerRadius = 15 ;
+
         
+        b1.clipsToBounds = true
+        b2.clipsToBounds = true
+        b3.clipsToBounds = true
+        b4.clipsToBounds = true
+        b5.clipsToBounds = true
+        b6.clipsToBounds = true
+        b7.clipsToBounds = true
+        b8.clipsToBounds = true
+        b9.clipsToBounds = true
+        b10.clipsToBounds = true
+        b11.clipsToBounds = true
+        b12.clipsToBounds = true
+        b13.clipsToBounds = true
+        b14.clipsToBounds = true
+        b15.clipsToBounds = true
+        b16.clipsToBounds = true
+        b17.clipsToBounds = true
+        b18.clipsToBounds = true
+        b19.clipsToBounds = true
+        b20.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
+    
     
     @objc func defineClicked(_ sender: UIButton){
         self.clicked = sender.restorationIdentifier!
