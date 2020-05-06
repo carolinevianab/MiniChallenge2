@@ -151,7 +151,7 @@ class ConquistasViewController: UIViewController {
         if(b19Activate == true){
             b19.isEnabled = true
         }
-        if(b20Activate == true){
+        if(b17.isEnabled == true && b18.isEnabled == true && b19.isEnabled == true && b20Activate == true){
             b20.isEnabled = true
         }
         
