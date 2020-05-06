@@ -675,7 +675,7 @@ class JogoViewController: UIViewController {
             a.b19Active = true
         }
         if choice == "4"{
-            a.jogo4 = true
+            a.b20Active = true
         }
         
         a.defineDefaults()
@@ -698,7 +698,7 @@ class JogoViewController: UIViewController {
                 a.b19Active = true
             }
             if choice == "4"{
-                a.jogo4 = true
+                a.b20Active = true
             }
             a.defineDefaults()
         }
