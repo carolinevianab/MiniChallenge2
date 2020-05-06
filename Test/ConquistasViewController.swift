@@ -13,6 +13,21 @@ class ConquistasViewController: UIViewController {
 
     
     var clicked = ""
+    var jogo4 = false
+    var b17Active = false
+    var b18Active = false
+    var b19Active = false
+    var b20Active = false
+    
+    
+    let defaults = UserDefaults.standard
+    
+    struct Keys {
+        static let b17IsActive = "b17IsActive"
+        static let b18IsActive = "b18IsActive"
+        static let b19IsActive = "b19IsActive"
+        static let b20IsActive = "b20IsActive"
+    }
     
     // Esses são todos os botões presentes na view
     @IBOutlet weak var b1: UIButton!
@@ -103,12 +118,61 @@ class ConquistasViewController: UIViewController {
         b19.clipsToBounds = true
         b20.clipsToBounds = true
         // Do any additional setup after loading the view.
+        
+        b17.isEnabled = false
+        b18.isEnabled = false
+        b19.isEnabled = false
+        b20.isEnabled = false
+        
+        defineDefaults()
+        var i = 0
+        let timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
+            print(i)
+            i += 5
+            self.carregar()
+        }
+        
+        timer.fire()
+        carregar()
+    }
+    
+    func carregar(){
+        let b17Activate = defaults.bool(forKey: Keys.b17IsActive)
+        let b18Activate = defaults.bool(forKey: Keys.b18IsActive)
+        let b19Activate = defaults.bool(forKey: Keys.b19IsActive)
+        let b20Activate = defaults.bool(forKey: Keys.b20IsActive)
+        
+        if(b17Activate == true){
+            b17.isEnabled = true
+        }
+        if(b18Activate == true){
+            b18.isEnabled = true
+        }
+        if(b19Activate == true){
+            b19.isEnabled = true
+        }
+        if(b20Activate == true){
+            b20.isEnabled = true
+        }
+        
+      
+    }
+    
+    func defineDefaults(){
+        defaults.set(b17Active, forKey: Keys.b17IsActive)
+        defaults.set(b18Active, forKey: Keys.b18IsActive)
+        defaults.set(b19Active, forKey: Keys.b19IsActive)
+        defaults.set(b20Active, forKey: Keys.b20IsActive)
     }
     
     
     @objc func defineClicked(_ sender: UIButton){
         self.clicked = sender.restorationIdentifier!
         performSegue(withIdentifier: "SegueAr", sender: sender)
+        if sender.restorationIdentifier == "2" {
+            b17Active = true
+            carregar()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

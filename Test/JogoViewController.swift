@@ -31,6 +31,14 @@ class JogoViewController: UIViewController {
     @IBOutlet weak var TituloJogo: UILabel!
     @IBOutlet weak var SairJogo: UIButton!
     
+    
+    @IBOutlet weak var voceAcertou: UILabel!
+    @IBOutlet weak var correctTotal: UILabel!
+    @IBOutlet weak var parabens: UILabel!
+    @IBOutlet weak var voltarAoInicio: UIButton!
+    
+    
+    
     var choice = ""
     var correct = ""
     var i = 0
@@ -42,6 +50,16 @@ class JogoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        voceAcertou.isEnabled = false
+        correctTotal.isEnabled = false
+        parabens.isEnabled = false
+        voltarAoInicio.isEnabled = false
+        voceAcertou.isHidden = true
+        correctTotal.isHidden = true
+        parabens.isHidden = true
+        voltarAoInicio.isHidden = true
+        
         
         // Botão bonito
         resp1.layer.cornerRadius = 15
@@ -235,7 +253,7 @@ class JogoViewController: UIViewController {
             setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)        }
         else{
             end = true
-            performSegue(withIdentifier: "segueResul", sender: self)
+            final()
         }
         
     }
@@ -369,7 +387,7 @@ class JogoViewController: UIViewController {
         }
         else{
             end = true
-            performSegue(withIdentifier: "segueResul", sender: self)
+            final()
         }
         
     }
@@ -394,7 +412,7 @@ class JogoViewController: UIViewController {
         
         if answered > 4{
             end = true
-            performSegue(withIdentifier: "segueResul", sender: self)
+            final()
         }
     }
     
@@ -503,7 +521,7 @@ class JogoViewController: UIViewController {
         }
         else{
             end = true
-            performSegue(withIdentifier: "segueResul", sender: self)
+            final()
         }
     }
     
@@ -611,6 +629,79 @@ class JogoViewController: UIViewController {
             vc.total = String(correctAnswers)
         }
         
+    }
+    
+    func final(){
+        TituloJogo.text = "Resultados"
+        Pergunta.isEnabled = false
+        resp1.isEnabled = false
+        resp2.isEnabled = false
+        resp3.isEnabled = false
+        resp4.isEnabled = false
+        Next.isEnabled = false
+        gameImage.isHidden = true
+        Pergunta.isHidden = true
+        resp1.isHidden = true
+        resp2.isHidden = true
+        resp3.isHidden = true
+        resp4.isHidden = true
+        Next.isHidden = true
+        
+        voceAcertou.isEnabled = true
+        correctTotal.isEnabled = true
+        parabens.isEnabled = true
+        voltarAoInicio.isEnabled = true
+        voceAcertou.isHidden = false
+        correctTotal.isHidden = false
+        parabens.isHidden = false
+        voltarAoInicio.isHidden = false
+        
+        correctTotal.text = String(correctAnswers)
+    }
+    
+    @IBAction func backToTheStart(_ sender: Any) {
+        let a = ConquistasViewController()
+        
+        if choice == "1"{
+            a.b17Active = true
+            a.b17Active = true
+        }
+        if choice == "2"{
+            a.b18Active = true
+            a.b18Active = true
+        }
+        if choice == "3"{
+            a.b19Active = true
+            a.b19Active = true
+        }
+        if choice == "4"{
+            a.jogo4 = true
+        }
+        
+        a.defineDefaults()
+        self.dismiss(animated: true, completion: nil)
+        
+        if(isBeingDismissed == true){
+            let a = ConquistasViewController()
+            //a.b17Active = true
+            //a.b17Active = true
+            if choice == "1"{
+                a.b17Active = true
+                a.b17Active = true
+            }
+            if choice == "2"{
+                a.b18Active = true
+                a.b18Active = true
+            }
+            if choice == "3"{
+                a.b19Active = true
+                a.b19Active = true
+            }
+            if choice == "4"{
+                a.jogo4 = true
+            }
+            a.defineDefaults()
+        }
     }
     
 }
