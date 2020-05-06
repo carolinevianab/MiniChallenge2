@@ -2,7 +2,7 @@
 //  InstrucoesViewController.swift
 //  Test
 //
-//  Created by Denys Roger on 17/04/20.
+//  Created by Denys Roger on 12/04/20.
 //  Copyright © 2020 Aline Mitsuoka. All rights reserved.
 //
 
@@ -14,13 +14,14 @@ class InstrucoesViewController: UIViewController {
     @IBOutlet weak var title2: UILabel! //Segundo titulo
     @IBOutlet weak var text1: UILabel!  //Primeiro texto
     @IBOutlet weak var text2: UILabel!  //Segundo texto
-    
+    @IBOutlet weak var button: UIButton!
     var count = 0 //Contador utilizado para modificar o conteúdo das labels
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        button.layer.cornerRadius = 15
         instanceLabel(countF: count)
         
     }
