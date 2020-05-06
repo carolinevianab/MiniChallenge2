@@ -266,6 +266,7 @@
         <!--Achievement View Controller-->
         <scene sceneID="7SX-zK-ghI">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seD-0v-nWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="u70-vN-WQM" customClass="AchievementViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QKy-C6-Yb2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -326,7 +327,6 @@
                         <outlet property="titleAc" destination="Got-mH-dLC" id="P3E-9v-7AG"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="seD-0v-nWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1259.4202898550725" y="1908.4821428571427"/>
         </scene>
@@ -596,106 +596,6 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
             </objects>
             <point key="canvasLocation" x="1476.8115942028987" y="1029.9107142857142"/>
         </scene>
-        <!--Final View Controller-->
-        <scene sceneID="0CV-bN-aIZ">
-            <objects>
-                <viewController id="UMS-xH-y6a" customClass="FinalViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gqx-qZ-50q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oSl-wE-tMk">
-                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Resultados">
-                                        <attributes>
-                                            <color key="NSColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="32" name="SFProRounded-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FEY-Oo-51m">
-                                <rect key="frame" x="37" y="176" width="340" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
-                                <color key="textColor" red="0.51488136559999997" green="0.22962914819999999" blue="0.81624433289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jeu-wR-aRP">
-                                <rect key="frame" x="36" y="254" width="340" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Você acertou">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="25" name="SFProDisplay-Semibold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ae1-4Q-JAM">
-                                <rect key="frame" x="36" y="327" width="340" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="100"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CpZ-Ux-7LD">
-                                <rect key="frame" x="36" y="504" width="340" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Parabéns!">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="25" name="SFProDisplay-Semibold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="J5V-BJ-PYG">
-                                <rect key="frame" x="53" y="694" width="306" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <accessibility key="accessibilityConfiguration" identifier="2"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Voltar ao início">
-                                            <attributes>
-                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <font key="NSFont" size="25" name="SFProRounded-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="dFm-ZK-tkd" kind="presentation" identifier="SegueInicio" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="1fy-fL-w1K"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="SAY-r6-gMO"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="295-Rc-cBq"/>
-                    <connections>
-                        <outlet property="backButton" destination="J5V-BJ-PYG" id="Zri-Au-aWz"/>
-                        <outlet property="correctTotal" destination="ae1-4Q-JAM" id="xNc-ET-cqJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qoo-iP-0of" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="773.91304347826087" y="2540.625"/>
-        </scene>
         <!--Jogo-->
         <scene sceneID="sHQ-R5-dY7">
             <objects>
@@ -805,6 +705,61 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oZD-Iv-hoX">
+                                <rect key="frame" x="36" y="254" width="340" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Você acertou">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="25" name="SFProDisplay-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qLC-KW-KJ1">
+                                <rect key="frame" x="36" y="327" width="340" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="100"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SfJ-rE-4Bu">
+                                <rect key="frame" x="36" y="504" width="340" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Parabéns!">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="25" name="SFProDisplay-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="QQr-yK-L3z">
+                                <rect key="frame" x="53" y="694" width="306" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="2"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Voltar ao início">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <font key="NSFont" size="25" name="SFProRounded-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="backToTheStart:" destination="Pk9-0A-s37" eventType="touchUpInside" id="W2e-4i-cm4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vjh-ix-8So"/>
@@ -815,12 +770,15 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                         <outlet property="Pergunta" destination="zEh-Z6-9zY" id="aWf-L0-2So"/>
                         <outlet property="SairJogo" destination="98v-nG-b02" id="B7L-OX-hI1"/>
                         <outlet property="TituloJogo" destination="9Gy-3A-Qja" id="cmY-uX-ciK"/>
+                        <outlet property="correctTotal" destination="qLC-KW-KJ1" id="UvH-ow-epb"/>
                         <outlet property="gameImage" destination="vhP-Uh-g5p" id="F89-ur-CGG"/>
+                        <outlet property="parabens" destination="SfJ-rE-4Bu" id="sLl-mi-Rj1"/>
                         <outlet property="resp1" destination="HJk-SM-smX" id="kI3-Tf-3Ku"/>
                         <outlet property="resp2" destination="XQh-eY-iBv" id="ZcE-fu-LY7"/>
                         <outlet property="resp3" destination="rKs-WL-oqA" id="MeU-Az-PIr"/>
                         <outlet property="resp4" destination="wIw-Jm-aM6" id="5ul-uf-lMf"/>
-                        <segue destination="UMS-xH-y6a" kind="presentation" identifier="segueResul" modalPresentationStyle="fullScreen" id="f7c-oF-BxG"/>
+                        <outlet property="voceAcertou" destination="oZD-Iv-hoX" id="Ry0-hw-emL"/>
+                        <outlet property="voltarAoInicio" destination="QQr-yK-L3z" id="bMZ-8R-bNc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9GF-b2-nsv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -828,9 +786,6 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
             <point key="canvasLocation" x="773.91304347826087" y="1803.3482142857142"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Dpd-Cu-ATo"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="15" width="96" height="96"/>
         <image name="16" width="96" height="96"/>
@@ -857,14 +812,5 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
         <image name="Trans" width="300" height="180"/>
         <image name="ace" width="1200" height="720"/>
         <image name="blank.png" width="1920" height="1080"/>
-
-
-        <image name="checkmark.seal" catalog="system" width="128" height="122"/>
-        <image name="checkmark.seal.fill" catalog="system" width="128" height="122"/>
-        <image name="flag" catalog="system" width="128" height="121"/>
-        <image name="gamecontroller" catalog="system" width="128" height="82"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="link" catalog="system" width="128" height="116"/>
-
     </resources>
 </document>
