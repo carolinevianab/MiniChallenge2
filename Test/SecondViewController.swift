@@ -18,7 +18,6 @@ class SecondViewController: UIViewController {
     var clicked = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.5824574828, green: 0.9204275012, blue: 0.6569642425, alpha: 1)
         
         // Botão bonito
         button1.layer.cornerRadius = 15

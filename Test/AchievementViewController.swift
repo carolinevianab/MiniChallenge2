@@ -31,46 +31,45 @@ class AchievementViewController: UIViewController {
         // Aqui entram os textos e imagens das conquistas, deixei os números iguais (se vc clicar no botao 1, abre titulo 1 e por ai vai) pra ficar mais fácil de definir as coisas
         // Pra colocar imagem, arrasta ela pra dentro do projeto e coloca o nome dela na parte "image:", eu deixei uma imagem chamada "blank.png" porque ele quebra se deixar vazio
         let data =
-            [Achievement(name: "Titulo 1", image: "blank.png", description: "texto 1"),
+            [Achievement(name: "Conquista 1", image: "ace.png", description: "Parabéns! Você desbloqueou a orientação sexual assexual!"),
         
-            Achievement(name: "Titulo 2", image: "blank.png", description: "texto 2"),
+            Achievement(name: "Conquista 2", image: "Bi.png", description: "Parabéns! Você desbloqueou a orientação sexual bissexual!"),
             
-            Achievement(name: "Titulo 3", image: "blank.png", description: "texto 3"),
+            Achievement(name: "Conquista 3", image: "Demi.png", description: "Parabéns! Você desbloqueou a orientação sexual demissexual!"),
             
-            Achievement(name: "Titulo 4", image: "blank.png", description: "texto 4"),
-            Achievement(name: "Titulo 5", image: "blank.png", description: "texto 5"),
+            Achievement(name: "Conquista 4", image: "blank.png", description: "Parabéns! Você desbloqueou a orientação sexual heterossexual!"),
+            Achievement(name: "Conquista 5", image: "Homo.png", description: "Parabéns! Você desbloqueou a orientação sexual homossexual!"),
             
-            Achievement(name: "Titulo 6", image: "blank.png", description: "texto 6"),
+            Achievement(name: "Conquista 6", image: "Pan.png", description: "Parabéns! Você desbloqueou a orientação sexual panssexual!"),
             
-            Achievement(name: "Titulo 7", image: "blank.png", description: "texto 7"),
+            Achievement(name: "Conquista 7", image: "Agenero.png", description: "Parabéns! Você desbloqueou a identidade de gênero agênero!"),
             
-            Achievement(name: "Titulo 8", image: "blank.png", description: "texto 8"),
+            Achievement(name: "Conquista 8", image: "Androgine.png", description: "Parabéns! Você desbloqueou a identidade de gênero androginia!"),
             
-            Achievement(name: "Titulo 9", image: "blank.png", description: "texto 9"),
+            Achievement(name: "Conquista 9", image: "blank.png", description: "Parabéns! Você desbloqueou a identidade de gênero cisgênero!"),
             
-            Achievement(name: "Titulo 10", image: "blank.png", description: "texto 10"),
+            Achievement(name: "Conquista 10", image: "Genero fluido.png", description: "Parabéns! Você desbloqueou a identidade de gênero gênero fluído!"),
             
-            Achievement(name: "Titulo 11", image: "blank.png", description: "texto 11"),
+            Achievement(name: "Conquista 11", image: "Intergenero.png", description: "Parabéns! Você desbloqueou a identidade de gênero intergênero!"),
             
-            Achievement(name: "Titulo 12", image: "blank.png", description: "texto 12"),
+            Achievement(name: "Conquista 12", image: "Nao binario.png", description: "Parabéns! Você desbloqueou a identidade de gênero não binário!"),
             
-            Achievement(name: "Titulo 13", image: "blank.png", description: "texto 13"),
+            Achievement(name: "Conquista 13", image: "Queer.png", description: "Parabéns! Você desbloqueou a identidade de gênero queer!"),
             
-            Achievement(name: "Titulo 14", image: "blank.png", description: "texto 14"),
+            Achievement(name: "Conquista 14", image: "Trans.png", description: "Parabéns! Você desbloqueou a identidade de gênero transgênero!"),
             
-            Achievement(name: "Titulo 15", image: "blank.png", description: "texto 15"),
+            Achievement(name: "Conquista 15", image: "15b.png", description: "Parabéns! Você desbloqueou todas as orientações sexuais!"),
             
-            Achievement(name: "Titulo 16", image: "blank.png", description: "texto 16"),
+            Achievement(name: "Conquista 16", image: "16b.png", description: "Parabéns! Você desbloqueou todas as identidades de gênero!"),
             
-            Achievement(name: "Titulo 17", image: "blank.png", description: "texto 17"),
+            Achievement(name: "Conquista 17", image: "17b.png", description: "tParabéns! Você concluiu o jogo sobre orientações sexuais!"),
             
-            Achievement(name: "Titulo 18", image: "blank.png", description: "texto 18"),
+            Achievement(name: "Conquista 18", image: "18b.png", description: "Parabéns! Você concluiu o jogo sobre identidades de gênero!"),
             
-            Achievement(name: "Titulo 19", image: "blank.png", description: "texto 19"),
+            Achievement(name: "Conquista 19", image: "19b.png", description: "Parabéns! Você concluiu o jogo sobre perguntas gerais!"),
             
-            Achievement(name: "Titulo 20", image: "blank.png", description: "texto 20"),
+            Achievement(name: "Conquista 20", image: "20b.png", description: "Parabéns! Você concluiu todos os jogo!"),
             
-            Achievement(name: "Titulo 21", image: "blank.png", description: "texto 21"),
             
         ]
         
