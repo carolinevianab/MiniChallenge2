@@ -686,19 +686,27 @@ class JogoViewController: UIViewController {
             //a.b17Active = true
             //a.b17Active = true
             if choice == "1"{
-                a.b17Active = true
-                a.b17Active = true
+                if(correctAnswers >= 4){
+                    a.b17Active = true
+                    a.b17Active = true
+                }
             }
             if choice == "2"{
-                a.b18Active = true
-                a.b18Active = true
+                if(correctAnswers >= 4){
+                    a.b18Active = true
+                    a.b18Active = true
+                }
             }
             if choice == "3"{
-                a.b19Active = true
-                a.b19Active = true
+                if(correctAnswers >= 4){
+                    a.b19Active = true
+                    a.b19Active = true
+                }
             }
             if choice == "4"{
-                a.b20Active = true
+                if(correctAnswers >= 4){
+                    a.b20Active = true
+                }
             }
             a.defineDefaults()
         }
