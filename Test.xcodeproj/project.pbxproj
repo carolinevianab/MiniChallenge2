@@ -28,7 +28,7 @@
 		10DEF4A52459C53000F46E70 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DEF4A42459C53000F46E70 /* AchievementViewController.swift */; };
 		10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F01F8124400DEA00CEC504 /* FinalViewController.swift */; };
 		2D03B6B4244A2934009AEC91 /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */; };
-		2D46CFC724632E7500076093 /* Icon arredondado.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D46CFC624632E7400076093 /* Icon arredondado.png */; };
+		2D44021324639D1500D35283 /* Icon arredondado.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D44021224639D1500D35283 /* Icon arredondado.png */; };
 		2DCA33D5246361140085C50C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA33D4246361140085C50C /* StartViewController.swift */; };
 		2DCA33D7246395A10085C50C /* BemVindoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA33D6246395A10085C50C /* BemVindoViewController.swift */; };
 		A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */; };
@@ -81,7 +81,7 @@
 		10DEF4A42459C53000F46E70 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 		10F01F8124400DEA00CEC504 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
-		2D46CFC624632E7400076093 /* Icon arredondado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon arredondado.png"; path = "../../../../../Downloads/Icon arredondado.png"; sourceTree = "<group>"; };
+		2D44021224639D1500D35283 /* Icon arredondado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon arredondado.png"; sourceTree = "<group>"; };
 		2DCA33D4246361140085C50C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		2DCA33D6246395A10085C50C /* BemVindoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BemVindoViewController.swift; sourceTree = "<group>"; };
 		A88C8EE02433B6DB00BC6847 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,7 +138,7 @@
 		10DEF48A245476A600F46E70 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2D46CFC624632E7400076093 /* Icon arredondado.png */,
+				2D44021224639D1500D35283 /* Icon arredondado.png */,
 				102952FD245C4CD500047009 /* Generofluido.png */,
 				10DEF495245479BA00F46E70 /* Agender-Pride-Flag.png */,
 				102952FF245C4CE200047009 /* Homo.jpg */,
@@ -329,6 +329,7 @@
 				10DEF497245479BA00F46E70 /* Queer-Pride-Flag.png in Resources */,
 				A88C8EED2433B6DD00BC6847 /* Assets.xcassets in Resources */,
 				10295306245C4CF300047009 /* Nao binario.png in Resources */,
+				2D44021324639D1500D35283 /* Icon arredondado.png in Resources */,
 				10DEF49F24547AA900F46E70 /* blank.png in Resources */,
 				10295305245C4CF300047009 /* Intergenero.png in Resources */,
 				10DEF49B245479BA00F46E70 /* Demisexual-Pride-Flag.png in Resources */,
@@ -342,7 +343,6 @@
 				102952FE245C4CD500047009 /* Generofluido.png in Resources */,
 				A88C8EEB2433B6DB00BC6847 /* Main.storyboard in Resources */,
 				10DEF499245479BA00F46E70 /* Bisexual-Pride-Flag.png in Resources */,
-				2D46CFC724632E7500076093 /* Icon arredondado.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
