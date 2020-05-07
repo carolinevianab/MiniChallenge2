@@ -15,7 +15,7 @@ class BemVindoViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
-
+        button.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
     }
     
