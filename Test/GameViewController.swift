@@ -18,24 +18,24 @@ struct Questions {
     let ImageName: String
 }
 
-class JogoViewController: UIViewController {
+class GameViewController: UIViewController {
 
-    @IBOutlet weak var Pergunta: UILabel!
+    @IBOutlet weak var lblQuestion: UILabel!
     
     @IBOutlet weak var resp1: UIButton!
     @IBOutlet weak var resp2: UIButton!
     @IBOutlet weak var resp3: UIButton!
     @IBOutlet weak var resp4: UIButton!
-    @IBOutlet weak var Next: UIButton!
+    @IBOutlet weak var nextQuestion: UIButton!
     @IBOutlet weak var gameImage: UIImageView!
-    @IBOutlet weak var TituloJogo: UILabel!
-    @IBOutlet weak var SairJogo: UIButton!
+    @IBOutlet weak var gameTitle: UILabel!
+    @IBOutlet weak var quitGame: UIButton!
     
     
-    @IBOutlet weak var voceAcertou: UILabel!
+    @IBOutlet weak var lblGotRight: UILabel!
     @IBOutlet weak var correctTotal: UILabel!
-    @IBOutlet weak var parabens: UILabel!
-    @IBOutlet weak var voltarAoInicio: UIButton!
+    @IBOutlet weak var congrats: UILabel!
+    @IBOutlet weak var backToStart: UIButton!
     
     
     
@@ -51,23 +51,22 @@ class JogoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        voceAcertou.isEnabled = false
+        lblGotRight.isEnabled = false
         correctTotal.isEnabled = false
-        parabens.isEnabled = false
-        voltarAoInicio.isEnabled = false
-        voceAcertou.isHidden = true
+        congrats.isEnabled = false
+        backToStart.isEnabled = false
+        lblGotRight.isHidden = true
         correctTotal.isHidden = true
-        parabens.isHidden = true
-        voltarAoInicio.isHidden = true
-        
+        congrats.isHidden = true
+        backToStart.isHidden = true
         
         // Botão bonito
         resp1.layer.cornerRadius = 15
         resp2.layer.cornerRadius = 15
         resp3.layer.cornerRadius = 15
         resp4.layer.cornerRadius = 15
-        SairJogo.layer.cornerRadius = 15
-        Next.layer.cornerRadius = 15
+        quitGame.layer.cornerRadius = 15
+        nextQuestion.layer.cornerRadius = 15
         
         resp1.layer.borderWidth = 1
         resp2.layer.borderWidth = 1
@@ -79,18 +78,16 @@ class JogoViewController: UIViewController {
         resp3.layer.borderColor = UIColor.gray.cgColor
         resp4.layer.borderColor = UIColor.gray.cgColor
         
-        
-        
         resp1.titleLabel?.textAlignment = .left
         resp2.titleLabel?.textAlignment = .left
         resp3.titleLabel?.textAlignment = .left
         resp4.titleLabel?.textAlignment = .left
         
         
-        Next.setTitleColor(#colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1), for: .disabled)
-        Next.setTitleColor(.black, for: .normal)
-        Next.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
-        Next.isEnabled = false
+        nextQuestion.setTitleColor(#colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1), for: .disabled)
+        nextQuestion.setTitleColor(.black, for: .normal)
+        nextQuestion.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
+        nextQuestion.isEnabled = false
         
         //Dependendo do valor de escolha, ativa um jogo diferente
         // Se escolha = 1, botão 1 quem foi clicado
@@ -99,19 +96,19 @@ class JogoViewController: UIViewController {
         // Se escolha = 4, botão 4 quem foi clicado
         
         if (choice == "1"){
-            TituloJogo.text = "Orientação sexual"
+            gameTitle.text = "Orientação sexual"
             game1()
         }
         if (choice == "2"){
-            TituloJogo.text = "Identidade de gênero"
+            gameTitle.text = "Identidade de gênero"
             game2()
         }
         if (choice == "3"){
-            TituloJogo.text = "Geral"
+            gameTitle.text = "Geral"
             game3()
         }
         if (choice == "4"){
-            TituloJogo.text = "Jogo das bandeiras"
+            gameTitle.text = "Jogo das bandeiras"
             game4()
         }
         
@@ -253,7 +250,7 @@ class JogoViewController: UIViewController {
             setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)        }
         else{
             end = true
-            final()
+            ending()
         }
         
     }
@@ -319,7 +316,7 @@ class JogoViewController: UIViewController {
                 
                 Questions(Question: "Qual a característica da identidade de gênero queer?",
                           Answer1: "Pessoas que mudam de gênero de tempos em tempos",
-                          Answer2: "Pessoas que não são nem 100% homens, nem 100% mulheres e que agem radicalmente contra as normas de gênero",
+                          Answer2: "Pessoas que não são 100% homens nem 100% mulheres, e agem contra as normas de gênero",
                           Answer3: "Ausência de gênero, gênero neutro, ou ausência de identidade de gênero.",
                           Answer4: "Pessoas cujo gênero não é nem 100% homem e nem 100% mulher",
                           correctAnswer: "2",
@@ -387,7 +384,7 @@ class JogoViewController: UIViewController {
         }
         else{
             end = true
-            final()
+            ending()
         }
         
     }
@@ -412,7 +409,7 @@ class JogoViewController: UIViewController {
         
         if answered > 4{
             end = true
-            final()
+            ending()
         }
     }
     
@@ -521,7 +518,7 @@ class JogoViewController: UIViewController {
         }
         else{
             end = true
-            final()
+            ending()
         }
     }
     
@@ -537,7 +534,7 @@ class JogoViewController: UIViewController {
         resp3.setTitleColor(.black, for: .normal)
         resp4.setTitleColor(.black, for: .normal)
         
-        Pergunta.text = question
+        lblQuestion.text = question
         resp1.setTitle(answer1, for: .normal)
         resp2.setTitle(answer2, for: .normal)
         resp3.setTitle(answer3, for: .normal)
@@ -568,14 +565,14 @@ class JogoViewController: UIViewController {
     }
     
     @objc func rightAnswer(sender: UIButton){
-        SairJogo.isEnabled = false
-        SairJogo.isHidden = true
+        quitGame.isEnabled = false
+        quitGame.isHidden = true
         
         if sender.accessibilityIdentifier == correct {
             sender.backgroundColor = .green
             sender.setTitleColor(.black, for: .normal)
-            Next.isEnabled = true
-            Next.backgroundColor = .white
+            nextQuestion.isEnabled = true
+            nextQuestion.backgroundColor = .white
             resp1.isEnabled = false
             resp2.isEnabled = false
             resp3.isEnabled = false
@@ -598,15 +595,14 @@ class JogoViewController: UIViewController {
     
     @IBAction func NextQuestion(_ sender: Any) {
         i += 1
-        Next.isEnabled = false
+        nextQuestion.isEnabled = false
         resp1.isEnabled = true
         resp2.isEnabled = true
         resp3.isEnabled = true
         resp4.isEnabled = true
-        Next.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
+        nextQuestion.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
         
         answered += 1
-        //i = randomQuestion()
         
         if (choice == "1"){
             game1()
@@ -622,93 +618,79 @@ class JogoViewController: UIViewController {
         }
         
     }
-    
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if end == true{
             let vc = segue.destination as! FinalViewController
             vc.total = String(correctAnswers)
         }
-        
     }
-    
-    func final(){
-        TituloJogo.text = "Resultados"
-        Pergunta.isEnabled = false
+    */
+    func ending(){
+        gameTitle.text = "Resultados"
+        lblQuestion.isEnabled = false
         resp1.isEnabled = false
         resp2.isEnabled = false
         resp3.isEnabled = false
         resp4.isEnabled = false
-        Next.isEnabled = false
+        nextQuestion.isEnabled = false
         gameImage.isHidden = true
-        Pergunta.isHidden = true
+        lblQuestion.isHidden = true
         resp1.isHidden = true
         resp2.isHidden = true
         resp3.isHidden = true
         resp4.isHidden = true
-        Next.isHidden = true
+        nextQuestion.isHidden = true
         
-        voceAcertou.isEnabled = true
+        lblGotRight.isEnabled = true
         correctTotal.isEnabled = true
-        parabens.isEnabled = true
-        voltarAoInicio.isEnabled = true
-        voceAcertou.isHidden = false
+        congrats.isEnabled = true
+        backToStart.isEnabled = true
+        lblGotRight.isHidden = false
         correctTotal.isHidden = false
-        parabens.isHidden = false
-        voltarAoInicio.isHidden = false
+        congrats.isHidden = false
+        backToStart.isHidden = false
         
         correctTotal.text = String(correctAnswers)
     }
     
+    @IBAction func gameOut(_ sender: Any) {
+         self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func backToTheStart(_ sender: Any) {
-        let a = ConquistasViewController()
-        
-        if choice == "1"{
-            a.b17Active = true
-            a.b17Active = true
-        }
-        if choice == "2"{
-            a.b18Active = true
-            a.b18Active = true
-        }
-        if choice == "3"{
-            a.b19Active = true
-            a.b19Active = true
-        }
-        if choice == "4"{
-            a.b20Active = true
-        }
-        
-        a.defineDefaults()
         self.dismiss(animated: true, completion: nil)
         
         if(isBeingDismissed == true){
             let a = ConquistasViewController()
-            //a.b17Active = true
-            //a.b17Active = true
+            
             if choice == "1"{
                 if(correctAnswers >= 4){
                     a.b17Active = true
                     a.b17Active = true
+                    a.defaults.set(a.b17Active, forKey: "b17IsActive")
                 }
             }
             if choice == "2"{
                 if(correctAnswers >= 4){
                     a.b18Active = true
                     a.b18Active = true
+                    a.defaults.set(a.b18Active, forKey: "b18IsActive")
                 }
             }
             if choice == "3"{
                 if(correctAnswers >= 4){
                     a.b19Active = true
                     a.b19Active = true
+                    a.defaults.set(a.b19Active, forKey: "b19IsActive")
                 }
             }
             if choice == "4"{
                 if(correctAnswers >= 4){
                     a.b20Active = true
+                    a.defaults.set(a.b20Active, forKey: "b20IsActive")
                 }
             }
-            a.defineDefaults()
         }
     }
     

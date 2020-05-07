@@ -266,7 +266,6 @@
         <!--Achievement View Controller-->
         <scene sceneID="7SX-zK-ghI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="seD-0v-nWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="u70-vN-WQM" customClass="AchievementViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QKy-C6-Yb2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -327,6 +326,7 @@
                         <outlet property="titleAc" destination="Got-mH-dLC" id="P3E-9v-7AG"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seD-0v-nWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1259.4202898550725" y="1908.4821428571427"/>
         </scene>
@@ -365,7 +365,7 @@
         <!--Jogos-->
         <scene sceneID="gpY-L4-AEH">
             <objects>
-                <viewController id="T5D-kW-PZj" customClass="SecondViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="T5D-kW-PZj" customClass="GameScreenViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9N7-EG-Dnj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -381,7 +381,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Teste:" destination="Rgl-lh-BOF" eventType="touchUpInside" id="bLF-6v-jTN"/>
-                                    <action selector="bntJogo1:" destination="T5D-kW-PZj" eventType="touchUpInside" id="sQE-U5-rKJ"/>
+                                    <action selector="bntGame1:" destination="T5D-kW-PZj" eventType="touchUpInside" id="sQE-U5-rKJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IpQ-89-8Um">
@@ -411,7 +411,7 @@
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                 <connections>
                                     <action selector="Teste:" destination="Rgl-lh-BOF" eventType="touchUpInside" id="hUS-ki-0wA"/>
-                                    <action selector="bntJogo2:" destination="T5D-kW-PZj" eventType="touchUpInside" id="Idq-Iy-7AM"/>
+                                    <action selector="bntGame2:" destination="T5D-kW-PZj" eventType="touchUpInside" id="Idq-Iy-7AM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M96-ed-fhZ">
@@ -441,7 +441,7 @@
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                 <connections>
                                     <action selector="Teste:" destination="Rgl-lh-BOF" eventType="touchUpInside" id="eSX-f0-VYY"/>
-                                    <action selector="bntJogo3:" destination="T5D-kW-PZj" eventType="touchUpInside" id="Wg6-UN-JyI"/>
+                                    <action selector="bntGame3:" destination="T5D-kW-PZj" eventType="touchUpInside" id="Wg6-UN-JyI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kTE-8Y-1Vj">
@@ -471,7 +471,7 @@
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                 <connections>
                                     <action selector="Teste:" destination="Rgl-lh-BOF" eventType="touchUpInside" id="vt1-qM-Lvg"/>
-                                    <action selector="bntJogo4:" destination="T5D-kW-PZj" eventType="touchUpInside" id="THr-gc-cDy"/>
+                                    <action selector="bntGame4:" destination="T5D-kW-PZj" eventType="touchUpInside" id="THr-gc-cDy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5RH-f7-8Kt">
@@ -599,7 +599,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
         <!--Jogo-->
         <scene sceneID="sHQ-R5-dY7">
             <objects>
-                <viewController title="Jogo" modalPresentationStyle="fullScreen" id="Pk9-0A-s37" customClass="JogoViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Jogo" modalPresentationStyle="fullScreen" id="Pk9-0A-s37" customClass="GameViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNj-IK-NMg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -682,7 +682,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dFm-ZK-tkd" kind="presentation" identifier="segueInicio" modalPresentationStyle="fullScreen" id="Dpd-Cu-ATo"/>
+                                    <action selector="gameOut:" destination="Pk9-0A-s37" eventType="touchUpInside" id="6ma-Sk-BYq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UXg-Ht-uH0">
@@ -766,19 +766,19 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                     </view>
                     <navigationItem key="navigationItem" id="7tM-93-fFE"/>
                     <connections>
-                        <outlet property="Next" destination="UXg-Ht-uH0" id="0IN-Wi-MWm"/>
-                        <outlet property="Pergunta" destination="zEh-Z6-9zY" id="aWf-L0-2So"/>
-                        <outlet property="SairJogo" destination="98v-nG-b02" id="B7L-OX-hI1"/>
-                        <outlet property="TituloJogo" destination="9Gy-3A-Qja" id="cmY-uX-ciK"/>
+                        <outlet property="backToStart" destination="QQr-yK-L3z" id="bMZ-8R-bNc"/>
+                        <outlet property="congrats" destination="SfJ-rE-4Bu" id="sLl-mi-Rj1"/>
                         <outlet property="correctTotal" destination="qLC-KW-KJ1" id="UvH-ow-epb"/>
                         <outlet property="gameImage" destination="vhP-Uh-g5p" id="F89-ur-CGG"/>
-                        <outlet property="parabens" destination="SfJ-rE-4Bu" id="sLl-mi-Rj1"/>
+                        <outlet property="gameTitle" destination="9Gy-3A-Qja" id="cmY-uX-ciK"/>
+                        <outlet property="lblGotRight" destination="oZD-Iv-hoX" id="Ry0-hw-emL"/>
+                        <outlet property="lblQuestion" destination="zEh-Z6-9zY" id="aWf-L0-2So"/>
+                        <outlet property="nextQuestion" destination="UXg-Ht-uH0" id="0IN-Wi-MWm"/>
+                        <outlet property="quitGame" destination="98v-nG-b02" id="B7L-OX-hI1"/>
                         <outlet property="resp1" destination="HJk-SM-smX" id="kI3-Tf-3Ku"/>
                         <outlet property="resp2" destination="XQh-eY-iBv" id="ZcE-fu-LY7"/>
                         <outlet property="resp3" destination="rKs-WL-oqA" id="MeU-Az-PIr"/>
                         <outlet property="resp4" destination="wIw-Jm-aM6" id="5ul-uf-lMf"/>
-                        <outlet property="voceAcertou" destination="oZD-Iv-hoX" id="Ry0-hw-emL"/>
-                        <outlet property="voltarAoInicio" destination="QQr-yK-L3z" id="bMZ-8R-bNc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9GF-b2-nsv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

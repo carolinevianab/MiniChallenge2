@@ -14,10 +14,10 @@ class ConquistasViewController: UIViewController {
     
     var clicked = ""
     var jogo4 = false
-    var b17Active = false
-    var b18Active = false
-    var b19Active = false
-    var b20Active = false
+    var b17Active: Bool! //= false
+    var b18Active: Bool! //= false
+    var b19Active: Bool! //= false
+    var b20Active: Bool! //= false
     
     
     let defaults = UserDefaults.standard
@@ -144,6 +144,7 @@ class ConquistasViewController: UIViewController {
         
         if(b17Activate == true){
             b17.isEnabled = true
+            b17Active = true
         }
         if(b18Activate == true){
             b18.isEnabled = true
@@ -159,35 +160,22 @@ class ConquistasViewController: UIViewController {
     }
     
     func defineDefaults(){
+        /*
         defaults.set(b17Active, forKey: Keys.b17IsActive)
         defaults.set(b18Active, forKey: Keys.b18IsActive)
         defaults.set(b19Active, forKey: Keys.b19IsActive)
-        defaults.set(b20Active, forKey: Keys.b20IsActive)
+        defaults.set(b20Active, forKey: Keys.b20IsActive)*/
     }
     
     
     @objc func defineClicked(_ sender: UIButton){
         self.clicked = sender.restorationIdentifier!
         performSegue(withIdentifier: "SegueAr", sender: sender)
-        if sender.restorationIdentifier == "2" {
-            b17Active = true
-            carregar()
-        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! AchievementViewController
         vc.selected = clicked
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
  
 }

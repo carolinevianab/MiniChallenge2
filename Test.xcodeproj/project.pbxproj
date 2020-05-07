@@ -13,8 +13,8 @@
 		10295302245C4CE300047009 /* Homo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10295300245C4CE300047009 /* Homo2.png */; };
 		10295305245C4CF300047009 /* Intergenero.png in Resources */ = {isa = PBXBuildFile; fileRef = 10295303245C4CF300047009 /* Intergenero.png */; };
 		10295306245C4CF300047009 /* Nao binario.png in Resources */ = {isa = PBXBuildFile; fileRef = 10295304245C4CF300047009 /* Nao binario.png */; };
-		10A3270E243C00B1005E4AF1 /* JogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3270D243C00B1005E4AF1 /* JogoViewController.swift */; };
-		10AEC594243AC60600C4BB05 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEC593243AC60600C4BB05 /* SecondViewController.swift */; };
+		10A3270E243C00B1005E4AF1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3270D243C00B1005E4AF1 /* GameViewController.swift */; };
+		10AEC594243AC60600C4BB05 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEC593243AC60600C4BB05 /* GameScreenViewController.swift */; };
 		10DEF497245479BA00F46E70 /* Queer-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF490245479BA00F46E70 /* Queer-Pride-Flag.png */; };
 		10DEF498245479BA00F46E70 /* Assexual-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF491245479BA00F46E70 /* Assexual-Pride-Flag.png */; };
 		10DEF499245479BA00F46E70 /* Bisexual-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF492245479BA00F46E70 /* Bisexual-Pride-Flag.png */; };
@@ -26,7 +26,6 @@
 		10DEF4A124547C1000F46E70 /* Androgine-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF4A024547C1000F46E70 /* Androgine-Pride-Flag.png */; };
 		10DEF4A32459A99F00F46E70 /* ConquistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DEF4A22459A99E00F46E70 /* ConquistasViewController.swift */; };
 		10DEF4A52459C53000F46E70 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DEF4A42459C53000F46E70 /* AchievementViewController.swift */; };
-		10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F01F8124400DEA00CEC504 /* FinalViewController.swift */; };
 		2D03B6B4244A2934009AEC91 /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */; };
 		A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */; };
 		A88C8EE62433B6DB00BC6847 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE52433B6DB00BC6847 /* SceneDelegate.swift */; };
@@ -63,8 +62,8 @@
 		10295300245C4CE300047009 /* Homo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Homo2.png; sourceTree = "<group>"; };
 		10295303245C4CF300047009 /* Intergenero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intergenero.png; sourceTree = "<group>"; };
 		10295304245C4CF300047009 /* Nao binario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nao binario.png"; sourceTree = "<group>"; };
-		10A3270D243C00B1005E4AF1 /* JogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoViewController.swift; sourceTree = "<group>"; };
-		10AEC593243AC60600C4BB05 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		10A3270D243C00B1005E4AF1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		10AEC593243AC60600C4BB05 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
 		10DEF490245479BA00F46E70 /* Queer-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Queer-Pride-Flag.png"; sourceTree = "<group>"; };
 		10DEF491245479BA00F46E70 /* Assexual-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Assexual-Pride-Flag.png"; sourceTree = "<group>"; };
 		10DEF492245479BA00F46E70 /* Bisexual-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bisexual-Pride-Flag.png"; sourceTree = "<group>"; };
@@ -76,7 +75,6 @@
 		10DEF4A024547C1000F46E70 /* Androgine-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Androgine-Pride-Flag.png"; sourceTree = "<group>"; };
 		10DEF4A22459A99E00F46E70 /* ConquistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasViewController.swift; sourceTree = "<group>"; };
 		10DEF4A42459C53000F46E70 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
-		10F01F8124400DEA00CEC504 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		A88C8EE02433B6DB00BC6847 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,13 +175,12 @@
 				A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */,
 				A88C8EE52433B6DB00BC6847 /* SceneDelegate.swift */,
 				A88C8EE72433B6DB00BC6847 /* ViewController.swift */,
-				10AEC593243AC60600C4BB05 /* SecondViewController.swift */,
+				10AEC593243AC60600C4BB05 /* GameScreenViewController.swift */,
 				A88C8EEC2433B6DD00BC6847 /* Assets.xcassets */,
 				10DEF48A245476A600F46E70 /* Images */,
 				A88C8EEE2433B6DD00BC6847 /* LaunchScreen.storyboard */,
 				A88C8EF12433B6DD00BC6847 /* Info.plist */,
-				10A3270D243C00B1005E4AF1 /* JogoViewController.swift */,
-				10F01F8124400DEA00CEC504 /* FinalViewController.swift */,
+				10A3270D243C00B1005E4AF1 /* GameViewController.swift */,
 				2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */,
 				10DEF4A22459A99E00F46E70 /* ConquistasViewController.swift */,
 				10DEF4A42459C53000F46E70 /* AchievementViewController.swift */,
@@ -358,14 +355,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D03B6B4244A2934009AEC91 /* InstrucoesViewController.swift in Sources */,
-				10AEC594243AC60600C4BB05 /* SecondViewController.swift in Sources */,
-				10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */,
+				10AEC594243AC60600C4BB05 /* GameScreenViewController.swift in Sources */,
 				10DEF4A32459A99F00F46E70 /* ConquistasViewController.swift in Sources */,
 				A88C8EE82433B6DB00BC6847 /* ViewController.swift in Sources */,
 				A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */,
 				A88C8EE62433B6DB00BC6847 /* SceneDelegate.swift in Sources */,
 				10DEF4A52459C53000F46E70 /* AchievementViewController.swift in Sources */,
-				10A3270E243C00B1005E4AF1 /* JogoViewController.swift in Sources */,
+				10A3270E243C00B1005E4AF1 /* GameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
