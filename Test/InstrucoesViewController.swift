@@ -65,7 +65,6 @@ class InstrucoesViewController: UIViewController {
         if count == 3{
             Welcome = false
             UserDefaults.standard.set(Welcome, forKey: "UserHasSeenWelcome")
-            //performSegue(withIdentifier: "UserHasSeenWelcome", sender: self)*/
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let mainVC = storyboard.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
             self.present(mainVC, animated: true, completion: nil)

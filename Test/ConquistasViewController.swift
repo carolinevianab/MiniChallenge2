@@ -18,7 +18,6 @@ class ConquistasViewController: UIViewController {
     var b18Active = false
     var b19Active = false
     var b20Active = false
-    //var UD = UserDefaults.standard.bool(forKey: "UserHasSeenWelcome")
     
     
     let defaults = UserDefaults.standard
@@ -185,12 +184,6 @@ class ConquistasViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //if UD == false{
-            //let viewC = segue.destination as! BemVindoViewController
-            //viewC.WelC = UD
-        //}else{
-        //let vc = segue.destination as! BemVindoViewController
-        
         let vc = segue.destination as! AchievementViewController
         vc.selected = clicked
         }
