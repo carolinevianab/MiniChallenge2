@@ -51,8 +51,16 @@ class ConquistasViewController: UIViewController {
     @IBOutlet weak var b19: UIButton!
     @IBOutlet weak var b20: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //super.performSegue(withIdentifier: "welcome", sender: self)
+        //performSegue(withIdentifier: "welcome", sender: self)
+
+        /*
+        if UD == false{
+            performSegue(withIdentifier: "BemVindo", sender: self)
+        }*/
 
         b1.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
         b2.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
@@ -176,6 +184,5 @@ class ConquistasViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! AchievementViewController
         vc.selected = clicked
+        }
     }
- 
-}
