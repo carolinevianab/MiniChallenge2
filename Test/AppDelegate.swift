@@ -15,6 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        /*
+        let laucherdBefore = UserDefaults.standard.bool(forKey: "hasLauched")
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let lauchStoryboard = UIStoryboard(name: "Inicio", bundle: nil)
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        var vc: UIViewController
+        
+        if(laucherdBefore){
+            vc = mainStoryboard.instantiateInitialViewController()!
+        }
+        else{
+            vc = lauchStoryboard.instantiateViewController(withIdentifier: "BemVindoVC")
+        }
+        UserDefaults.standard.set(true, forKey: "hasLauched")
+        
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+        */
         return true
     }
 

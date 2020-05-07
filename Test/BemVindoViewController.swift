@@ -22,6 +22,7 @@ class BemVindoViewController: UIViewController {
     @IBAction func button(_ sender: Any) {
         performSegue(withIdentifier: "instrucoes", sender: self)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! InstrucoesViewController
         vc.Welcome = WelC

@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="euF-ey-337">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +25,7 @@
                                 </state>
                                 <connections>
                                     <action selector="button:" destination="euF-ey-337" eventType="touchUpInside" id="7xI-I6-csp"/>
-                                    <segue destination="r8W-PX-Puw" kind="presentation" identifier="instrucoes" modalPresentationStyle="fullScreen" id="LrC-Ce-ZCx"/>
+                                    <segue destination="r8W-PX-Puw" kind="presentation" identifier="instrucoes" modalPresentationStyle="fullScreen" id="q6Q-CS-oqY"/>
                                 </connections>
                             </button>
                             <label autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="8" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKU-QU-y1t">
@@ -158,25 +158,15 @@
                     <navigationItem key="navigationItem" id="ceS-Bt-L2Z"/>
                     <connections>
                         <outlet property="button" destination="yzU-3J-pSG" id="T7S-5u-Wd5"/>
-                        <outlet property="texto1" destination="eA9-TI-btw" id="ROv-G7-nXc"/>
-                        <outlet property="texto2" destination="8Av-GG-U0m" id="wR3-bF-gGU"/>
-                        <outlet property="titulo1" destination="UIC-hC-N6U" id="liw-I2-VAR"/>
-                        <outlet property="titulo2" destination="Fso-ZV-ehl" id="Mdu-PG-uCJ"/>
+                        <outlet property="text1" destination="eA9-TI-btw" id="gTu-cp-PvR"/>
+                        <outlet property="text2" destination="8Av-GG-U0m" id="rXV-uk-1Nl"/>
+                        <outlet property="title1" destination="UIC-hC-N6U" id="CPP-U7-wzi"/>
+                        <outlet property="title2" destination="Fso-ZV-ehl" id="bCi-4K-tbi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZc-am-83L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102.89855072463769" y="772.76785714285711"/>
-        </scene>
-        <!--TabBarVC-->
-        <scene sceneID="CZz-xp-uK4">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabBarVC" id="qRo-eZ-1QM" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="qym-YJ-6Qz"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iic-9W-auh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2194" y="732"/>
+            <point key="canvasLocation" x="103" y="814"/>
         </scene>
     </scenes>
     <resources>

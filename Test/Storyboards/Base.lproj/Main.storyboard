@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dFm-ZK-tkd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--Start View Controller-->
         <scene sceneID="psU-Zg-uEC">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarVC" modalPresentationStyle="overFullScreen" id="dFm-ZK-tkd" customClass="StartViewController" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" modalPresentationStyle="overFullScreen" id="dFm-ZK-tkd" customClass="StartViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="kNK-he-U9e"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UTO-15-P2R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -23,22 +23,11 @@
                         <segue destination="qbI-ss-2mn" kind="relationship" relationship="viewControllers" id="vlS-yl-ACd"/>
                         <segue destination="T5D-kW-PZj" kind="relationship" relationship="viewControllers" id="Cxp-lT-iCw"/>
                         <segue destination="a3m-3U-3FS" kind="relationship" relationship="viewControllers" id="K7g-IS-w1J"/>
-                        <segue destination="EZY-X7-nxu" kind="presentation" identifier="BemVindo" id="PwZ-VX-kMF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ge-Ug-Bkr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-132" y="309"/>
-        </scene>
-        <!--BemVindoVC-->
-        <scene sceneID="fWu-Lw-aJi">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="BemVindoVC" storyboardName="Inicio" referencedIdentifier="BemVindoVC" id="EZY-X7-nxu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ShB-Uc-jpT"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NWD-xU-5Vv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="756" y="272"/>
         </scene>
         <!--Conquistas-->
         <scene sceneID="Drv-C4-d1B">
@@ -268,7 +257,6 @@
                         <outlet property="b8" destination="QH7-kT-p85" id="imw-hW-SaF"/>
                         <outlet property="b9" destination="6NU-Yh-uNa" id="cEw-sW-EWR"/>
                         <segue destination="u70-vN-WQM" kind="show" identifier="SegueAr" id="b9M-TP-CUF"/>
-                        <segue destination="EZY-X7-nxu" kind="presentation" identifier="BemVindo" id="1L7-PP-8jp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cna-Qr-ac2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -798,9 +786,6 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
             <point key="canvasLocation" x="773.91304347826087" y="1803.3482142857142"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="1L7-PP-8jp"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="15" width="96" height="96"/>
         <image name="16" width="96" height="96"/>
