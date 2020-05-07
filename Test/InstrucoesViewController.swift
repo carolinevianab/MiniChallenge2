@@ -16,6 +16,7 @@ class InstrucoesViewController: UIViewController {
     @IBOutlet weak var text2: UILabel!  //Segundo texto
     @IBOutlet weak var button: UIButton!
     var count = 0 //Contador utilizado para modificar o conteúdo das labels
+    var Welcome : Bool!
     
     
     override func viewDidLoad() {
@@ -57,8 +58,14 @@ class InstrucoesViewController: UIViewController {
             }
         
     }
+             
     @IBAction func button(_ sender: Any) {
         count+=1
+        if count == 3{
+            Welcome = false
+            UserDefaults.standard.set(Welcome, forKey: "UserHasSeenWelcome")
+            performSegue(withIdentifier: "UserHasSeenWelcome", sender: self)
+            
+        }
     }
-    
 }

@@ -10,16 +10,11 @@
         <!--BemvindoVC-->
         <scene sceneID="YWE-5h-Scd">
             <objects>
-                <viewController id="euF-ey-337" userLabel="BemvindoVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BemVindoVC" id="euF-ey-337" userLabel="BemvindoVC" customClass="BemVindoViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k4n-gw-gqh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon arredondado.png" translatesAutoresizingMaskIntoConstraints="NO" id="jF2-XF-3wG">
-                                <rect key="frame" x="103" y="84" width="212" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zp-Qx-caE">
                                 <rect key="frame" x="243" y="727" width="151" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -29,7 +24,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="r8W-PX-Puw" kind="presentation" modalPresentationStyle="fullScreen" id="LrC-Ce-ZCx"/>
+                                    <action selector="button:" destination="euF-ey-337" eventType="touchUpInside" id="7xI-I6-csp"/>
+                                    <segue destination="r8W-PX-Puw" kind="presentation" identifier="instrucoes" modalPresentationStyle="fullScreen" id="LrC-Ce-ZCx"/>
                                 </connections>
                             </button>
                             <label autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="8" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKU-QU-y1t">
@@ -40,7 +36,7 @@
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Ola, bem vindo ao Orientity, aqui você terá um ambiente confortável e confiável para aprender sobre as mais diversas orientações sexuais e identidades de gênero.</string>
+                                        <string key="content">Orientity é um app que busca ensinar sobre algumas orientações sexuais e identidades de gênero de forma simples e clara. Através de cards informativos e jogos no formato de quiz. </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="21" name="SFProRounded-Regular"/>
@@ -66,10 +62,17 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="0.17971500880281691" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Icon arredondado.png" translatesAutoresizingMaskIntoConstraints="NO" id="NaU-eb-dT2">
+                                <rect key="frame" x="141" y="94" width="133" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.83137254901960778" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="i7H-uL-J0N"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="5zp-Qx-caE" id="6fz-di-psD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k19-95-9Zm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

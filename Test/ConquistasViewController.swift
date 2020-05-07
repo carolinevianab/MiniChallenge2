@@ -18,6 +18,7 @@ class ConquistasViewController: UIViewController {
     var b18Active = false
     var b19Active = false
     var b20Active = false
+    var UD = UserDefaults.standard.bool(forKey: "UserHasSeenWelcome")
     
     
     let defaults = UserDefaults.standard
@@ -53,6 +54,9 @@ class ConquistasViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if UD == false{
+            performSegue(withIdentifier: "BemVindo", sender: self)
+        }
 
         b1.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
         b2.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
@@ -176,8 +180,13 @@ class ConquistasViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if UD == true{
+            let viewC = segue.destination as! BemVindoViewController
+            viewC.WelC = UD
+        }else{
         let vc = segue.destination as! AchievementViewController
         vc.selected = clicked
+        }
     }
 
     /*
