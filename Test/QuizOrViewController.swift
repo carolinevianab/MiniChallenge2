@@ -19,6 +19,10 @@ class QuizOrViewController: UIViewController {
        @IBOutlet weak var gameImage: UIImageView!
        @IBOutlet weak var nextQ: UIButton!
        @IBOutlet weak var gameTitle: UILabel!
+    
+    
+    @IBOutlet weak var background: UIImageView!
+    
        var choice = ""
        var correct = ""
        var correctAnswers = 0
@@ -28,7 +32,7 @@ class QuizOrViewController: UIViewController {
 
        override func viewDidLoad() {
            super.viewDidLoad()
-           
+        background.layer.cornerRadius = 15
         
         // Botão bonito
         resp1.layer.cornerRadius = 15

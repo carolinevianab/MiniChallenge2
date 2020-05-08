@@ -37,6 +37,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var congrats: UILabel!
     @IBOutlet weak var backToStart: UIButton!
     
+    @IBOutlet weak var background: UIImageView!
+    
     
     
     var choice = ""
@@ -50,6 +52,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        background.layer.cornerRadius = 15
         
         lblGotRight.isEnabled = false
         correctTotal.isEnabled = false
@@ -89,6 +92,8 @@ class GameViewController: UIViewController {
         //nextQuestion.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
         nextQuestion.isHidden = true
         nextQuestion.isEnabled = false
+        
+        
         
         //Dependendo do valor de escolha, ativa um jogo diferente
         // Se escolha = 1, botão 1 quem foi clicado

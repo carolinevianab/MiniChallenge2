@@ -19,6 +19,9 @@ class QuizIdViewController: UIViewController {
     @IBOutlet weak var gameImage: UIImageView!
     @IBOutlet weak var nextQ: UIButton!
     @IBOutlet weak var gameTitle: UILabel!
+    
+    @IBOutlet weak var background: UIImageView!
+    
     var choice = ""
     var correct = ""
     var correctAnswers = 0
@@ -28,6 +31,8 @@ class QuizIdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        background.layer.cornerRadius = 15
         
         resp1.layer.cornerRadius = 15
         resp2.layer.cornerRadius = 15

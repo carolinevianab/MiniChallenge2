@@ -16,10 +16,17 @@ class OriTextoViewController: UIViewController {
     @IBOutlet weak var TituloOri: UILabel!
     @IBOutlet weak var TextoOri: UILabel!
     
+    
+    @IBOutlet weak var background: UIScrollView!
+    
+    @IBOutlet weak var bntQuiz: UIButton!
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
         
+        background.layer.cornerRadius = 15
+        bntQuiz.layer.cornerRadius = 15
         
             if (choice == "1"){
                 TituloOri.text = "Assexual"

@@ -18,9 +18,19 @@ class InstrucoesViewController: UIViewController {
     var count = 0 //Contador utilizado para modificar o conteúdo das labels
     var Welcome : Bool!
     
+    @IBOutlet weak var backgroundText1: UIButton!
+    @IBOutlet weak var backgroundText2: UIButton!
+    
+    @IBOutlet weak var backgroundTitle1: UIButton!
+    @IBOutlet weak var backgroundTitle2: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundTitle1.layer.cornerRadius = 15
+        backgroundText1.layer.cornerRadius = 15
+        backgroundTitle2.layer.cornerRadius = 15
+        backgroundText2.layer.cornerRadius = 15
         
         button.layer.cornerRadius = 15
         instanceLabel(countF: count)

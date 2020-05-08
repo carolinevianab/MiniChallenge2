@@ -24,9 +24,12 @@ class AchievementViewController: UIViewController {
     @IBOutlet weak var textAc: UILabel!
     @IBOutlet weak var image: UIImageView!
     
+    @IBOutlet weak var background: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        background.layer.cornerRadius = 15
         
         // Aqui entram os textos e imagens das conquistas, deixei os números iguais (se vc clicar no botao 1, abre titulo 1 e por ai vai) pra ficar mais fácil de definir as coisas
         // Pra colocar imagem, arrasta ela pra dentro do projeto e coloca o nome dela na parte "image:", eu deixei uma imagem chamada "blank.png" porque ele quebra se deixar vazio
@@ -62,7 +65,7 @@ class AchievementViewController: UIViewController {
             
             Achievement(name: "Conquista 16", image: "16b.png", description: "Parabéns! Você desbloqueou todas as identidades de gênero!"),
             
-            Achievement(name: "Conquista 17", image: "17b.png", description: "tParabéns! Você concluiu o jogo sobre orientações sexuais!"),
+            Achievement(name: "Conquista 17", image: "17b.png", description: "Parabéns! Você concluiu o jogo sobre orientações sexuais!"),
             
             Achievement(name: "Conquista 18", image: "18b.png", description: "Parabéns! Você concluiu o jogo sobre identidades de gênero!"),
             
