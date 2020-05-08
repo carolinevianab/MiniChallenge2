@@ -343,11 +343,9 @@ class QuizIdViewController: UIViewController {
     }
     
     @objc func rightAnswer(sender: UIButton){
-        quitGame.isEnabled = false
-        quitGame.isHidden = true
         
         if sender.accessibilityIdentifier == correct {
-            sender.backgroundColor = .green
+            sender.backgroundColor = #colorLiteral(red: 0.431372549, green: 0.8549019608, blue: 0.4705882353, alpha: 1)
             sender.setTitleColor(.black, for: .normal)
             nextQ.isEnabled = true
             nextQ.isHidden = false
@@ -364,7 +362,7 @@ class QuizIdViewController: UIViewController {
     
     @objc func wrongAnswer(sender: UIButton){
         if sender.accessibilityIdentifier != correct {
-            sender.backgroundColor = .red
+            sender.backgroundColor = #colorLiteral(red: 1, green: 0.4117647059, blue: 0.3803921569, alpha: 1)
             sender.setTitleColor(.white, for: .normal)
             if correctAnswers == aux {
                 correctAnswers -= 1

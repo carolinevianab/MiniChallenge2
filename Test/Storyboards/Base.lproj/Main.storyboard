@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dFm-ZK-tkd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -44,7 +44,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Conquistas">
                                         <attributes>
-                                            <color key="NSColor" red="1" green="0.70564502480000002" blue="0.1839940846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="32" name="SFProRounded-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -193,7 +193,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.70196078429999997" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="935" id="XBH-dc-gSZ"/>
                                         </constraints>
@@ -223,7 +223,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.70196078431372544" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="E8P-09-enG" firstAttribute="leading" secondItem="Kz7-Zm-J8L" secondAttribute="leading" id="1cQ-8W-kcw"/>
                             <constraint firstItem="Kz7-Zm-J8L" firstAttribute="trailing" secondItem="E8P-09-enG" secondAttribute="trailing" id="K3F-7E-cmm"/>
@@ -345,7 +345,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Identidade de gênero">
                                         <attributes>
-                                            <color key="NSColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="NSColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="32" name="SFProRounded-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -374,7 +374,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -388,7 +388,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -402,7 +402,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -416,7 +416,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -430,7 +430,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -444,7 +444,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -458,7 +458,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -472,7 +472,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -480,7 +480,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89988595250000003" green="0.5250952244" blue="0.99219208960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="LTt-nG-oec"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gêneros" image="Identidade" selectedImage="Identidade" springLoaded="YES" id="wQz-CU-CdV"/>
@@ -546,7 +546,7 @@
                                 </accessibility>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="37"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -560,7 +560,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="37"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -574,7 +574,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -588,7 +588,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -602,7 +602,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -616,7 +616,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
                                 <state key="normal" title="?">
-                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -624,7 +624,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="eqD-vW-tcP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Orientação" image="Orientacao" selectedImage="Orientacao" id="M9u-zT-0KO"/>
@@ -781,7 +781,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Jogos">
                                         <attributes>
-                                            <color key="NSColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="32" name="SFProRounded-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -790,7 +790,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="NWL-W0-XRK"/>
                     </view>
@@ -823,7 +823,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Sobre o app">
                                         <attributes>
-                                            <color key="NSColor" red="0.25098039220000001" green="0.61176470589999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="32" name="SFCompactRounded-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -841,7 +841,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Orientity é a mistura das palavras “orientation” (orientação) e “identity” 
+                                        <mutableString key="content">Orientity é a mistura das palavras “orientation” (orientação) e “identity” 
 (identidade).
 
 Nosso objetivo é ensinar um pouco mais sobre alguns tipos de orientações 
@@ -849,9 +849,9 @@ sexuais e identidades de gênero. Temas importantes que não costumam ser aborda
 
 Nosso objetivo é ensinar um pouco mais sobre alguns tipos de Orientações Sexuais e Identidades de Gênero. Temas importantes que não costumam ser abordados nas escolas ou em casa, e muitas vezes, por causa de preconceitos ou desconhecimento, as poucas informações passadas não são totalmente verídicas. 
 
-Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas sobre o assunto em um ambiente em que se sintam seguras e confortáveis. E assim, quem sabe, repassar esse conhecimento.</string>
+Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas sobre o assunto em um ambiente em que se sintam seguras e confortáveis. E assim, quem sabe, repassar esse conhecimento.</mutableString>
                                         <attributes>
-                                            <color key="NSColor" red="0.16075268770000001" green="0.43296271339999998" blue="0.72565038069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="17" name="SFProDisplay-Regular"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -867,7 +867,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.25098039215686274" green="0.61176470588235299" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gKi-Ii-iqD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sobre o app" image="Sobre o app" id="JNa-V7-28L"/>
@@ -889,7 +889,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
-                                <color key="textColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uip-dT-lal">
@@ -1041,7 +1041,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.18823529411764706" green="0.85882352941176465" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vjh-ix-8So"/>
                     </view>
                     <navigationItem key="navigationItem" id="7tM-93-fFE"/>
@@ -1078,7 +1078,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
-                                <color key="textColor" red="0.85490196080000003" green="0.56078431370000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="alZ-N7-Skc">
@@ -1125,7 +1125,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.85490196080000003" green="0.56078431370000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="dyF-8C-x7W"/>
                     </view>
                     <navigationItem key="navigationItem" id="rlg-Rn-kIc"/>
@@ -1153,7 +1153,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
-                                <color key="textColor" red="0.99268239739999997" green="0.36177390809999999" blue="0.3489658833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RTS-dX-E0g">
@@ -1200,7 +1200,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                 <viewLayoutGuide key="frameLayoutGuide" id="rIt-Y0-5Ce"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99215686274509807" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="RyC-II-nbB"/>
                     </view>
                     <navigationItem key="navigationItem" id="H7X-ZQ-Fdu"/>
@@ -1325,7 +1325,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.85490196078431369" green="0.5607843137254902" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ojp-OS-KxG"/>
                     </view>
                     <navigationItem key="navigationItem" id="dav-pC-biK"/>
@@ -1455,7 +1455,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.99215686274509807" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="45c-dx-PQF"/>
                     </view>
                     <navigationItem key="navigationItem" id="zej-y6-6xC"/>
