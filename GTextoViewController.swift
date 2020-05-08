@@ -61,6 +61,12 @@ class GTextoViewController: UIViewController {
                                       
                              oriImage.image  = UIImage(named: "Transgender-Pride-Flag.png")
                          }
+        if (choice == "8"){
+            TituloOri.text = "Agênero"
+            TextoOri.text = "\n\n\nAgênero é uma identidade que pode denotar ausência de gênero, gênero neutro, ou ausência de identidade de gênero. Algumas pessoas também se identificam como agênero por não entenderem bem seu gênero. A bandeira agênero mais conhecida foi criada por Ska no blog transrants e é formada por 7 listras horizontais de mesma altura, as quais são: \nPretas: simbolizando a completa ausência de gênero; \nCinzas: simbolizando a ausência parcial de gênero; \nBrancas: simbolizando também a completa ausência de gênero; \nVerde: simbolizando gênero não-binário."
+                     
+            oriImage.image  = UIImage(named: "Agender-Pride-Flag.png")
+        }
 
     }
     
