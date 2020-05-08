@@ -333,14 +333,152 @@
         <!--Gêneros-->
         <scene sceneID="FRM-bl-dUk">
             <objects>
-                <viewController id="M8r-PY-Pm3" sceneMemberID="viewController">
+                <viewController id="M8r-PY-Pm3" customClass="GeneroViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UuQ-8H-gMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qhR-if-Vut">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Identidade de gênero">
+                                        <attributes>
+                                            <color key="NSColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="32" name="SFProRounded-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMc-vY-Q9d">
+                                <rect key="frame" x="76" y="167" width="263" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Clique nos cards e descubra mais!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVm-kt-XUS" userLabel="Identidade1">
+                                <rect key="frame" x="37" y="227" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntGen1:" destination="M8r-PY-Pm3" eventType="touchUpInside" id="mRC-dh-BUp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nho-cH-7mP" userLabel="Identidade2">
+                                <rect key="frame" x="217" y="227" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntGen2:" destination="M8r-PY-Pm3" eventType="touchUpInside" id="2mH-dz-8tP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43P-fb-QoD" userLabel="Identidade3">
+                                <rect key="frame" x="37" y="346" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntGen3:" destination="M8r-PY-Pm3" eventType="touchUpInside" id="fPF-RO-Kl9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BI-tu-8Ou" userLabel="Identidade4">
+                                <rect key="frame" x="217" y="346" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntGen4:" destination="M8r-PY-Pm3" eventType="touchUpInside" id="wZp-1t-Hgk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4r-Eo-zq0" userLabel="Identidade5">
+                                <rect key="frame" x="37" y="462" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntGen5:" destination="M8r-PY-Pm3" eventType="touchUpInside" id="s7I-er-cIF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fn-lk-JrY" userLabel="Identidade6">
+                                <rect key="frame" x="217" y="462" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntGen6:" destination="M8r-PY-Pm3" eventType="touchUpInside" id="rbm-rh-fVf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebD-XP-aeB" userLabel="Identidade7">
+                                <rect key="frame" x="37" y="581" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntGen7:" destination="M8r-PY-Pm3" eventType="touchUpInside" id="EYv-5c-Imq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89988595250000003" green="0.5250952244" blue="0.99219208960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="LTt-nG-oec"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gêneros" image="Identidade" selectedImage="Identidade" springLoaded="YES" id="wQz-CU-CdV"/>
+                    <tabBarItem key="tabBarItem" title="Gêneros" image="Identidade" selectedImage="Identidade" springLoaded="YES" id="wQz-CU-CdV"/>                  <connections>
+                        <outlet property="Gen1" destination="MVm-kt-XUS" id="ew0-bu-1hS"/>
+                        <outlet property="Gen2" destination="Nho-cH-7mP" id="4C6-r0-JYO"/>
+                        <outlet property="Gen3" destination="43P-fb-QoD" id="0gB-Qh-YRC"/>
+                        <outlet property="Gen4" destination="9BI-tu-8Ou" id="Le3-cz-oew"/>
+                        <outlet property="Gen5" destination="i4r-Eo-zq0" id="E04-nx-b3M"/>
+                        <outlet property="Gen6" destination="6fn-lk-JrY" id="kEX-Z5-klH"/>
+                        <outlet property="Gen7" destination="ebD-XP-aeB" id="QGb-fs-HCY"/>
+                        <segue destination="Of8-FE-FMr" kind="show" identifier="segue3" id="8WS-dI-faE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUL-KK-D7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -349,14 +487,140 @@
         <!--Orientação-->
         <scene sceneID="ltM-Wx-UGX">
             <objects>
-                <viewController id="qbI-ss-2mn" sceneMemberID="viewController">
+                <viewController id="qbI-ss-2mn" customClass="OrientacaoViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0iz-RN-gvG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ghk-mc-2SW">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Orientação sexual">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="32" name="SFProRounded-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3Q-DK-UtF">
+                                <rect key="frame" x="76" y="167" width="263" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Clique nos cards e descubra mais!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQ4-O6-htx" userLabel="Orientacao1">
+                                <rect key="frame" x="37" y="227" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="37"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntOri1:" destination="qbI-ss-2mn" eventType="touchUpInside" id="7F8-jJ-T0Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DH-sA-N7H" userLabel="Orientacao2">
+                                <rect key="frame" x="217" y="227" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="37"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntOri2:" destination="qbI-ss-2mn" eventType="touchUpInside" id="DLA-sR-gfn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wch-mY-aW2" userLabel="Orientacao3">
+                                <rect key="frame" x="37" y="353" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntOri3:" destination="qbI-ss-2mn" eventType="touchUpInside" id="G3R-v2-TxS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbY-mh-QnZ" userLabel="Orientacao4">
+                                <rect key="frame" x="217" y="353" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntOri4:" destination="qbI-ss-2mn" eventType="touchUpInside" id="M4w-vJ-5hK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m52-MD-pOD" userLabel="Orientacao5">
+                                <rect key="frame" x="37" y="480" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntOri5:" destination="qbI-ss-2mn" eventType="touchUpInside" id="JNx-0b-Zsx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KW6-8x-GoK" userLabel="Orientacao6">
+                                <rect key="frame" x="217" y="480" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntOri6:" destination="qbI-ss-2mn" eventType="touchUpInside" id="Pcg-bv-SIO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="eqD-vW-tcP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Orientação" image="Orientacao" selectedImage="Orientacao" id="M9u-zT-0KO"/>
+                    <connections>
+                        <outlet property="Ori1" destination="cQ4-O6-htx" id="hyI-nO-btW"/>
+                        <outlet property="Ori2" destination="0DH-sA-N7H" id="Gpq-8o-u64"/>
+                        <outlet property="Ori3" destination="Wch-mY-aW2" id="Taa-No-Cs5"/>
+                        <outlet property="Ori4" destination="DbY-mh-QnZ" id="4hO-v1-7qM"/>
+                        <outlet property="Ori5" destination="m52-MD-pOD" id="D2n-T0-Qxa"/>
+                        <outlet property="Ori6" destination="KW6-8x-GoK" id="bCg-xO-Jc8"/>
+                        <segue destination="NCV-ca-0Gz" kind="show" identifier="segue2" id="dM9-6a-VtA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bg4-Yd-wZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -784,6 +1048,148 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9GF-b2-nsv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="773.91304347826087" y="1803.3482142857142"/>
+        </scene>
+        <!--Identidade-->
+        <scene sceneID="CQa-Li-gOe">
+            <objects>
+                <viewController id="Of8-FE-FMr" userLabel="Identidade" customClass="GTextoViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="baX-fS-RSl" userLabel="Identidade">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da identidade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gjq-YN-zfz">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
+                                <color key="textColor" red="0.85490196080000003" green="0.56078431370000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="alZ-N7-Skc">
+                                <rect key="frame" x="37" y="179" width="340" height="565"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mdW-5m-O6A" userLabel="Bandeira">
+                                        <rect key="frame" x="90" y="8" width="158" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Mz-zZ-Ksd">
+                                        <rect key="frame" x="8" y="0.0" width="324" height="565"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Blablablalbal">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="17" name="SFProText-Regular"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Idv-VB-FHC"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Wfo-9c-AUu"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7rN-di-j2e">
+                                <rect key="frame" x="37" y="770" width="340" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                <state key="normal" title="QUIZ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85490196080000003" green="0.56078431370000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="dyF-8C-x7W"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rlg-Rn-kIc"/>
+                    <connections>
+                        <outlet property="TextoOri" destination="8Mz-zZ-Ksd" id="3kh-1N-y2x"/>
+                        <outlet property="TituloOri" destination="Gjq-YN-zfz" id="Bt2-Wm-bmf"/>
+                        <outlet property="oriImage" destination="mdW-5m-O6A" id="xXX-dV-wGz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ubi-ah-onY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571" y="1803"/>
+        </scene>
+        <!--OrientacaoS-->
+        <scene sceneID="7Ud-Pq-ROF">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="NCV-ca-0Gz" userLabel="OrientacaoS" customClass="OriTextoViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wdb-0R-QQT" userLabel="OrientacaoS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da orientação" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Op-cv-fQ7">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
+                                <color key="textColor" red="0.99268239739999997" green="0.36177390809999999" blue="0.3489658833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RTS-dX-E0g">
+                                <rect key="frame" x="37" y="770" width="340" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                <state key="normal" title="QUIZ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbc-h5-PdQ">
+                                <rect key="frame" x="37" y="179" width="340" height="565"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWA-zx-21l" userLabel="Bandeira">
+                                        <rect key="frame" x="90" y="8" width="158" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wkX-9H-gsO">
+                                        <rect key="frame" x="8" y="0.0" width="324" height="565"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Blablablalbal">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="17" name="SFProText-Regular"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="rK1-R5-pBQ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="rIt-Y0-5Ce"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99284332990000002" green="0.41303300859999997" blue="0.38034141059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="RyC-II-nbB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H7X-ZQ-Fdu"/>
+                    <connections>
+                        <outlet property="TextoOri" destination="wkX-9H-gsO" id="sPO-Kb-4uC"/>
+                        <outlet property="TituloOri" destination="0Op-cv-fQ7" id="p9N-ia-r4T"/>
+                        <outlet property="oriImage" destination="kWA-zx-21l" id="1vO-CF-DYh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZU-rV-IlY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="1803"/>
         </scene>
     </scenes>
     <resources>
