@@ -54,22 +54,27 @@ class QuizOrViewController: UIViewController {
 
            // Do any additional setup after loading the view.
            if (choice == "1"){
-               gameTitle.text = "Androginia"
+                gameTitle.text = "Assexual"
                Assexual()
            }
            if (choice == "2"){
+                gameTitle.text = "Bisexual"
                bisexual()
            }
            if (choice == "3"){
+                gameTitle.text = "Homosexual"
                homosexual()
            }
            if (choice == "4"){
+                gameTitle.text = "Pansexual"
                pansexual()
            }
            if (choice == "5"){
+                gameTitle.text = "Heterosexual"
                heterosexual()
            }
            if (choice == "6"){
+                gameTitle.text = "Demisexual"
                demisexual()
            }
 
