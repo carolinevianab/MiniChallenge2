@@ -63,5 +63,16 @@ class GTextoViewController: UIViewController {
                          }
 
     }
+    
+    
+    @IBAction func quiz(_ sender: Any) {
+        performSegue(withIdentifier: "segueQuiz", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! QuizIdViewController
+        vc.choice = choice
+    }
 
 }

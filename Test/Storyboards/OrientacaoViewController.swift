@@ -57,6 +57,7 @@ class OrientacaoViewController: UIViewController {
             performSegue(withIdentifier: "segue2", sender: self)
         Ori4.setBackgroundImage(UIImage(named: "Pansexual-Pride-Flag.png"), for: UIControl.State.normal)
         Ori4.setTitle("", for:.normal)
+        Ori4.setImage(UIImage(named: "Pansexual-Pride-Flag.png"), for: UIControl.State.normal)
         }
     @IBAction func bntOri5(_ sender: Any) {
             self.clicado = "5"
