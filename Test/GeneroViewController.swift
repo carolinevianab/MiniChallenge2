@@ -48,9 +48,8 @@ class GeneroViewController: UIViewController {
     @IBAction func bntGen3(_ sender: Any) {
         self.clicado = "3"
         performSegue(withIdentifier: "segue3", sender: self)
-         Gen3.setBackgroundImage(UIImage(named: "Generofluido.png"), for:
+         Gen3.setBackgroundImage(UIImage(named: "Generofluido.png"), for: UIControl.State.normal)
         Gen3.setTitle("", for:.normal)
-         Gen3.setTitle("", for:.normal)
     }
     @IBAction func bntGen4(_ sender: Any) {
         self.clicado = "4"
