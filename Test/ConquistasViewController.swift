@@ -182,7 +182,6 @@ class ConquistasViewController: UIViewController {
         defineDefaults()
         var i = 0
         let timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
-            print(i)
             i += 5
             self.carregar()
         }

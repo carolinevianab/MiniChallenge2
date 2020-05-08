@@ -58,21 +58,27 @@ class QuizIdViewController: UIViewController {
             Androgine()
         }
         if (choice == "2"){
+            gameTitle.text = "Cisgênero"
             cisgender()
         }
         if (choice == "3"){
+            gameTitle.text = "Gênero Fluido"
             genderFluid()
         }
         if (choice == "4"){
+            gameTitle.text = "Não Binário"
             nonBinary()
         }
         if (choice == "5"){
+            gameTitle.text = "Intergênero"
             intergender()
         }
         if (choice == "6"){
+            gameTitle.text = "Queer"
             queer()
         }
         if (choice == "7"){
+            gameTitle.text = "Transgênero"
             transgender()
         }
         // Falta agenero
