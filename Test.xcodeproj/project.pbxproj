@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1007EF9A2446A2B1009AF65C /* Inicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1007EF992446A2B1009AF65C /* Inicio.storyboard */; };
+		100C52CE2464988300259C87 /* Icon arredondado.png in Resources */ = {isa = PBXBuildFile; fileRef = 100C52CD2464988300259C87 /* Icon arredondado.png */; };
 		102952FE245C4CD500047009 /* Generofluido.png in Resources */ = {isa = PBXBuildFile; fileRef = 102952FD245C4CD500047009 /* Generofluido.png */; };
 		10295301245C4CE300047009 /* Homo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 102952FF245C4CE200047009 /* Homo.jpg */; };
 		10295302245C4CE300047009 /* Homo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10295300245C4CE300047009 /* Homo2.png */; };
 		10295305245C4CF300047009 /* Intergenero.png in Resources */ = {isa = PBXBuildFile; fileRef = 10295303245C4CF300047009 /* Intergenero.png */; };
 		10295306245C4CF300047009 /* Nao binario.png in Resources */ = {isa = PBXBuildFile; fileRef = 10295304245C4CF300047009 /* Nao binario.png */; };
-		10A3270E243C00B1005E4AF1 /* JogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3270D243C00B1005E4AF1 /* JogoViewController.swift */; };
-		10AEC594243AC60600C4BB05 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEC593243AC60600C4BB05 /* SecondViewController.swift */; };
+		10A3270E243C00B1005E4AF1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3270D243C00B1005E4AF1 /* GameViewController.swift */; };
+		10AEC594243AC60600C4BB05 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEC593243AC60600C4BB05 /* GameScreenViewController.swift */; };
 		10DEF497245479BA00F46E70 /* Queer-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF490245479BA00F46E70 /* Queer-Pride-Flag.png */; };
 		10DEF498245479BA00F46E70 /* Assexual-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF491245479BA00F46E70 /* Assexual-Pride-Flag.png */; };
 		10DEF499245479BA00F46E70 /* Bisexual-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF492245479BA00F46E70 /* Bisexual-Pride-Flag.png */; };
@@ -24,13 +25,14 @@
 		10DEF49D245479BA00F46E70 /* Transgender-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF496245479BA00F46E70 /* Transgender-Pride-Flag.png */; };
 		10DEF49F24547AA900F46E70 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF49E24547AA900F46E70 /* blank.png */; };
 		10DEF4A124547C1000F46E70 /* Androgine-Pride-Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DEF4A024547C1000F46E70 /* Androgine-Pride-Flag.png */; };
-		10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F01F8124400DEA00CEC504 /* FinalViewController.swift */; };
-		96F1CAF224648A6600E61CEE /* OriTextoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CAF124648A6600E61CEE /* OriTextoViewController.swift */; };
-		96F1CAF42464A51B00E61CEE /* OrientacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CAF32464A51B00E61CEE /* OrientacaoViewController.swift */; };
-		96F1CB002464DC6B00E61CEE /* GeneroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CAFF2464DC6B00E61CEE /* GeneroViewController.swift */; };
-		96F1CB022464DCC800E61CEE /* GTextoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CB012464DCC800E61CEE /* GTextoViewController.swift */; };
-		96F1CB042464EC2200E61CEE /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CB032464EC2200E61CEE /* AchievementViewController.swift */; };
-		96F1CB062464EC3700E61CEE /* ConquistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CB052464EC3700E61CEE /* ConquistasViewController.swift */; };
+		10DEF4A32459A99F00F46E70 /* ConquistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DEF4A22459A99E00F46E70 /* ConquistasViewController.swift */; };
+		10DEF4A52459C53000F46E70 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DEF4A42459C53000F46E70 /* AchievementViewController.swift */; };
+		2D03B6B4244A2934009AEC91 /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */; };
+		2DCA33D7246395A10085C50C /* BemVindoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA33D6246395A10085C50C /* BemVindoViewController.swift */; };
+		96F1CB082465058F00E61CEE /* OrientacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CB072465058F00E61CEE /* OrientacaoViewController.swift */; };
+		96F1CB0A246505FF00E61CEE /* OriTextoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CB09246505FF00E61CEE /* OriTextoViewController.swift */; };
+		96F1CB0C246506AD00E61CEE /* GeneroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CB0B246506AD00E61CEE /* GeneroViewController.swift */; };
+		96F1CB0E246506D800E61CEE /* GTextoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CB0D246506D800E61CEE /* GTextoViewController.swift */; };
 		A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */; };
 		A88C8EE62433B6DB00BC6847 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE52433B6DB00BC6847 /* SceneDelegate.swift */; };
 		A88C8EE82433B6DB00BC6847 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE72433B6DB00BC6847 /* ViewController.swift */; };
@@ -61,13 +63,14 @@
 
 /* Begin PBXFileReference section */
 		1007EF992446A2B1009AF65C /* Inicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Inicio.storyboard; sourceTree = "<group>"; };
+		100C52CD2464988300259C87 /* Icon arredondado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon arredondado.png"; sourceTree = "<group>"; };
 		102952FD245C4CD500047009 /* Generofluido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Generofluido.png; sourceTree = "<group>"; };
 		102952FF245C4CE200047009 /* Homo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Homo.jpg; sourceTree = "<group>"; };
 		10295300245C4CE300047009 /* Homo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Homo2.png; sourceTree = "<group>"; };
 		10295303245C4CF300047009 /* Intergenero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intergenero.png; sourceTree = "<group>"; };
 		10295304245C4CF300047009 /* Nao binario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nao binario.png"; sourceTree = "<group>"; };
-		10A3270D243C00B1005E4AF1 /* JogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoViewController.swift; sourceTree = "<group>"; };
-		10AEC593243AC60600C4BB05 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		10A3270D243C00B1005E4AF1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		10AEC593243AC60600C4BB05 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
 		10DEF490245479BA00F46E70 /* Queer-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Queer-Pride-Flag.png"; sourceTree = "<group>"; };
 		10DEF491245479BA00F46E70 /* Assexual-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Assexual-Pride-Flag.png"; sourceTree = "<group>"; };
 		10DEF492245479BA00F46E70 /* Bisexual-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bisexual-Pride-Flag.png"; sourceTree = "<group>"; };
@@ -77,13 +80,14 @@
 		10DEF496245479BA00F46E70 /* Transgender-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Transgender-Pride-Flag.png"; sourceTree = "<group>"; };
 		10DEF49E24547AA900F46E70 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		10DEF4A024547C1000F46E70 /* Androgine-Pride-Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Androgine-Pride-Flag.png"; sourceTree = "<group>"; };
-		10F01F8124400DEA00CEC504 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
-		96F1CAF124648A6600E61CEE /* OriTextoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriTextoViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
-		96F1CAF32464A51B00E61CEE /* OrientacaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientacaoViewController.swift; sourceTree = "<group>"; };
-		96F1CAFF2464DC6B00E61CEE /* GeneroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeneroViewController.swift; path = Storyboards/GeneroViewController.swift; sourceTree = "<group>"; };
-		96F1CB012464DCC800E61CEE /* GTextoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTextoViewController.swift; sourceTree = "<group>"; };
-		96F1CB032464EC2200E61CEE /* AchievementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AchievementViewController.swift; path = "../../MiniChallenge2-Caroline 2/Test/AchievementViewController.swift"; sourceTree = "<group>"; };
-		96F1CB052464EC3700E61CEE /* ConquistasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConquistasViewController.swift; path = "../../MiniChallenge2-Caroline 2/Test/ConquistasViewController.swift"; sourceTree = "<group>"; };
+		10DEF4A22459A99E00F46E70 /* ConquistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasViewController.swift; sourceTree = "<group>"; };
+		10DEF4A42459C53000F46E70 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
+		2DCA33D6246395A10085C50C /* BemVindoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BemVindoViewController.swift; sourceTree = "<group>"; };
+		96F1CB072465058F00E61CEE /* OrientacaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrientacaoViewController.swift; path = Storyboards/OrientacaoViewController.swift; sourceTree = "<group>"; };
+		96F1CB09246505FF00E61CEE /* OriTextoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriTextoViewController.swift; sourceTree = "<group>"; };
+		96F1CB0B246506AD00E61CEE /* GeneroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneroViewController.swift; sourceTree = "<group>"; };
+		96F1CB0D246506D800E61CEE /* GTextoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTextoViewController.swift; sourceTree = "<group>"; };
 		A88C8EE02433B6DB00BC6847 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A88C8EE52433B6DB00BC6847 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		10DEF48A245476A600F46E70 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				100C52CD2464988300259C87 /* Icon arredondado.png */,
 				102952FD245C4CD500047009 /* Generofluido.png */,
 				10DEF495245479BA00F46E70 /* Agender-Pride-Flag.png */,
 				102952FF245C4CE200047009 /* Homo.jpg */,
@@ -183,19 +188,20 @@
 				A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */,
 				A88C8EE52433B6DB00BC6847 /* SceneDelegate.swift */,
 				A88C8EE72433B6DB00BC6847 /* ViewController.swift */,
-				10AEC593243AC60600C4BB05 /* SecondViewController.swift */,
+				10AEC593243AC60600C4BB05 /* GameScreenViewController.swift */,
 				A88C8EEC2433B6DD00BC6847 /* Assets.xcassets */,
 				10DEF48A245476A600F46E70 /* Images */,
 				A88C8EEE2433B6DD00BC6847 /* LaunchScreen.storyboard */,
 				A88C8EF12433B6DD00BC6847 /* Info.plist */,
-				10A3270D243C00B1005E4AF1 /* JogoViewController.swift */,
-				10F01F8124400DEA00CEC504 /* FinalViewController.swift */,
-				96F1CAFF2464DC6B00E61CEE /* GeneroViewController.swift */,
-				96F1CB012464DCC800E61CEE /* GTextoViewController.swift */,
-				96F1CB052464EC3700E61CEE /* ConquistasViewController.swift */,
-				96F1CAF124648A6600E61CEE /* OriTextoViewController.swift */,
-				96F1CB032464EC2200E61CEE /* AchievementViewController.swift */,
-				96F1CAF32464A51B00E61CEE /* OrientacaoViewController.swift */,
+				10A3270D243C00B1005E4AF1 /* GameViewController.swift */,
+				2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */,
+				10DEF4A22459A99E00F46E70 /* ConquistasViewController.swift */,
+				10DEF4A42459C53000F46E70 /* AchievementViewController.swift */,
+				96F1CB072465058F00E61CEE /* OrientacaoViewController.swift */,
+				96F1CB0B246506AD00E61CEE /* GeneroViewController.swift */,
+				96F1CB0D246506D800E61CEE /* GTextoViewController.swift */,
+				96F1CB09246505FF00E61CEE /* OriTextoViewController.swift */,
+				2DCA33D6246395A10085C50C /* BemVindoViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				10DEF497245479BA00F46E70 /* Queer-Pride-Flag.png in Resources */,
 				A88C8EED2433B6DD00BC6847 /* Assets.xcassets in Resources */,
 				10295306245C4CF300047009 /* Nao binario.png in Resources */,
+				100C52CE2464988300259C87 /* Icon arredondado.png in Resources */,
 				10DEF49F24547AA900F46E70 /* blank.png in Resources */,
 				10295305245C4CF300047009 /* Intergenero.png in Resources */,
 				10DEF49B245479BA00F46E70 /* Demisexual-Pride-Flag.png in Resources */,
@@ -366,18 +373,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96F1CB042464EC2200E61CEE /* AchievementViewController.swift in Sources */,
-				96F1CAF42464A51B00E61CEE /* OrientacaoViewController.swift in Sources */,
-				96F1CB062464EC3700E61CEE /* ConquistasViewController.swift in Sources */,
-				10AEC594243AC60600C4BB05 /* SecondViewController.swift in Sources */,
-				96F1CB022464DCC800E61CEE /* GTextoViewController.swift in Sources */,
-				96F1CAF224648A6600E61CEE /* OriTextoViewController.swift in Sources */,
-				10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */,
-				96F1CB002464DC6B00E61CEE /* GeneroViewController.swift in Sources */,
+				96F1CB0A246505FF00E61CEE /* OriTextoViewController.swift in Sources */,
+				2D03B6B4244A2934009AEC91 /* InstrucoesViewController.swift in Sources */,
+				10AEC594243AC60600C4BB05 /* GameScreenViewController.swift in Sources */,
+				10AEC594243AC60600C4BB05 /* GameScreenViewController.swift in Sources */,
+				2DCA33D7246395A10085C50C /* BemVindoViewController.swift in Sources */,
+				10DEF4A32459A99F00F46E70 /* ConquistasViewController.swift in Sources */,
 				A88C8EE82433B6DB00BC6847 /* ViewController.swift in Sources */,
 				A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */,
+				96F1CB082465058F00E61CEE /* OrientacaoViewController.swift in Sources */,
 				A88C8EE62433B6DB00BC6847 /* SceneDelegate.swift in Sources */,
-				10A3270E243C00B1005E4AF1 /* JogoViewController.swift in Sources */,
+				10DEF4A52459C53000F46E70 /* AchievementViewController.swift in Sources */,
+				96F1CB0C246506AD00E61CEE /* GeneroViewController.swift in Sources */,
+				10A3270E243C00B1005E4AF1 /* GameViewController.swift in Sources */,
+				96F1CB0E246506D800E61CEE /* GTextoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
