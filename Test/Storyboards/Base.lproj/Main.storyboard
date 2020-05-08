@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dFm-ZK-tkd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -465,6 +465,20 @@
                                     <action selector="bntGen7:" destination="M8r-PY-Pm3" eventType="touchUpInside" id="EYv-5c-Imq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMl-Di-sCS" userLabel="Identidade8">
+                                <rect key="frame" x="217" y="581" width="160" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="38"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.72694903609999995" green="0.42238217589999999" blue="0.80002850290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bntGen8:" destination="M8r-PY-Pm3" eventType="touchUpInside" id="T6G-TF-xxG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.89988595250000003" green="0.5250952244" blue="0.99219208960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="LTt-nG-oec"/>
@@ -478,6 +492,7 @@
                         <outlet property="Gen5" destination="i4r-Eo-zq0" id="E04-nx-b3M"/>
                         <outlet property="Gen6" destination="6fn-lk-JrY" id="kEX-Z5-klH"/>
                         <outlet property="Gen7" destination="ebD-XP-aeB" id="QGb-fs-HCY"/>
+                        <outlet property="Gen8" destination="cMl-Di-sCS" id="6oA-di-a8t"/>
                         <segue destination="Of8-FE-FMr" kind="show" identifier="segue3" id="8WS-dI-faE"/>
                     </connections>
                 </viewController>

@@ -16,6 +16,7 @@ class GeneroViewController: UIViewController {
     @IBOutlet weak var Gen5: UIButton!
     @IBOutlet weak var Gen6: UIButton!
     @IBOutlet weak var Gen7: UIButton!
+    @IBOutlet weak var Gen8: UIButton!
     
     var clicado = "";
     
@@ -29,6 +30,7 @@ class GeneroViewController: UIViewController {
         Gen5.layer.cornerRadius = 15
         Gen6.layer.cornerRadius = 15
         Gen7.layer.cornerRadius = 15
+        Gen8.layer.cornerRadius = 15
     }
 
 
@@ -79,6 +81,13 @@ class GeneroViewController: UIViewController {
          Gen7.setBackgroundImage(UIImage(named: "Transgender-Pride-Flag.png"), for: UIControl.State.normal)
         Gen7.setTitle("", for:.normal)
        }
+    @IBAction func bntGen8(_ sender: Any) {
+           self.clicado = "8"
+           performSegue(withIdentifier: "segue3", sender: self)
+         Gen8.setBackgroundImage(UIImage(named: "Agender-Pride-Flag.png"), for: UIControl.State.normal)
+        Gen8.setTitle("", for:.normal)
+       }
+    
     
     // Envia para a próxima view qual foi o botão clicado
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
