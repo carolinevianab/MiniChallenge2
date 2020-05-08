@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class GameScreenViewController: UIViewController {
 
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -18,7 +18,6 @@ class SecondViewController: UIViewController {
     var clicked = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
         
         // Botão bonito
         button1.layer.cornerRadius = 15
@@ -29,29 +28,29 @@ class SecondViewController: UIViewController {
     }
     
     // Definem qual foi o botão clicado
-    @IBAction func bntJogo1(_ sender: Any) {
+    @IBAction func bntGame1(_ sender: Any) {
         self.clicked = "1"
         performSegue(withIdentifier: "segue1", sender: self)
     }
     
-    @IBAction func bntJogo2(_ sender: Any) {
+    @IBAction func bntGame2(_ sender: Any) {
         self.clicked = "2"
         performSegue(withIdentifier: "segue1", sender: self)
     }
     
-    @IBAction func bntJogo3(_ sender: Any) {
+    @IBAction func bntGame3(_ sender: Any) {
         self.clicked = "3"
         performSegue(withIdentifier: "segue1", sender: self)
     }
     
-    @IBAction func bntJogo4(_ sender: Any) {
+    @IBAction func bntGame4(_ sender: Any) {
         self.clicked = "4"
         performSegue(withIdentifier: "segue1", sender: self)
     }
     
     // Envia para a próxima view qual foi o botão clicado
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! JogoViewController
+        let vc = segue.destination as! GameViewController
         vc.choice = clicked
     }
     

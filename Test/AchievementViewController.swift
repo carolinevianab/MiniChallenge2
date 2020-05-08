@@ -48,7 +48,7 @@ class AchievementViewController: UIViewController {
             
             Achievement(name: "Conquista 9", image: "blank.png", description: "Parabéns! Você desbloqueou a identidade de gênero cisgênero!"),
             
-            Achievement(name: "Conquista 10", image: "Genero fuido.png", description: "Parabéns! Você desbloqueou a identidade de gênero gênero fluído!"),
+            Achievement(name: "Conquista 10", image: "Genero fluido.png", description: "Parabéns! Você desbloqueou a identidade de gênero gênero fluído!"),
             
             Achievement(name: "Conquista 11", image: "Intergenero.png", description: "Parabéns! Você desbloqueou a identidade de gênero intergênero!"),
             
@@ -58,17 +58,17 @@ class AchievementViewController: UIViewController {
             
             Achievement(name: "Conquista 14", image: "Trans.png", description: "Parabéns! Você desbloqueou a identidade de gênero transgênero!"),
             
-            Achievement(name: "Conquista 15", image: "blank.png", description: "Parabéns! Você desbloqueou todas as orientações sexuais!"),
+            Achievement(name: "Conquista 15", image: "15b.png", description: "Parabéns! Você desbloqueou todas as orientações sexuais!"),
             
-            Achievement(name: "Conquista 16", image: "blank.png", description: "Parabéns! Você desbloqueou todas as identidades de gênero!"),
+            Achievement(name: "Conquista 16", image: "16b.png", description: "Parabéns! Você desbloqueou todas as identidades de gênero!"),
             
-            Achievement(name: "Conquista 17", image: "blank.png", description: "tParabéns! Você concluiu o jogo sobre orientações sexuais!"),
+            Achievement(name: "Conquista 17", image: "17b.png", description: "tParabéns! Você concluiu o jogo sobre orientações sexuais!"),
             
-            Achievement(name: "Conquista 18", image: "blank.png", description: "Parabéns! Você concluiu o jogo sobre identidades de gênero!"),
+            Achievement(name: "Conquista 18", image: "18b.png", description: "Parabéns! Você concluiu o jogo sobre identidades de gênero!"),
             
-            Achievement(name: "Conquista 19", image: "blank.png", description: "Parabéns! Você concluiu o jogo sobre perguntas gerais!"),
+            Achievement(name: "Conquista 19", image: "19b.png", description: "Parabéns! Você concluiu o jogo sobre perguntas gerais!"),
             
-            Achievement(name: "Conquista 20", image: "blank.png", description: "Parabéns! Você concluiu todos os jogo!"),
+            Achievement(name: "Conquista 20", image: "20b.png", description: "Parabéns! Você concluiu todos os jogo!"),
             
             
         ]
@@ -80,17 +80,4 @@ class AchievementViewController: UIViewController {
         textAc.text = data[intSelected].description
         image.image = UIImage(named: data[intSelected].image)
     }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
