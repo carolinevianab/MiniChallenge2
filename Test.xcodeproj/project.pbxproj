@@ -35,7 +35,6 @@
 		96F1CB0A246505FF00E61CEE /* OriTextoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CB09246505FF00E61CEE /* OriTextoViewController.swift */; };
 		96F1CB0C246506AD00E61CEE /* GeneroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CB0B246506AD00E61CEE /* GeneroViewController.swift */; };
 		96F1CB0E246506D800E61CEE /* GTextoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1CB0D246506D800E61CEE /* GTextoViewController.swift */; };
-		10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F01F8124400DEA00CEC504 /* FinalViewController.swift */; };
 		A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */; };
 		A88C8EE62433B6DB00BC6847 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE52433B6DB00BC6847 /* SceneDelegate.swift */; };
 		A88C8EE82433B6DB00BC6847 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C8EE72433B6DB00BC6847 /* ViewController.swift */; };
@@ -93,7 +92,6 @@
 		96F1CB09246505FF00E61CEE /* OriTextoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriTextoViewController.swift; sourceTree = "<group>"; };
 		96F1CB0B246506AD00E61CEE /* GeneroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneroViewController.swift; sourceTree = "<group>"; };
 		96F1CB0D246506D800E61CEE /* GTextoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTextoViewController.swift; sourceTree = "<group>"; };
-		10F01F8124400DEA00CEC504 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		A88C8EE02433B6DB00BC6847 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88C8EE32433B6DB00BC6847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A88C8EE52433B6DB00BC6847 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -201,8 +199,6 @@
 				A88C8EF12433B6DD00BC6847 /* Info.plist */,
 				10A3270D243C00B1005E4AF1 /* GameViewController.swift */,
 				2D03B6B3244A2934009AEC91 /* InstrucoesViewController.swift */,
-				10A3270D243C00B1005E4AF1 /* JogoViewController.swift */,
-				10F01F8124400DEA00CEC504 /* FinalViewController.swift */,
 				10DEF4A22459A99E00F46E70 /* ConquistasViewController.swift */,
 				10DEF4A42459C53000F46E70 /* AchievementViewController.swift */,
 				96F1CB072465058F00E61CEE /* OrientacaoViewController.swift */,
@@ -388,8 +384,6 @@
 				10AEC594243AC60600C4BB05 /* GameScreenViewController.swift in Sources */,
 				10AEC594243AC60600C4BB05 /* GameScreenViewController.swift in Sources */,
 				2DCA33D7246395A10085C50C /* BemVindoViewController.swift in Sources */,
-				10AEC594243AC60600C4BB05 /* SecondViewController.swift in Sources */,
-				10F01F8224400DEA00CEC504 /* FinalViewController.swift in Sources */,
 				10DEF4A32459A99F00F46E70 /* ConquistasViewController.swift in Sources */,
 				A88C8EE82433B6DB00BC6847 /* ViewController.swift in Sources */,
 				A88C8EE42433B6DB00BC6847 /* AppDelegate.swift in Sources */,
