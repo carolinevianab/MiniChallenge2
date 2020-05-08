@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dFm-ZK-tkd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -469,7 +469,8 @@
                         <color key="backgroundColor" red="0.89988595250000003" green="0.5250952244" blue="0.99219208960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="LTt-nG-oec"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gêneros" image="Identidade" selectedImage="Identidade" springLoaded="YES" id="wQz-CU-CdV"/>                  <connections>
+                    <tabBarItem key="tabBarItem" title="Gêneros" image="Identidade" selectedImage="Identidade" springLoaded="YES" id="wQz-CU-CdV"/>
+                    <connections>
                         <outlet property="Gen1" destination="MVm-kt-XUS" id="ew0-bu-1hS"/>
                         <outlet property="Gen2" destination="Nho-cH-7mP" id="4C6-r0-JYO"/>
                         <outlet property="Gen3" destination="43P-fb-QoD" id="0gB-Qh-YRC"/>
