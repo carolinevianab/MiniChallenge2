@@ -36,8 +36,8 @@ class GeneroViewController: UIViewController {
         self.clicado = "1"
         performSegue(withIdentifier: "segue3", sender: self)
            Gen1.setBackgroundImage(UIImage(named: "Androgine-Pride-Flag.png"), for: UIControl.State.normal)
+        Gen1.setTitle("", for:.normal)
            Gen1.setTitle("", for:.normal)
-
     }
     @IBAction func bntGen2(_ sender: Any) {
         self.clicado = "2"
@@ -48,7 +48,8 @@ class GeneroViewController: UIViewController {
     @IBAction func bntGen3(_ sender: Any) {
         self.clicado = "3"
         performSegue(withIdentifier: "segue3", sender: self)
-         Gen3.setBackgroundImage(UIImage(named: "Generofluido.png"), for: UIControl.State.normal)
+         Gen3.setBackgroundImage(UIImage(named: "Generofluido.png"), for:
+        Gen3.setTitle("", for:.normal)
          Gen3.setTitle("", for:.normal)
     }
     @IBAction func bntGen4(_ sender: Any) {
@@ -60,6 +61,8 @@ class GeneroViewController: UIViewController {
     @IBAction func bntGen5(_ sender: Any) {
            self.clicado = "5"
            performSegue(withIdentifier: "segue3", sender: self)
+         Gen5.setBackgroundImage(UIImage(named: "Intergenero.png"), for: UIControl.State.normal)
+        Gen5.setTitle("", for:.normal)
             Gen5.setBackgroundImage(UIImage(named: "Intergenero.png"), for: UIControl.State.normal)
             Gen5.setTitle("", for:.normal)
 

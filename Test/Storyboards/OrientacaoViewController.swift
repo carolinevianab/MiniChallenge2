@@ -38,17 +38,18 @@ class OrientacaoViewController: UIViewController {
          performSegue(withIdentifier: "segue2", sender: self)
         Ori1.setBackgroundImage(UIImage(named: "Assexual-Pride-Flag.png"), for: UIControl.State.normal)
         Ori1.setTitle("", for:.normal)
-
      }
      @IBAction func bntOri2(_ sender: Any) {
              self.clicado = "2"
              performSegue(withIdentifier: "segue2", sender: self)
         Ori2.setBackgroundImage(UIImage(named: "Bisexual-Pride-Flag.png"), for: UIControl.State.normal)
+        Ori2.setTitle("", for:.normal)
         Ori1.setTitle("", for:.normal)
          }
     @IBAction func bntOri3(_ sender: Any) {
             self.clicado = "3"
             performSegue(withIdentifier: "segue2", sender: self)
+        Ori3.setBackgroundImage(UIImage(named: "Homo2.png"), for: UIControl.State.normal)
         Ori3.setBackgroundImage(UIImage(named: "Homo.jpg"), for: UIControl.State.normal)
         Ori3.setTitle("", for:.normal)
         }
@@ -69,6 +70,7 @@ class OrientacaoViewController: UIViewController {
                self.clicado = "6"
                performSegue(withIdentifier: "segue2", sender: self)
             Ori6.setBackgroundImage(UIImage(named: "Demisexual-Pride-Flag.png"), for: UIControl.State.normal)
+            Ori6.setTitle("", for:.normal)
         Ori6.setTitle("", for:.normal)
            }
     

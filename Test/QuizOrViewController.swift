@@ -335,6 +335,43 @@ class QuizOrViewController: UIViewController {
        
        func ending(){
            self.dismiss(animated: true, completion: nil)
+        
+        if(isBeingDismissed == true){
+            let a = ConquistasViewController()
+            if(correctAnswers >= 2){
+                if (choice == "1"){
+                    a.b1Active = true
+                    a.defaults.set(a.b1Active, forKey: "b1IsActive")
+                }
+                if (choice == "2"){
+                    a.b2Active = true
+                    a.defaults.set(a.b2Active, forKey: "b2IsActive")
+                }
+                if (choice == "3"){
+                    a.b3Active = true
+                    a.defaults.set(a.b3Active, forKey: "b3IsActive")
+                }
+                if (choice == "4"){
+                    a.b4Active = true
+                    a.defaults.set(a.b4Active, forKey: "b4IsActive")
+                }
+                if (choice == "6"){
+                    a.b6Active = true
+                    a.defaults.set(a.b6Active, forKey: "b6IsActive")
+                }
+            }
+            if(correctAnswers >= 1){
+                if (choice == "5"){//
+                    a.b5Active = true
+                    a.defaults.set(a.b5Active, forKey: "b5IsActive")
+                }
+            }
+            
+            
+            a.b15Active = true
+            a.defaults.set(a.b15Active, forKey: "b15IsActive")
+
+        }
        }
        
     

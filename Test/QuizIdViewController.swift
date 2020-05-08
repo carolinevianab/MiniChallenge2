@@ -75,6 +75,7 @@ class QuizIdViewController: UIViewController {
         if (choice == "7"){
             transgender()
         }
+        // Falta agenero
 
     }
     
@@ -401,6 +402,46 @@ class QuizIdViewController: UIViewController {
     
     func ending(){
         self.dismiss(animated: true, completion: nil)
+        
+        if(isBeingDismissed == true){
+            let a = ConquistasViewController()
+            if(correctAnswers >= 2){
+                if (choice == "1"){
+                    a.b8Active = true
+                    a.defaults.set(a.b8Active, forKey: "b8IsActive")
+                }
+                if (choice == "3"){
+                    a.b10Active = true
+                    a.defaults.set(a.b10Active, forKey: "b10IsActive")
+                }
+                if (choice == "4"){
+                    a.b12Active = true
+                    a.defaults.set(a.b12Active, forKey: "b12IsActive")
+                }
+                if (choice == "5"){
+                    a.b11Active = true
+                    a.defaults.set(a.b11Active, forKey: "b11IsActive")
+                }
+                if (choice == "6"){
+                    a.b13Active = true
+                    a.defaults.set(a.b13Active, forKey: "b13IsActive")
+                }
+                if (choice == "7"){
+                    a.b14Active = true
+                    a.defaults.set(a.b14Active, forKey: "b14IsActive")
+                }
+                
+            }
+            if(correctAnswers >= 1){
+                if (choice == "2"){
+                    a.b9Active = true
+                    a.defaults.set(a.b9Active, forKey: "b9IsActive")
+                }
+            }
+            
+            
+            
+        }
     }
     
     
