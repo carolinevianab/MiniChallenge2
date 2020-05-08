@@ -180,9 +180,9 @@ class ConquistasViewController: UIViewController {
         b20.isEnabled = false
         
         defineDefaults()
-        var i = 0
-        let timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
-            i += 5
+        //var i = 0
+        let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            //i += 5
             self.carregar()
         }
         

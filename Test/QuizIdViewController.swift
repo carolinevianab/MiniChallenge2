@@ -81,7 +81,10 @@ class QuizIdViewController: UIViewController {
             gameTitle.text = "Transgênero"
             transgender()
         }
-        // Falta agenero
+        if (choice == "8"){
+            gameTitle.text = "Agênero"
+            agender()
+        }
 
     }
     
@@ -297,6 +300,7 @@ class QuizIdViewController: UIViewController {
 
     }
     
+    
     func setQuiz (question: String, answer1: String, answer2: String, answer3: String, answer4: String, correctAnswer: String, ImageName: String){
         
         resp1.backgroundColor = .white
@@ -400,6 +404,9 @@ class QuizIdViewController: UIViewController {
         if (choice == "7"){
             transgender()
         }
+        if (choice == "8"){
+            agender()
+        }
     }
     
     @IBAction func gameOut(_ sender: Any) {
@@ -436,6 +443,10 @@ class QuizIdViewController: UIViewController {
                     a.b14Active = true
                     a.defaults.set(a.b14Active, forKey: "b14IsActive")
                 }
+                if (choice == "8"){
+                    a.b7Active = true
+                    a.defaults.set(a.b7Active, forKey: "b7IsActive")
+                }
                 
             }
             if(correctAnswers >= 1){
@@ -445,7 +456,8 @@ class QuizIdViewController: UIViewController {
                 }
             }
             
-            
+            a.b16Active = true
+            a.defaults.set(a.b16Active, forKey: "b16IsActive")
             
         }
     }
