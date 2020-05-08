@@ -35,41 +35,48 @@ class GeneroViewController: UIViewController {
     @IBAction func bntGen1(_ sender: Any) {
         self.clicado = "1"
         performSegue(withIdentifier: "segue3", sender: self)
-           Gen1.setImage(UIImage(named: "Androgine-Pride-Flag.png"), for: UIControl.State.normal)
+           Gen1.setBackgroundImage(UIImage(named: "Androgine-Pride-Flag.png"), for: UIControl.State.normal)
+        Gen1.setTitle("", for:.normal)
     }
     @IBAction func bntGen2(_ sender: Any) {
         self.clicado = "2"
         performSegue(withIdentifier: "segue3", sender: self)
+        Gen2.setTitle("", for:.normal)
 
     }
     @IBAction func bntGen3(_ sender: Any) {
         self.clicado = "3"
         performSegue(withIdentifier: "segue3", sender: self)
-         Gen3.setImage(UIImage(named: "Generofluido.png"), for: UIControl.State.normal)
+         Gen3.setBackgroundImage(UIImage(named: "Generofluido.png"), for: UIControl.State.normal)
+        Gen3.setTitle("", for:.normal)
 
     }
     @IBAction func bntGen4(_ sender: Any) {
         self.clicado = "4"
         performSegue(withIdentifier: "segue3", sender: self)
-         Gen4.setImage(UIImage(named: "Nao binario.png"), for: UIControl.State.normal)
+         Gen4.setBackgroundImage(UIImage(named: "Nao binario.png"), for: UIControl.State.normal)
+        Gen4.setTitle("", for:.normal)
 
     }
     @IBAction func bntGen5(_ sender: Any) {
            self.clicado = "5"
            performSegue(withIdentifier: "segue3", sender: self)
-         Gen5.setImage(UIImage(named: "Intergenero.png"), for: UIControl.State.normal)
+         Gen5.setBackgroundImage(UIImage(named: "Intergenero.png"), for: UIControl.State.normal)
+        Gen5.setTitle("", for:.normal)
 
        }
     @IBAction func bntGen6(_ sender: Any) {
            self.clicado = "6"
            performSegue(withIdentifier: "segue3", sender: self)
-         Gen6.setImage(UIImage(named: "Queer-Pride-Flag.png"), for: UIControl.State.normal)
+         Gen6.setBackgroundImage(UIImage(named: "Queer-Pride-Flag.png"), for: UIControl.State.normal)
+        Gen6.setTitle("", for:.normal)
 
        }
     @IBAction func bntGen7(_ sender: Any) {
            self.clicado = "7"
            performSegue(withIdentifier: "segue3", sender: self)
-         Gen7.setImage(UIImage(named: "Transgender-Pride-Flag.png"), for: UIControl.State.normal)
+         Gen7.setBackgroundImage(UIImage(named: "Transgender-Pride-Flag.png"), for: UIControl.State.normal)
+        Gen7.setTitle("", for:.normal)
 
        }
     
