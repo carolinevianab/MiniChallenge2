@@ -61,5 +61,13 @@ class OriTextoViewController: UIViewController {
                        oriImage.image  = UIImage(named: "Demisexual-Pride-Flag.png")
             }
     }
+    @IBAction func quiz(_ sender: Any) {
+        performSegue(withIdentifier: "segueQuiz2", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! QuizOrViewController
+        vc.choice = choice
+    }
     
 }
