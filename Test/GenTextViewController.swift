@@ -29,19 +29,22 @@ class GenTextViewController: UIViewController {
         
         if (choice == "1"){
                        TitleGen.text = "Androginia"
-                       TextGen.text = "\n\nAndrógines são pessoas cujo gênero está entre mulher e homem, ou cujo gênero é uma mescla de mulher e homem. Ou ainda, podem ser entre/uma mescla de dois outros gêneros, mas geralmente esses ou são os gêneros binários, ou gêneros relacionados a estes gêneros binários. Existem muitas bandeiras para representar andrógines. Uma das mais antigas e populares é dividida em três faixas na vertical. A rosa simboliza feminilidade, a azul masculinidade, e a roxa a mistura entre ambas as qualidades"
+                       TextGen.text = "\n\nAndrógines são pessoas cujo gênero está entre mulher e homem, ou cujo gênero é uma mescla de mulher e homem. Ou ainda, podem ser entre/uma mescla de dois outros gêneros, mas geralmente esses ou são os gêneros binários, ou gêneros relacionados a estes gêneros binários.\nExistem muitas bandeiras para representar andrógines. Uma das mais antigas e populares é dividida em três faixas na vertical. A rosa simboliza feminilidade, a azul masculinidade, e a roxa a mistura entre ambas as qualidades."
+
             
                        genImage.image  = UIImage(named: "Androgine-Pride-Flag.png")
 
                    }
                    if (choice == "2"){
                        TitleGen.text = "Cisgênero"
-                       TextGen.text = "\n\nAlguém que se identifica completamente e pela vida inteira com o mesmo gênero que lhe foi designado ao nascer, e que a princípio possui todas as características corporais esperadas de uma pessoa de tal gênero em sua sociedade. Esta modalidade de gênero é injustamente considerada a padrão em sociedades eurocêntricas ocidentais, e isso gera consequências como pessoas cisdissidentes, ou seja, que não são cis, são mais invalidadas ou questionadas quanto às suas identidades de gênero. Não existe nenhuma bandeira reconhecida como oficial ou amplamente usada para representar pessoas cisgênero."
+                       TextGen.text = "\n\nAlguém que se identifica completamente e pela vida inteira com o mesmo gênero que lhe foi designado ao nascer, e que a princípio possui todas as características corporais esperadas de uma pessoa de tal gênero em sua sociedade.\nEsta modalidade de gênero é injustamente considerada a padrão em sociedades eurocêntricas ocidentais, e isso gera consequências como pessoas cisdissidentes, ou seja, que não são cis, são mais invalidadas ou questionadas quanto às suas identidades de gênero.\nNão existe nenhuma bandeira reconhecida como oficial ou amplamente usada para representar pessoas cisgênero."
+
                                 
                    }
         if (choice == "3"){
             TitleGen.text = "Gênero fluído"
-            TextGen.text = "\n\nPessoas gênero-fluido são pessoas que mudam de gênero de tempos em tempos. As mudanças podem ser:Graduais ou súbitas; constantes ou inconstantes; entre gêneros definidos e/ou indefinidos; entre certos gêneros, e/ou entre gêneros completamente diferentes a cada mudança; influenciadas (por questões como ciclo hormonal, crises, clima, pessoas em volta, etc.) ou não. A bandeira gênero-fluido foi postada em 2012 por JJ Poole no blog nova-pride-flags. Os significados dados às cores são: Rosa: feminilidade Branca: todos os gêneros Roxa: combinação de masculinidade e feminilidade"
+            TextGen.text = "\n\nPessoas gênero-fluido são pessoas que mudam de gênero de tempos em tempos. As mudanças podem ser: Graduais ou súbitas; constantes ou inconstantes; entre gêneros definidos e/ou indefinidos; entre certos gêneros, e/ou entre gêneros completamente diferentes a cada mudança; influenciadas (por questões como ciclo hormonal, crises, clima, pessoas em volta, etc.) ou não. A bandeira gênero-fluido foi postada em 2012 por JJ Poole no blog nova-pride-flags. Os significados dados às cores são:\nRosa: feminilidade\nBranca: todos os gêneros\nRoxa: combinação de masculinidade e feminilidade"
+
                      
             genImage.image  = UIImage(named: "Generofluido.png")
         }
