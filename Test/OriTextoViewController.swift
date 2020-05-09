@@ -18,13 +18,14 @@ class OriTextoViewController: UIViewController {
     
     
     @IBOutlet weak var background: UIScrollView!
+    @IBOutlet weak var backgroundTitle: UIButton!
     
     @IBOutlet weak var bntQuiz: UIButton!
     
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        
+        backgroundTitle.layer.cornerRadius = 15
         background.layer.cornerRadius = 15
         bntQuiz.layer.cornerRadius = 15
         

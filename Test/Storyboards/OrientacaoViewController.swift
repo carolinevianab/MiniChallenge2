@@ -17,10 +17,13 @@ class OrientacaoViewController: UIViewController {
     @IBOutlet weak var Ori6: UIButton!
 
 
+    @IBOutlet weak var backgroundTitle: UIButton!
+    
     var clicado = "";
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        backgroundTitle.layer.cornerRadius = 15
         
         Ori1.layer.cornerRadius = 15
         Ori2.layer.cornerRadius = 15

@@ -83,15 +83,11 @@ class ConquistasViewController: UIViewController {
     @IBOutlet weak var b20: UIButton!
     
     
+    @IBOutlet weak var backgroundTitle: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //super.performSegue(withIdentifier: "welcome", sender: self)
-        //performSegue(withIdentifier: "welcome", sender: self)
-
-        /*
-        if UD == false{
-            performSegue(withIdentifier: "BemVindo", sender: self)
-        }*/
+        backgroundTitle.layer.cornerRadius = 15
 
         b1.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)
         b2.addTarget(self, action: #selector(defineClicked), for: .touchUpInside)

@@ -20,8 +20,11 @@ class GeneroViewController: UIViewController {
     
     var clicado = "";
     
+    @IBOutlet weak var backgroundTitle: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundTitle.layer.cornerRadius = 15
         
         Gen1.layer.cornerRadius = 15
         Gen2.layer.cornerRadius = 15

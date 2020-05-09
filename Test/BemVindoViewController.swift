@@ -15,10 +15,12 @@ class BemVindoViewController: UIViewController {
     
     
     @IBOutlet weak var background: UIButton!
+    @IBOutlet weak var backgroundTitle: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
         background.layer.cornerRadius = 15
+        backgroundTitle.layer.cornerRadius = 15
         button.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
     }

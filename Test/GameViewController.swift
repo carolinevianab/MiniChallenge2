@@ -39,6 +39,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var background: UIImageView!
     
+    @IBOutlet weak var backgroundTitle: UIButton!
     
     
     var choice = ""
@@ -53,6 +54,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         background.layer.cornerRadius = 15
+        backgroundTitle.layer.cornerRadius = 15
         
         lblGotRight.isEnabled = false
         correctTotal.isEnabled = false

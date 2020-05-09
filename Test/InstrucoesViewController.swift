@@ -23,10 +23,11 @@ class InstrucoesViewController: UIViewController {
     
     @IBOutlet weak var backgroundTitle1: UIButton!
     @IBOutlet weak var backgroundTitle2: UIButton!
+    @IBOutlet weak var backgroundTitle: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        backgroundTitle.layer.cornerRadius = 15
         backgroundTitle1.layer.cornerRadius = 15
         backgroundText1.layer.cornerRadius = 15
         backgroundTitle2.layer.cornerRadius = 15
@@ -39,13 +40,13 @@ class InstrucoesViewController: UIViewController {
     
     func instanceLabel(countF : Int){
         
-        let titles = ["Cards", "Card Desbloqueado", "Quiz", "Jogos", "Medalhas", "Áudio"]
+        let titles = ["Cards", "Card Desbloqueado", "Quiz", "Jogos", "Medalhas", "Informações"]
         let texts = ["Nas janelas Gêneros e Orientações, você encontrará diversos cards        bloqueados, cada card contém informações sobre um tipo de orientação sexual     ou identidade de gênero, você pode desbloqueá-los apenas clicando sobre uma     das bandeiras de interrogação.",
             "Ao desbloquear um card, ele abrirá com algumas informações sobre a orientação sexual/identidade de gênero e sua(s) bandeira(s), basta deslizar para o lado para ler todas as informações e deslizar para baixo para fechá-lo.",
             "Ao terminar de ler todas as informações sobre a orientação sexual/identidade de gênero será apresentado um quiz para testar os conhecimentos que você acabou de adquirir. Prestou atenção no que leu?",
             "Ao desbloquear todos os cards de orientações sexuais ou/e identidades de gênero será desbloqueado um jogo sobre o tema. Basta lembrar do que leu para conseguir completá-los!",
             "Você receberá medalhas ao desbloquear cards e completar os jogos, para ver suas conquistas basta clicar no ícone de medalhas.",
-            "Todas as informações podem ser ouvidas ao clicar no ícone de áudio. Cuidado com o volume!"]
+            "Para ler mais curiosidades e detalhes do aplicativo clique no ícone 'sobre o app'"]
         
         
             if countF == 0{

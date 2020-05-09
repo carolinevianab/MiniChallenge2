@@ -37,10 +37,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1190"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAV-oP-TEE">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TIU-mH-Nd0">
                                 <rect key="frame" x="36.5" y="76" width="340" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Conquistas">
                                         <attributes>
@@ -178,7 +186,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="20" image="20"/>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="181-6f-qrr">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="181-6f-qrr">
                                                 <rect key="frame" x="89" y="17" width="236" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
@@ -198,7 +206,7 @@
                                             <constraint firstAttribute="height" constant="935" id="XBH-dc-gSZ"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Nl-V5-qPQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Nl-V5-qPQ">
                                         <rect key="frame" x="26" y="893" width="362" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <attributedString key="attributedText">
@@ -256,6 +264,7 @@
                         <outlet property="b7" destination="ide-me-5RU" id="ZyR-OW-Ie1"/>
                         <outlet property="b8" destination="QH7-kT-p85" id="imw-hW-SaF"/>
                         <outlet property="b9" destination="6NU-Yh-uNa" id="cEw-sW-EWR"/>
+                        <outlet property="backgroundTitle" destination="sAV-oP-TEE" id="oX9-2r-VjV"/>
                         <segue destination="u70-vN-WQM" kind="show" identifier="SegueAr" id="b9M-TP-CUF"/>
                     </connections>
                 </viewController>
@@ -276,10 +285,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdb-gb-J42">
+                                <rect key="frame" x="36.5" y="59" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Got-mH-dLC">
                                 <rect key="frame" x="36" y="59" width="342" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Conquista 1">
                                         <attributes>
@@ -322,6 +339,7 @@
                     <navigationItem key="navigationItem" id="QTi-Gf-5oj"/>
                     <connections>
                         <outlet property="background" destination="Gsi-Fm-QMq" id="3LY-ba-HGh"/>
+                        <outlet property="backgroundTitle" destination="Zdb-gb-J42" id="Euy-o4-4NC"/>
                         <outlet property="image" destination="3gg-C8-WG4" id="ard-93-2zc"/>
                         <outlet property="textAc" destination="pTw-Ob-GhZ" id="jfS-gx-Rwz"/>
                         <outlet property="titleAc" destination="Got-mH-dLC" id="P3E-9v-7AG"/>
@@ -339,10 +357,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtB-qV-zwi">
+                                <rect key="frame" x="36" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qhR-if-Vut">
                                 <rect key="frame" x="36.5" y="76" width="340" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Identidade de gênero">
                                         <attributes>
@@ -354,7 +380,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tMc-vY-Q9d">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tMc-vY-Q9d">
                                 <rect key="frame" x="76" y="167" width="263" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
@@ -494,6 +520,7 @@
                         <outlet property="Gen6" destination="6fn-lk-JrY" id="kEX-Z5-klH"/>
                         <outlet property="Gen7" destination="ebD-XP-aeB" id="QGb-fs-HCY"/>
                         <outlet property="Gen8" destination="cMl-Di-sCS" id="6oA-di-a8t"/>
+                        <outlet property="backgroundTitle" destination="rtB-qV-zwi" id="U08-vk-rSd"/>
                         <segue destination="Of8-FE-FMr" kind="show" identifier="segue3" id="8WS-dI-faE"/>
                     </connections>
                 </viewController>
@@ -509,10 +536,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ghk-mc-2SW">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrJ-CH-46r">
                                 <rect key="frame" x="36.5" y="76" width="340" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ghk-mc-2SW">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Orientação sexual">
                                         <attributes>
@@ -524,7 +559,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F3Q-DK-UtF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F3Q-DK-UtF">
                                 <rect key="frame" x="76" y="167" width="263" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
@@ -636,6 +671,7 @@
                         <outlet property="Ori4" destination="DbY-mh-QnZ" id="4hO-v1-7qM"/>
                         <outlet property="Ori5" destination="m52-MD-pOD" id="D2n-T0-Qxa"/>
                         <outlet property="Ori6" destination="KW6-8x-GoK" id="bCg-xO-Jc8"/>
+                        <outlet property="backgroundTitle" destination="ZrJ-CH-46r" id="CZ9-Xk-jAf"/>
                         <segue destination="NCV-ca-0Gz" kind="show" identifier="segue2" id="dM9-6a-VtA"/>
                     </connections>
                 </viewController>
@@ -775,10 +811,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="548-Gm-MdY">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxc-Ig-7sf">
                                 <rect key="frame" x="36.5" y="76" width="340" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="548-Gm-MdY">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Jogos">
                                         <attributes>
@@ -797,6 +841,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Jogos" image="Jogos" selectedImage="Jogos" id="BbO-z6-2Or"/>
                     <connections>
+                        <outlet property="backgroundTitle" destination="vxc-Ig-7sf" id="ES7-jq-dBL"/>
                         <outlet property="button1" destination="QuH-eb-oU0" id="xAg-1m-3JP"/>
                         <outlet property="button2" destination="4PO-Xa-fHs" id="c0x-TR-Wc7"/>
                         <outlet property="button3" destination="XoV-49-yVo" id="QS9-pI-UAm"/>
@@ -817,10 +862,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3R-31-nnt">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rVa-3k-jC7">
                                 <rect key="frame" x="36.5" y="76" width="340" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sobre o app">
                                         <attributes>
@@ -842,7 +895,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Orientity é a mistura das palavras “orientation” (orientação) e “identity” 
+                                        <mutableString key="content">Orientity é a mistura das palavras “orientation” (orientação) e “identity” 
 (identidade).
 
 Nosso objetivo é ensinar um pouco mais sobre alguns tipos de orientações 
@@ -850,9 +903,9 @@ sexuais e identidades de gênero. Temas importantes que não costumam ser aborda
 
 Nosso objetivo é ensinar um pouco mais sobre alguns tipos de Orientações Sexuais e Identidades de Gênero. Temas importantes que não costumam ser abordados nas escolas ou em casa, e muitas vezes, por causa de preconceitos ou desconhecimento, as poucas informações passadas não são totalmente verídicas. 
 
-Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas sobre o assunto em um ambiente em que se sintam seguras e confortáveis. E assim, quem sabe, repassar esse conhecimento.</string>
+Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas sobre o assunto em um ambiente em que se sintam seguras e confortáveis. E assim, quem sabe, repassar esse conhecimento.</mutableString>
                                         <attributes>
-                                            <color key="NSColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="17" name="SFProDisplay-Regular"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -874,6 +927,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                     <tabBarItem key="tabBarItem" title="Sobre o app" image="Sobre o app" id="JNa-V7-28L"/>
                     <connections>
                         <outlet property="background" destination="T6q-eh-uXE" id="Rar-5B-kZB"/>
+                        <outlet property="backgroundTitle" destination="e3R-31-nnt" id="zT1-nl-ghB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRA-eM-dr8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -888,10 +942,18 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Gy-3A-Qja">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjA-pn-Q9X">
                                 <rect key="frame" x="36.5" y="76" width="340" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Gy-3A-Qja">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
                                 <color key="textColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1049,6 +1111,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                     <connections>
                         <outlet property="backToStart" destination="QQr-yK-L3z" id="bMZ-8R-bNc"/>
                         <outlet property="background" destination="4xt-GK-DtA" id="QMd-C1-Ash"/>
+                        <outlet property="backgroundTitle" destination="hjA-pn-Q9X" id="JTJ-9I-rff"/>
                         <outlet property="congrats" destination="SfJ-rE-4Bu" id="sLl-mi-Rj1"/>
                         <outlet property="correctTotal" destination="qLC-KW-KJ1" id="UvH-ow-epb"/>
                         <outlet property="gameImage" destination="vhP-Uh-g5p" id="F89-ur-CGG"/>
@@ -1075,10 +1138,18 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da identidade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gjq-YN-zfz">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQx-Vb-FcW">
                                 <rect key="frame" x="36.5" y="76" width="340" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da identidade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gjq-YN-zfz">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
                                 <color key="textColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -1135,6 +1206,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                         <outlet property="TextoOri" destination="8Mz-zZ-Ksd" id="3kh-1N-y2x"/>
                         <outlet property="TituloOri" destination="Gjq-YN-zfz" id="Bt2-Wm-bmf"/>
                         <outlet property="background" destination="alZ-N7-Skc" id="mrf-CD-IDG"/>
+                        <outlet property="backgroundTitle" destination="GQx-Vb-FcW" id="Of8-LN-eAd"/>
                         <outlet property="bntQuiz" destination="7rN-di-j2e" id="c0a-sG-IrD"/>
                         <outlet property="oriImage" destination="mdW-5m-O6A" id="xXX-dV-wGz"/>
                         <segue destination="mAS-EX-OWe" kind="presentation" identifier="segueQuiz" id="MVF-Q9-2fd"/>
@@ -1152,10 +1224,18 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da orientação" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Op-cv-fQ7">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="um7-wx-DSO">
                                 <rect key="frame" x="36.5" y="76" width="340" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da orientação" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Op-cv-fQ7">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
                                 <color key="textColor" red="1" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -1212,6 +1292,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                         <outlet property="TextoOri" destination="wkX-9H-gsO" id="sPO-Kb-4uC"/>
                         <outlet property="TituloOri" destination="0Op-cv-fQ7" id="p9N-ia-r4T"/>
                         <outlet property="background" destination="xbc-h5-PdQ" id="lQK-2o-uvW"/>
+                        <outlet property="backgroundTitle" destination="um7-wx-DSO" id="nXh-mB-0vk"/>
                         <outlet property="bntQuiz" destination="RTS-dX-E0g" id="SS1-3W-g5e"/>
                         <outlet property="oriImage" destination="kWA-zx-21l" id="1vO-CF-DYh"/>
                         <segue destination="4O5-Gz-mU5" kind="presentation" identifier="segueQuiz2" id="Zh8-ah-UlM"/>
@@ -1229,10 +1310,18 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2C1-am-ZHD">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOh-Cj-nKk">
                                 <rect key="frame" x="36.5" y="76" width="340" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2C1-am-ZHD">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
                                 <color key="textColor" red="0.99215686274509807" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1334,6 +1423,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                     <navigationItem key="navigationItem" id="dav-pC-biK"/>
                     <connections>
                         <outlet property="background" destination="NAl-5O-ku0" id="MSP-pf-FpZ"/>
+                        <outlet property="backgroundTitle" destination="LOh-Cj-nKk" id="4OE-Gv-p4J"/>
                         <outlet property="gameImage" destination="bul-1T-jzA" id="FSh-Gz-Bb7"/>
                         <outlet property="gameTitle" destination="2C1-am-ZHD" id="iSj-7z-Tm7"/>
                         <outlet property="lblQuestion" destination="OVB-Uv-1FZ" id="xfO-DA-QLb"/>
@@ -1357,10 +1447,18 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cBo-qT-q6m">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FO-hr-otU">
                                 <rect key="frame" x="36.5" y="76" width="340" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cBo-qT-q6m">
+                                <rect key="frame" x="36.5" y="76" width="340" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
                                 <color key="textColor" red="0.99215686274509807" green="0.41176470588235292" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1462,6 +1560,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                     <navigationItem key="navigationItem" id="zej-y6-6xC"/>
                     <connections>
                         <outlet property="background" destination="LR1-eE-sJX" id="RQu-xt-zff"/>
+                        <outlet property="backgroundTitle" destination="3FO-hr-otU" id="fVY-i4-suy"/>
                         <outlet property="gameImage" destination="ncr-XJ-LDu" id="oUM-xh-1tc"/>
                         <outlet property="gameTitle" destination="cBo-qT-q6m" id="03n-sV-Bew"/>
                         <outlet property="lblQuestion" destination="eEn-N0-5Bg" id="ee1-Gc-xnR"/>
