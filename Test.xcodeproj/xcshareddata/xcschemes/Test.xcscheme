@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A88C8EDF2433B6DB00BC6847"
-               BuildableName = "Test.app"
+               BuildableName = "Orientity.app"
                BlueprintName = "Test"
                ReferencedContainer = "container:Test.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A88C8EDF2433B6DB00BC6847"
-            BuildableName = "Test.app"
+            BuildableName = "Orientity.app"
             BlueprintName = "Test"
             ReferencedContainer = "container:Test.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A88C8EDF2433B6DB00BC6847"
-            BuildableName = "Test.app"
+            BuildableName = "Orientity.app"
             BlueprintName = "Test"
             ReferencedContainer = "container:Test.xcodeproj">
          </BuildableReference>

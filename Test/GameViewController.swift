@@ -37,6 +37,9 @@ class GameViewController: UIViewController {
     @IBOutlet weak var congrats: UILabel!
     @IBOutlet weak var backToStart: UIButton!
     
+    @IBOutlet weak var background: UIImageView!
+    
+    @IBOutlet weak var backgroundTitle: UIButton!
     
     
     var choice = ""
@@ -50,6 +53,8 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        background.layer.cornerRadius = 15
+        backgroundTitle.layer.cornerRadius = 15
         
         lblGotRight.isEnabled = false
         correctTotal.isEnabled = false
@@ -84,10 +89,13 @@ class GameViewController: UIViewController {
         resp4.titleLabel?.textAlignment = .left
         
         
-        nextQuestion.setTitleColor(#colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1), for: .disabled)
-        nextQuestion.setTitleColor(.black, for: .normal)
-        nextQuestion.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
+        //nextQuestion.setTitleColor(#colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1), for: .disabled)
+        //nextQuestion.setTitleColor(.black, for: .normal)
+        //nextQuestion.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
+        nextQuestion.isHidden = true
         nextQuestion.isEnabled = false
+        
+        
         
         //Dependendo do valor de escolha, ativa um jogo diferente
         // Se escolha = 1, botão 1 quem foi clicado
@@ -565,14 +573,12 @@ class GameViewController: UIViewController {
     }
     
     @objc func rightAnswer(sender: UIButton){
-        quitGame.isEnabled = false
-        quitGame.isHidden = true
         
         if sender.accessibilityIdentifier == correct {
-            sender.backgroundColor = .green
+            sender.backgroundColor = #colorLiteral(red: 0.431372549, green: 0.8549019608, blue: 0.4705882353, alpha: 1)
             sender.setTitleColor(.black, for: .normal)
             nextQuestion.isEnabled = true
-            nextQuestion.backgroundColor = .white
+            nextQuestion.isHidden = false
             resp1.isEnabled = false
             resp2.isEnabled = false
             resp3.isEnabled = false
@@ -585,7 +591,7 @@ class GameViewController: UIViewController {
     
     @objc func wrongAnswer(sender: UIButton){
         if sender.accessibilityIdentifier != correct {
-            sender.backgroundColor = .red
+            sender.backgroundColor = #colorLiteral(red: 1, green: 0.4117647059, blue: 0.3803921569, alpha: 1)
             sender.setTitleColor(.white, for: .normal)
             if correctAnswers == aux {
                 correctAnswers -= 1
@@ -600,7 +606,7 @@ class GameViewController: UIViewController {
         resp2.isEnabled = true
         resp3.isEnabled = true
         resp4.isEnabled = true
-        nextQuestion.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.8588235294, blue: 0.3568627451, alpha: 1)
+        nextQuestion.isHidden = true
         
         answered += 1
         
@@ -618,14 +624,7 @@ class GameViewController: UIViewController {
         }
         
     }
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if end == true{
-            let vc = segue.destination as! FinalViewController
-            vc.total = String(correctAnswers)
-        }
-    }
-    */
+    
     func ending(){
         gameTitle.text = "Resultados"
         lblQuestion.isEnabled = false
@@ -634,6 +633,7 @@ class GameViewController: UIViewController {
         resp3.isEnabled = false
         resp4.isEnabled = false
         nextQuestion.isEnabled = false
+        quitGame.isEnabled = false
         gameImage.isHidden = true
         lblQuestion.isHidden = true
         resp1.isHidden = true
@@ -641,6 +641,7 @@ class GameViewController: UIViewController {
         resp3.isHidden = true
         resp4.isHidden = true
         nextQuestion.isHidden = true
+        quitGame.isHidden = true
         
         lblGotRight.isEnabled = true
         correctTotal.isEnabled = true
@@ -662,7 +663,7 @@ class GameViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
         
         if(isBeingDismissed == true){
-            let a = ConquistasViewController()
+            let a = AchievementScreenViewController()
             
             if choice == "1"{
                 if(correctAnswers >= 4){
