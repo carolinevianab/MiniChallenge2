@@ -19,6 +19,11 @@ class QuizOrViewController: UIViewController {
        @IBOutlet weak var gameImage: UIImageView!
        @IBOutlet weak var nextQ: UIButton!
        @IBOutlet weak var gameTitle: UILabel!
+    
+    
+    @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var backgroundTitle: UIButton!
+    
        var choice = ""
        var correct = ""
        var correctAnswers = 0
@@ -26,31 +31,33 @@ class QuizOrViewController: UIViewController {
        var i = 0
        var answered = 0
 
-       override func viewDidLoad() {
-           super.viewDidLoad()
-           
-           resp1.layer.cornerRadius = 15
-           resp2.layer.cornerRadius = 15
-           resp3.layer.cornerRadius = 15
-           resp4.layer.cornerRadius = 15
-           quitGame.layer.cornerRadius = 15
-           nextQ.layer.cornerRadius = 15
-           quitGame.layer.cornerRadius = 15
-           
-           resp1.layer.borderWidth = 1
-           resp2.layer.borderWidth = 1
-           resp3.layer.borderWidth = 1
-           resp4.layer.borderWidth = 1
-           
-           resp1.layer.borderColor = UIColor.gray.cgColor
-           resp2.layer.borderColor = UIColor.gray.cgColor
-           resp3.layer.borderColor = UIColor.gray.cgColor
-           resp4.layer.borderColor = UIColor.gray.cgColor
-           
-           resp1.titleLabel?.textAlignment = .left
-           resp2.titleLabel?.textAlignment = .left
-           resp3.titleLabel?.textAlignment = .left
-           resp4.titleLabel?.textAlignment = .left
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            background.layer.cornerRadius = 15
+            backgroundTitle.layer.cornerRadius = 15
+            
+            // Botão bonito
+            resp1.layer.cornerRadius = 15
+            resp2.layer.cornerRadius = 15
+            resp3.layer.cornerRadius = 15
+            resp4.layer.cornerRadius = 15
+            quitGame.layer.cornerRadius = 15
+            nextQ.layer.cornerRadius = 15
+            
+            resp1.layer.borderWidth = 1
+            resp2.layer.borderWidth = 1
+            resp3.layer.borderWidth = 1
+            resp4.layer.borderWidth = 1
+            
+            resp1.layer.borderColor = UIColor.gray.cgColor
+            resp2.layer.borderColor = UIColor.gray.cgColor
+            resp3.layer.borderColor = UIColor.gray.cgColor
+            resp4.layer.borderColor = UIColor.gray.cgColor
+            
+            resp1.titleLabel?.textAlignment = .left
+            resp2.titleLabel?.textAlignment = .left
+            resp3.titleLabel?.textAlignment = .left
+            resp4.titleLabel?.textAlignment = .left
 
            // Do any additional setup after loading the view.
            if (choice == "1"){
@@ -159,7 +166,7 @@ class QuizOrViewController: UIViewController {
        
        func homosexual(){
            let questionsQuiz =
-           [                Questions(Question: "Uma pessoa homossexual…",
+           [Questions(Question: "Uma pessoa homossexual…",
                      Answer1: "Sente atração pelo mesmo gênero",
                      Answer2: "Sente atração por dois ou mais gêneros",
                      Answer3: "Sente atração pelo gênero oposto",
@@ -186,23 +193,21 @@ class QuizOrViewController: UIViewController {
        
        func pansexual(){
            let questionsQuiz =
-               [
-           
-                    Questions(Question: "Qual a característica da sexualidade pansexual?",
-                                            Answer1: "Sente atração por pessoas de qualquer identidade de gênero",
-                                            Answer2: "Sente atração por dois ou mais gêneros",
-                                            Answer3: "Alguém que sente atração pelo gênero oposto",
-                                            Answer4: "Nenhuma das alternativas",
-                                            correctAnswer: "1",
-                                            ImageName: "Pansexual-Pride-Flag.png"),
+               [Questions(Question: "Qual a característica da sexualidade pansexual?",
+                    Answer1: "Sente atração por pessoas de qualquer identidade de gênero",
+                    Answer2: "Sente atração por dois ou mais gêneros",
+                    Answer3: "Alguém que sente atração pelo gênero oposto",
+                    Answer4: "Nenhuma das alternativas",
+                    correctAnswer: "1",
+                    ImageName: "Pansexual-Pride-Flag.png"),
                                       
-                                  Questions(Question: "O que a cor amarela da bandeira pansexual significa?",
-                                            Answer1: "Comunidade",
-                                            Answer2: "Uma das cores do arco-íris",
-                                            Answer3: "Sexualidade",
-                                            Answer4: "Atração sexual daqueles que se identificam como não-binários, andróginos, agêneros e gênero-fluído",
-                                            correctAnswer: "4",
-                                            ImageName: "Pansexual-Pride-Flag.png")]
+                Questions(Question: "O que a cor amarela da bandeira pansexual significa?",
+                    Answer1: "Comunidade",
+                    Answer2: "Uma das cores do arco-íris",
+                    Answer3: "Sexualidade",
+                    Answer4: "Atração sexual daqueles que se identificam como não-binários, andróginos, agêneros e gênero-fluído",
+                    correctAnswer: "4",
+                    ImageName: "Pansexual-Pride-Flag.png")]
            
            if answered < 2{
                setQuiz(question: questionsQuiz[i].Question, answer1: questionsQuiz[i].Answer1, answer2: questionsQuiz[i].Answer2, answer3: questionsQuiz[i].Answer3, answer4: questionsQuiz[i].Answer4, correctAnswer: questionsQuiz[i].correctAnswer, ImageName: questionsQuiz[i].ImageName)        }
@@ -274,11 +279,9 @@ class QuizOrViewController: UIViewController {
        }
        
        @objc func rightAnswer(sender: UIButton){
-           quitGame.isEnabled = false
-           quitGame.isHidden = true
            
            if sender.accessibilityIdentifier == correct {
-               sender.backgroundColor = .green
+               sender.backgroundColor = #colorLiteral(red: 0.431372549, green: 0.8549019608, blue: 0.4705882353, alpha: 1)
                sender.setTitleColor(.black, for: .normal)
                nextQ.isEnabled = true
                nextQ.isHidden = false
@@ -295,7 +298,7 @@ class QuizOrViewController: UIViewController {
        
        @objc func wrongAnswer(sender: UIButton){
            if sender.accessibilityIdentifier != correct {
-               sender.backgroundColor = .red
+               sender.backgroundColor = #colorLiteral(red: 1, green: 0.4117647059, blue: 0.3803921569, alpha: 1)
                sender.setTitleColor(.white, for: .normal)
                if correctAnswers == aux {
                    correctAnswers -= 1
@@ -315,7 +318,6 @@ class QuizOrViewController: UIViewController {
            answered += 1
            
            if (choice == "1"){
-                         gameTitle.text = "Androginia"
                          Assexual()
                      }
                      if (choice == "2"){
@@ -342,7 +344,7 @@ class QuizOrViewController: UIViewController {
            self.dismiss(animated: true, completion: nil)
         
         if(isBeingDismissed == true){
-            let a = ConquistasViewController()
+            let a = AchievementScreenViewController()
             if(correctAnswers >= 2){
                 if (choice == "1"){
                     a.b1Active = true
@@ -378,17 +380,5 @@ class QuizOrViewController: UIViewController {
 
         }
        }
-       
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

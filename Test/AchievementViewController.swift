@@ -24,12 +24,15 @@ class AchievementViewController: UIViewController {
     @IBOutlet weak var textAc: UILabel!
     @IBOutlet weak var image: UIImageView!
     
+    @IBOutlet weak var background: UIButton!
+    @IBOutlet weak var backgroundTitle: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Aqui entram os textos e imagens das conquistas, deixei os números iguais (se vc clicar no botao 1, abre titulo 1 e por ai vai) pra ficar mais fácil de definir as coisas
-        // Pra colocar imagem, arrasta ela pra dentro do projeto e coloca o nome dela na parte "image:", eu deixei uma imagem chamada "blank.png" porque ele quebra se deixar vazio
+        background.layer.cornerRadius = 15
+        backgroundTitle.layer.cornerRadius = 15
+        
         let data =
             [Achievement(name: "Conquista 1", image: "ace.png", description: "Parabéns! Você desbloqueou a orientação sexual assexual!"),
         
@@ -62,16 +65,13 @@ class AchievementViewController: UIViewController {
             
             Achievement(name: "Conquista 16", image: "16b.png", description: "Parabéns! Você desbloqueou todas as identidades de gênero!"),
             
-            Achievement(name: "Conquista 17", image: "17b.png", description: "tParabéns! Você concluiu o jogo sobre orientações sexuais!"),
+            Achievement(name: "Conquista 17", image: "17b.png", description: "Parabéns! Você concluiu o jogo sobre orientações sexuais!"),
             
             Achievement(name: "Conquista 18", image: "18b.png", description: "Parabéns! Você concluiu o jogo sobre identidades de gênero!"),
             
             Achievement(name: "Conquista 19", image: "19b.png", description: "Parabéns! Você concluiu o jogo sobre perguntas gerais!"),
             
-            Achievement(name: "Conquista 20", image: "20b.png", description: "Parabéns! Você concluiu todos os jogo!"),
-            
-            
-        ]
+            Achievement(name: "Conquista 20", image: "20b.png", description: "Parabéns! Você concluiu todos os jogo!")]
         
         intSelected = Int(selected)!
         intSelected -= 1

@@ -15,9 +15,13 @@ class GameScreenViewController: UIViewController {
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button4: UIButton!
     
+    @IBOutlet weak var backgroundTitle: UIButton!
+    
     var clicked = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundTitle.layer.cornerRadius = 15
         
         // Botão bonito
         button1.layer.cornerRadius = 15
