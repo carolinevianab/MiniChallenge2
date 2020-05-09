@@ -59,7 +59,6 @@ class QuizIdViewController: UIViewController {
         resp3.titleLabel?.textAlignment = .left
         resp4.titleLabel?.textAlignment = .left
 
-        // Do any additional setup after loading the view.
         if (choice == "1"){
             gameTitle.text = "Androginia"
             Androgine()
@@ -123,9 +122,7 @@ class QuizIdViewController: UIViewController {
     
     func nonBinary(){
         let questionsQuiz =
-        [
-            
-            Questions(Question: "Qual a característica da identidade de gênero não binário?",
+        [Questions(Question: "Qual a característica da identidade de gênero não binário?",
                       Answer1: "Pessoas que mudam de gênero de tempos em tempos",
                       Answer2: "Ausência de gênero, gênero neutro, ou ausência de identidade de gênero.",
                       Answer3: "Alguém que se identifica com um gênero diferente do que lhe foi designado ao nascer",
@@ -151,9 +148,7 @@ class QuizIdViewController: UIViewController {
     
     func Androgine(){
         let questionsQuiz =
-        [
-            
-            Questions(Question: "O que é uma pessoa andrógina?",
+        [Questions(Question: "O que é uma pessoa andrógina?",
                       Answer1: "Pessoa cujo gênero está entre mulher e homem / é uma mescla de mulher e homem",
                       Answer2: "Pessoa que mudam de gênero de tempos em tempos",
                       Answer3: "Pessoa que se identifica e possui todas as características do gênero que lhe foi designado ao nascer",
@@ -178,8 +173,7 @@ class QuizIdViewController: UIViewController {
     
     func queer(){
         let questionsQuiz =
-        [
-        Questions(Question: "O que a cor verde da bandeira queer significa?",
+        [Questions(Question: "O que a cor verde da bandeira queer significa?",
                   Answer1: "Fluidez e multiplicidade das experiências de gênero",
                   Answer2: "Combinação dos gêneros binários",
                   Answer3: "Aqueles que estão em transição",
@@ -205,9 +199,7 @@ class QuizIdViewController: UIViewController {
     
     func genderFluid(){
         let questionsQuiz =
-            [
-        
-                Questions(Question: "O que a cor branca da bandeira gênero fluido significa?",
+            [Questions(Question: "O que a cor branca da bandeira gênero fluido significa?",
                           Answer1: "Todos os gêneros",
                           Answer2: "Combinação dos gêneros binários",
                           Answer3: "Mistura entre as qualidades femininas e masculinas",
@@ -233,9 +225,7 @@ class QuizIdViewController: UIViewController {
     
     func cisgender(){
         let questionsQuiz =
-        [
-                
-                   Questions(Question: "Qual a característica da identidade de gênero cisgênero?",
+            [Questions(Question: "Qual a característica da identidade de gênero cisgênero?",
                              Answer1: "Pessoas que mudam de gênero de tempos em tempos",
                              Answer2: "Ausência de gênero, gênero neutro, ou ausência de identidade de gênero.",
                              Answer3: "Alguem que identifica e possui todas as características do gênero que lhe foi designado ao nascer",
@@ -253,9 +243,7 @@ class QuizIdViewController: UIViewController {
     
     func intergender(){
         let questionsQuiz =
-            [
-        
-                        Questions(Question: "O que a cor cinza da bandeira intergênero significa?",
+            [Questions(Question: "O que a cor cinza da bandeira intergênero significa?",
                                   Answer1: "Ser agênero ou sem gênero",
                                   Answer2: "Gradiente entre os gêneros binários",
                                   Answer3: "Todos os gêneros",
@@ -281,9 +269,7 @@ class QuizIdViewController: UIViewController {
     
     func transgender(){
         let questionsQuiz =
-        [
-                        
-                        Questions(Question: "O que a cor branca da bandeira transgênero significa?",
+        [Questions(Question: "O que a cor branca da bandeira transgênero significa?",
                                   Answer1: "Fluidez e multiplicidade das experiências de gênero",
                                   Answer2: "Combinação dos gêneros binários",
                                   Answer3: "Aqueles que estão em transição",
@@ -306,7 +292,6 @@ class QuizIdViewController: UIViewController {
         }
 
     }
-    
     
     func setQuiz (question: String, answer1: String, answer2: String, answer3: String, answer4: String, correctAnswer: String, ImageName: String){
         
@@ -422,7 +407,7 @@ class QuizIdViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
         
         if(isBeingDismissed == true){
-            let a = ConquistasViewController()
+            let a = AchievementScreenViewController()
             if(correctAnswers >= 2){
                 if (choice == "1"){
                     a.b8Active = true
@@ -466,16 +451,5 @@ class QuizIdViewController: UIViewController {
             
         }
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

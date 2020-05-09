@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BemVindoViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
     var WelC : Bool!
@@ -22,7 +22,7 @@ class BemVindoViewController: UIViewController {
         background.layer.cornerRadius = 15
         backgroundTitle.layer.cornerRadius = 15
         button.layer.cornerRadius = 15
-        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func button(_ sender: Any) {
@@ -30,7 +30,7 @@ class BemVindoViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! InstrucoesViewController
+        let vc = segue.destination as! InstructionsViewController
         vc.Welcome = WelC
         
     }

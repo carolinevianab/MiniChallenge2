@@ -663,7 +663,7 @@ class GameViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
         
         if(isBeingDismissed == true){
-            let a = ConquistasViewController()
+            let a = AchievementScreenViewController()
             
             if choice == "1"{
                 if(correctAnswers >= 4){

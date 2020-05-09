@@ -344,7 +344,7 @@ class QuizOrViewController: UIViewController {
            self.dismiss(animated: true, completion: nil)
         
         if(isBeingDismissed == true){
-            let a = ConquistasViewController()
+            let a = AchievementScreenViewController()
             if(correctAnswers >= 2){
                 if (choice == "1"){
                     a.b1Active = true

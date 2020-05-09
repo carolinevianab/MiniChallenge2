@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GeneroViewController: UIViewController {
+class GenderViewController: UIViewController {
 
     @IBOutlet weak var Gen1: UIButton!
     @IBOutlet weak var Gen2: UIButton!
@@ -18,7 +18,7 @@ class GeneroViewController: UIViewController {
     @IBOutlet weak var Gen7: UIButton!
     @IBOutlet weak var Gen8: UIButton!
     
-    var clicado = "";
+    var clicked = "";
     
     @IBOutlet weak var backgroundTitle: UIButton!
     override func viewDidLoad() {
@@ -38,32 +38,32 @@ class GeneroViewController: UIViewController {
 
 
     @IBAction func bntGen1(_ sender: Any) {
-        self.clicado = "1"
+        self.clicked = "1"
         performSegue(withIdentifier: "segue3", sender: self)
            Gen1.setBackgroundImage(UIImage(named: "Androgine-Pride-Flag.png"), for: UIControl.State.normal)
         Gen1.setTitle("", for:.normal)
            Gen1.setTitle("", for:.normal)
     }
     @IBAction func bntGen2(_ sender: Any) {
-        self.clicado = "2"
+        self.clicked = "2"
         performSegue(withIdentifier: "segue3", sender: self)
         Gen2.setTitle("", for:.normal)
         Gen2.layer.cornerRadius = 0
     }
     @IBAction func bntGen3(_ sender: Any) {
-        self.clicado = "3"
+        self.clicked = "3"
         performSegue(withIdentifier: "segue3", sender: self)
          Gen3.setBackgroundImage(UIImage(named: "Generofluido.png"), for: UIControl.State.normal)
         Gen3.setTitle("", for:.normal)
     }
     @IBAction func bntGen4(_ sender: Any) {
-        self.clicado = "4"
+        self.clicked = "4"
         performSegue(withIdentifier: "segue3", sender: self)
          Gen4.setBackgroundImage(UIImage(named: "Nao binario.png"), for: UIControl.State.normal)
         Gen4.setTitle("", for:.normal)
     }
     @IBAction func bntGen5(_ sender: Any) {
-           self.clicado = "5"
+           self.clicked = "5"
            performSegue(withIdentifier: "segue3", sender: self)
          Gen5.setBackgroundImage(UIImage(named: "Intergenero.png"), for: UIControl.State.normal)
         Gen5.setTitle("", for:.normal)
@@ -72,20 +72,20 @@ class GeneroViewController: UIViewController {
 
        }
     @IBAction func bntGen6(_ sender: Any) {
-           self.clicado = "6"
+           self.clicked = "6"
            performSegue(withIdentifier: "segue3", sender: self)
          Gen6.setBackgroundImage(UIImage(named: "Queer-Pride-Flag.png"), for: UIControl.State.normal)
         Gen6.setTitle("", for:.normal)
 
        }
     @IBAction func bntGen7(_ sender: Any) {
-           self.clicado = "7"
+           self.clicked = "7"
            performSegue(withIdentifier: "segue3", sender: self)
          Gen7.setBackgroundImage(UIImage(named: "Transgender-Pride-Flag.png"), for: UIControl.State.normal)
         Gen7.setTitle("", for:.normal)
        }
     @IBAction func bntGen8(_ sender: Any) {
-           self.clicado = "8"
+           self.clicked = "8"
            performSegue(withIdentifier: "segue3", sender: self)
          Gen8.setBackgroundImage(UIImage(named: "Agender-Pride-Flag.png"), for: UIControl.State.normal)
         Gen8.setTitle("", for:.normal)
@@ -94,7 +94,7 @@ class GeneroViewController: UIViewController {
     
     // Envia para a próxima view qual foi o botão clicado
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           let vc = segue.destination as! GTextoViewController
-           vc.choice = clicado
+           let vc = segue.destination as! GenTextViewController
+           vc.choice = clicked
        }
 }

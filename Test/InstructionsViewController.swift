@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InstrucoesViewController: UIViewController {
+class InstructionsViewController: UIViewController {
     
     @IBOutlet weak var title1: UILabel! //Primeiro título
     @IBOutlet weak var title2: UILabel! //Segundo titulo

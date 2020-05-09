@@ -32,7 +32,7 @@
         <!--Conquistas-->
         <scene sceneID="Drv-C4-d1B">
             <objects>
-                <viewController modalPresentationStyle="overFullScreen" id="xs5-Wq-ra3" customClass="ConquistasViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overFullScreen" id="xs5-Wq-ra3" customClass="AchievementScreenViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zif-7i-rPN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1190"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,7 +275,7 @@
         <!--Achievement View Controller-->
         <scene sceneID="7SX-zK-ghI">
             <objects>
-                <viewController id="u70-vN-WQM" customClass="AchievementViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="u70-vN-WQM" customClass="AchievementViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QKy-C6-Yb2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,7 +352,7 @@
         <!--Gêneros-->
         <scene sceneID="FRM-bl-dUk">
             <objects>
-                <viewController id="M8r-PY-Pm3" customClass="GeneroViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M8r-PY-Pm3" customClass="GenderViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UuQ-8H-gMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -531,7 +531,7 @@
         <!--Orientação-->
         <scene sceneID="ltM-Wx-UGX">
             <objects>
-                <viewController id="qbI-ss-2mn" customClass="OrientacaoViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qbI-ss-2mn" customClass="OrientationViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0iz-RN-gvG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -682,7 +682,7 @@
         <!--Jogos-->
         <scene sceneID="gpY-L4-AEH">
             <objects>
-                <viewController id="T5D-kW-PZj" customClass="GameScreenViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="T5D-kW-PZj" customClass="GameScreenViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9N7-EG-Dnj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -857,7 +857,7 @@
         <!--Sobre o app-->
         <scene sceneID="U3K-cT-jMU">
             <objects>
-                <viewController id="a3m-3U-3FS" customClass="AboutTheAppViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="a3m-3U-3FS" customClass="AboutTheAppViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TiZ-FZ-7ct">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -895,7 +895,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">Orientity é a mistura das palavras “orientation” (orientação) e “identity” 
+                                        <string key="content">Orientity é a mistura das palavras “orientation” (orientação) e “identity” 
 (identidade).
 
 Nosso objetivo é ensinar um pouco mais sobre alguns tipos de orientações 
@@ -903,7 +903,7 @@ sexuais e identidades de gênero. Temas importantes que não costumam ser aborda
 
 Nosso objetivo é ensinar um pouco mais sobre alguns tipos de Orientações Sexuais e Identidades de Gênero. Temas importantes que não costumam ser abordados nas escolas ou em casa, e muitas vezes, por causa de preconceitos ou desconhecimento, as poucas informações passadas não são totalmente verídicas. 
 
-Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas sobre o assunto em um ambiente em que se sintam seguras e confortáveis. E assim, quem sabe, repassar esse conhecimento.</mutableString>
+Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas sobre o assunto em um ambiente em que se sintam seguras e confortáveis. E assim, quem sabe, repassar esse conhecimento.</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="17" name="SFProDisplay-Regular"/>
@@ -937,7 +937,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
         <!--Jogo-->
         <scene sceneID="sHQ-R5-dY7">
             <objects>
-                <viewController title="Jogo" modalPresentationStyle="fullScreen" id="Pk9-0A-s37" customClass="GameViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Jogo" modalPresentationStyle="fullScreen" id="Pk9-0A-s37" customClass="GameViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNj-IK-NMg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1133,7 +1133,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
         <!--Identidade-->
         <scene sceneID="CQa-Li-gOe">
             <objects>
-                <viewController id="Of8-FE-FMr" userLabel="Identidade" customClass="GTextoViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Of8-FE-FMr" userLabel="Identidade" customClass="GenTextViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="baX-fS-RSl" userLabel="Identidade">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1203,12 +1203,12 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                     </view>
                     <navigationItem key="navigationItem" id="rlg-Rn-kIc"/>
                     <connections>
-                        <outlet property="TextoOri" destination="8Mz-zZ-Ksd" id="3kh-1N-y2x"/>
-                        <outlet property="TituloOri" destination="Gjq-YN-zfz" id="Bt2-Wm-bmf"/>
+                        <outlet property="TextGen" destination="8Mz-zZ-Ksd" id="3kh-1N-y2x"/>
+                        <outlet property="TitleGen" destination="Gjq-YN-zfz" id="Bt2-Wm-bmf"/>
                         <outlet property="background" destination="alZ-N7-Skc" id="mrf-CD-IDG"/>
                         <outlet property="backgroundTitle" destination="GQx-Vb-FcW" id="Of8-LN-eAd"/>
                         <outlet property="bntQuiz" destination="7rN-di-j2e" id="c0a-sG-IrD"/>
-                        <outlet property="oriImage" destination="mdW-5m-O6A" id="xXX-dV-wGz"/>
+                        <outlet property="genImage" destination="mdW-5m-O6A" id="xXX-dV-wGz"/>
                         <segue destination="mAS-EX-OWe" kind="presentation" identifier="segueQuiz" id="MVF-Q9-2fd"/>
                     </connections>
                 </viewController>
@@ -1219,7 +1219,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
         <!--OrientacaoS-->
         <scene sceneID="7Ud-Pq-ROF">
             <objects>
-                <viewController storyboardIdentifier="Main" id="NCV-ca-0Gz" userLabel="OrientacaoS" customClass="OriTextoViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="NCV-ca-0Gz" userLabel="OrientacaoS" customClass="OriTextViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wdb-0R-QQT" userLabel="OrientacaoS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1289,8 +1289,8 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
                     </view>
                     <navigationItem key="navigationItem" id="H7X-ZQ-Fdu"/>
                     <connections>
-                        <outlet property="TextoOri" destination="wkX-9H-gsO" id="sPO-Kb-4uC"/>
-                        <outlet property="TituloOri" destination="0Op-cv-fQ7" id="p9N-ia-r4T"/>
+                        <outlet property="TextOri" destination="wkX-9H-gsO" id="sPO-Kb-4uC"/>
+                        <outlet property="TitleOri" destination="0Op-cv-fQ7" id="p9N-ia-r4T"/>
                         <outlet property="background" destination="xbc-h5-PdQ" id="lQK-2o-uvW"/>
                         <outlet property="backgroundTitle" destination="um7-wx-DSO" id="nXh-mB-0vk"/>
                         <outlet property="bntQuiz" destination="RTS-dX-E0g" id="SS1-3W-g5e"/>
@@ -1305,7 +1305,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
         <!--QuizId-->
         <scene sceneID="QVH-of-pUg">
             <objects>
-                <viewController title="QuizId" modalPresentationStyle="fullScreen" id="mAS-EX-OWe" customClass="QuizIdViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="QuizId" modalPresentationStyle="fullScreen" id="mAS-EX-OWe" customClass="QuizIdViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nKi-eG-9Te">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1442,7 +1442,7 @@ Queremos fornecer uma plataforma para que as pessoas possam aprender sozinhas so
         <!--QuizId-->
         <scene sceneID="kRU-WI-U9t">
             <objects>
-                <viewController title="QuizId" modalPresentationStyle="fullScreen" id="4O5-Gz-mU5" customClass="QuizOrViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="QuizId" modalPresentationStyle="fullScreen" id="4O5-Gz-mU5" customClass="QuizOrViewController" customModule="Orientity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vux-zv-D8z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

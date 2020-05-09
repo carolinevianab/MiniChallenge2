@@ -9,10 +9,9 @@
 import UIKit
 
 
-class ConquistasViewController: UIViewController {
+class AchievementScreenViewController: UIViewController {
     
     var clicked = ""
-    var jogo4 = false
     var b1Active: Bool!
     var b2Active: Bool!
     var b3Active: Bool!
@@ -152,7 +151,6 @@ class ConquistasViewController: UIViewController {
         b18.clipsToBounds = true
         b19.clipsToBounds = true
         b20.clipsToBounds = true
-        // Do any additional setup after loading the view.
         
         b1.isEnabled = false
         b2.isEnabled = false
@@ -175,18 +173,15 @@ class ConquistasViewController: UIViewController {
         b19.isEnabled = false
         b20.isEnabled = false
         
-        defineDefaults()
-        //var i = 0
         let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-            //i += 5
-            self.carregar()
+            self.loadUD()
         }
         
         timer.fire()
-        carregar()
+        loadUD()
     }
     
-    func carregar(){
+    func loadUD(){
         let b1Activate = defaults.bool(forKey: Keys.b1IsActive)
         let b2Activate = defaults.bool(forKey: Keys.b2IsActive)
         let b3Activate = defaults.bool(forKey: Keys.b3IsActive)
@@ -288,15 +283,6 @@ class ConquistasViewController: UIViewController {
         
       
     }
-    
-    func defineDefaults(){
-        /*
-        defaults.set(b17Active, forKey: Keys.b17IsActive)
-        defaults.set(b18Active, forKey: Keys.b18IsActive)
-        defaults.set(b19Active, forKey: Keys.b19IsActive)
-        defaults.set(b20Active, forKey: Keys.b20IsActive)*/
-    }
-    
     
     @objc func defineClicked(_ sender: UIButton){
         self.clicked = sender.restorationIdentifier!
